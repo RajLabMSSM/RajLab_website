@@ -1,6 +1,6 @@
 # RajLab_website
 
-The official site for the Raj Lab.  
+## The official website for the lab of Dr. Towfique Raj  
 www.rajlab.org  
 
 Icahn School of Medicine at Mount Sinai  

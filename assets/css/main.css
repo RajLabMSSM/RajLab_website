@@ -1934,7 +1934,7 @@
 	button,
 	.button {
 		background-color: var(--tertiary-color);
-		color: #ffffff !important;
+		color: var(--background-color) !important;
 	}
 
 		input[type="submit"]:hover,
@@ -1994,7 +1994,7 @@
 		button.special,
 		.button.special {
 			background-color: var(--primary-color);
-			color: #ffffff !important;
+			color: var(--background-color) !important;
 		}
 
 			input[type="submit"].special:hover,
@@ -2292,7 +2292,7 @@
 	input[type="radio"]:checked + label:before {
 		background-color: var(--primary-color);
 		border-color: var(--primary-color);
-		color: #ffffff;
+		color: var(--background-color);
 	}
 
 	input[type="checkbox"]:focus + label:before,
@@ -2688,15 +2688,15 @@
 		}
 
 			.wrapper.style1 input, .wrapper.style1 select, .wrapper.style1 textarea {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style1 a {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
@@ -2726,7 +2726,7 @@
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
 				background-color: var(--tertiary-color);
-				color: #ffffff !important;
+				color: var(--background-color) !important;
 			}
 
 				.wrapper.style1 input[type="submit"]:hover,
@@ -2752,7 +2752,7 @@
 				.wrapper.style1 .button.alt {
 					background-color: transparent;
 					box-shadow: inset 0 0 0 2px var(--background-color);
-					color: #ffffff !important;
+					color: var(--background-color) !important;
 				}
 
 					.wrapper.style1 input[type="submit"].alt:hover,
@@ -2784,12 +2784,12 @@
 				.wrapper.style1 input[type="button"].special,
 				.wrapper.style1 button.special,
 				.wrapper.style1 .button.special {
-					background-color: #ffffff;
+					background-color: var(--background-color);
 					color: var(--primary-color) !important;
 				}
 
 			.wrapper.style1 label {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style1 input[type="text"],
@@ -2806,8 +2806,8 @@
 				.wrapper.style1 input[type="email"]:focus,
 				.wrapper.style1 select:focus,
 				.wrapper.style1 textarea:focus {
-					border-color: #ffffff;
-					box-shadow: 0 0 0 1px #ffffff;
+					border-color: var(--background-color);
+					box-shadow: 0 0 0 1px var(--background-color);
 				}
 
 			.wrapper.style1 .select-wrapper:before {
@@ -2827,15 +2827,15 @@
 
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
-				background-color: #ffffff;
-				border-color: #ffffff;
+				background-color: var(--background-color);
+				border-color: var(--background-color);
 				color: var(--primary-color);
 			}
 
 			.wrapper.style1 input[type="checkbox"]:focus + label:before,
 			.wrapper.style1 input[type="radio"]:focus + label:before {
-				border-color: #ffffff;
-				box-shadow: 0 0 0 1px #ffffff;
+				border-color: var(--background-color);
+				box-shadow: 0 0 0 1px var(--background-color);
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -2875,7 +2875,7 @@
 				}
 
 			.wrapper.style1 table th {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style1 table thead {
@@ -2896,7 +2896,7 @@
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style2 a {
@@ -2904,7 +2904,7 @@
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style2 blockquote {
@@ -2929,7 +2929,7 @@
 			.wrapper.style2 input[type="button"],
 			.wrapper.style2 button,
 			.wrapper.style2 .button {
-				background-color: #ffffff;
+				background-color: var(--background-color);
 				color: var(--tertiary-color) !important;
 			}
 
@@ -2940,7 +2940,7 @@
 				.wrapper.style2 .button.alt {
 					background-color: transparent;
 					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
-					color: #ffffff !important;
+					color: var(--background-color) !important;
 				}
 
 					.wrapper.style2 input[type="submit"].alt:hover,
@@ -2973,7 +2973,7 @@
 				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
 					background-color: var(--primary-color);
-					color: #ffffff !important;
+					color: var(--background-color) !important;
 				}
 
 					.wrapper.style2 input[type="submit"].special:hover,
@@ -2993,7 +2993,7 @@
 					}
 
 			.wrapper.style2 label {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style2 input[type="text"],
@@ -3033,7 +3033,7 @@
 			.wrapper.style2 input[type="radio"]:checked + label:before {
 				background-color: var(--primary-color);
 				border-color: var(--primary-color);
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style2 input[type="checkbox"]:focus + label:before,
@@ -3079,7 +3079,7 @@
 				}
 
 			.wrapper.style2 table th {
-				color: #ffffff;
+				color: var(--background-color);
 			}
 
 			.wrapper.style2 table thead {
@@ -3161,29 +3161,30 @@
 			font-size: 2.75em;
 			text-transform: none;
 			font-weight: normal;
-			padding: 0;
+			padding: 0;  
 		}
 
 			#header .logo:hover {
-				color: var(--secondary-color);
+				color: var(--secondary-color); 
 			}
 
-		#header a {
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
+		#header a { 
 			display: inline-block; 
 			padding: 0 2em;
-			color: #ffffff;
+			color: var(--background-color);
 			text-decoration: none;
 			text-transform: uppercase; 
 			font-size: .85em;
+
+			-moz-transition: 0.2s ease-in-out;
+			-webkit-transition:  0.2s ease-in-out;
+			-ms-transition:  0.2s ease-in-out;
+			transition:  0.2s ease-in-out;
 		}
 
 			#header a:hover {
 				color: var(--primary-color);
-			}
+			} 
 
 			#header a:last-child {
 				padding-right: 0em;
@@ -3196,11 +3197,16 @@
 				}
 
 			}
-			#header .lab-logo {
+			#header .img-logo {
 				height: 50px; 
 				display: inline-block; 
 				vertical-align: middle; 
+				
+				-webkit-box-shadow: 10px 10px 300px 0px rgba(255,255,255,0.88);
+				-moz-box-shadow: 10px 10px 300px 0px rgba(255,255,255,0.88);
+				box-shadow: 10px 10px 300px 0px rgba(255,255,255,0.88);
 			}
+			 
 
 	@media screen and (max-width: 480px) {
 
@@ -3386,7 +3392,7 @@
 
 	#banner {
 		background-color: var(--primary-color);
-		color: #f2a3a5;
+		color: var(--primary-color);
 		padding: 13em 0 11em 0;
 		background-color: #0c0c0c;
 		background-image: url("../../images/banner.jpg");
@@ -3399,15 +3405,15 @@
 	}
 
 		#banner input, #banner select, #banner textarea {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#banner a {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#banner strong, #banner b {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#banner h1, #banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
@@ -3459,7 +3465,7 @@
 			#banner .button.alt {
 				background-color: transparent;
 				box-shadow: inset 0 0 0 2px var(--background-color);
-				color: #ffffff !important;
+				color: var(--background-color) !important;
 			}
 
 				#banner input[type="submit"].alt:hover,
@@ -3491,7 +3497,7 @@
 			#banner input[type="button"].special,
 			#banner button.special,
 			#banner .button.special {
-				background-color: #ffffff;
+				background-color: var(--background-color);
 				color: var(--primary-color) !important;
 			}
 
@@ -3774,15 +3780,15 @@
 	}
 
 		#footer input, #footer select, #footer textarea {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#footer a {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#footer strong, #footer b {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
@@ -3808,7 +3814,7 @@
 		#footer button,
 		#footer .button {
 			background-color: var(--tertiary-color);
-			color: #ffffff !important;
+			color: var(--background-color) !important;
 		}
 
 			#footer input[type="submit"]:hover,
@@ -3834,7 +3840,7 @@
 			#footer .button.alt {
 				background-color: transparent;
 				box-shadow: inset 0 0 0 2px var(--background-color);
-				color: #ffffff !important;
+				color: var(--background-color) !important;
 			}
 
 				#footer input[type="submit"].alt:hover,
@@ -3866,12 +3872,12 @@
 			#footer input[type="button"].special,
 			#footer button.special,
 			#footer .button.special {
-				background-color: #ffffff;
+				background-color: var(--background-color);
 				color: var(--primary-color) !important;
 			}
 
 		#footer label {
-			color: #ffffff;
+			color: var(--background-color);
 		}
 
 		#footer input[type="text"],
@@ -3888,8 +3894,8 @@
 			#footer input[type="email"]:focus,
 			#footer select:focus,
 			#footer textarea:focus {
-				border-color: #ffffff;
-				box-shadow: 0 0 0 1px #ffffff;
+				border-color: var(--background-color);
+				box-shadow: 0 0 0 1px var(--background-color);
 			}
 
 		#footer .select-wrapper:before {
@@ -3909,15 +3915,15 @@
 
 		#footer input[type="checkbox"]:checked + label:before,
 		#footer input[type="radio"]:checked + label:before {
-			background-color: #ffffff;
-			border-color: #ffffff;
+			background-color: var(--background-color);
+			border-color: var(--background-color);
 			color: var(--primary-color);
 		}
 
 		#footer input[type="checkbox"]:focus + label:before,
 		#footer input[type="radio"]:focus + label:before {
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			border-color: var(--background-color);
+			box-shadow: 0 0 0 1px var(--background-color);
 		}
 
 		#footer ::-webkit-input-placeholder {
@@ -3993,7 +3999,7 @@
 	background: var(--primary-color); 
 	border-radius: 2px; 
 	margin-left: 0;
-	margin-top: 10px;  
+	margin-top: 10px;
 } 
  
 
@@ -4007,7 +4013,7 @@
 	border-radius: 2px; 
 	font-size:  1vw; 
 
-	opacity: .;
+	opacity: .8;
 
 	transition: opacity .3s ease-in-out;
 	-moz-transition: opacity .3s ease-in-out;
@@ -4017,18 +4023,25 @@
 
 
 .project h3 {
+	text-transform: none;
 	font-size:  1.5vw;
 	color: var(--background-color);
-	padding: 20px 0 0 0;
+	padding: 20px 10px 0 0;
+	display: inline-block;
 
 	transition: color .3s ease-in-out;
 	-moz-transition: color .3s ease-in-out;
 	-webkit-transition: color .3s ease-in-out;
 }
+.project:hover h3 {
+	color: var(--secondary-color);
+}
 .project img {
-	height: 50%; 
+	height:150px;
 	display: block; 
-	margin: 10px auto;
+	max-height: 200px; 
+	margin: 10px auto; 
+
 }
 
 .project:hover {
@@ -4043,8 +4056,9 @@
 	box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.75);
 
 }
-.project:hover h3 {
-	color: var(--secondary-color);
+
+.project p {
+	min-height: 150px;
 }
 .project:hover p{  
 	opacity: 1;
@@ -4054,6 +4068,8 @@
 	-moz-box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.75);
 	box-shadow: 10px 10px 28px -7px rgba(0,0,0,0.75);
 }
+
+
 
 
 .allProjects h2{
@@ -4080,7 +4096,7 @@
 
 #map {
 	height: 100%;   
-	height: 100%;  
+	width: 100%;  
 	display: block;
 	float: left;
 	border-radius: 4px; 
@@ -4119,3 +4135,4 @@
 	text-align: left; 
 }
 
+ 
