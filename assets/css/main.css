@@ -2839,23 +2839,23 @@
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
-				color: #f8d1d2 !important;
+				color: var(--secondary-color) !important;
 			}
 
 			.wrapper.style1 :-moz-placeholder {
-				color: #f8d1d2 !important;
+				color: var(--secondary-color) !important;
 			}
 
 			.wrapper.style1 ::-moz-placeholder {
-				color: #f8d1d2 !important;
+				color: var(--secondary-color) !important;
 			}
 
 			.wrapper.style1 :-ms-input-placeholder {
-				color: #f8d1d2 !important;
+				color: var(--secondary-color) !important;
 			}
 
 			.wrapper.style1 .formerize-placeholder {
-				color: #f8d1d2 !important;
+				color: var(--secondary-color) !important;
 			}
 
 			.wrapper.style1 ul.alt li {
@@ -2863,7 +2863,7 @@
 			}
 
 			.wrapper.style1 header p {
-				color: #f8d1d2;
+				color: var(--secondary-color);
 			}
 
 			.wrapper.style1 table tbody tr {
@@ -3776,7 +3776,7 @@
 		background-color: var(--primary-color);
 		color: #f2a3a5;
 		padding: 4em 0 2em 0;
-		background: var(--primary-color);
+		background: var(--primary-color); 
 	}
 
 		#footer input, #footer select, #footer textarea {
@@ -3864,7 +3864,7 @@
 				#footer input[type="button"].alt.icon:before,
 				#footer button.alt.icon:before,
 				#footer .button.alt.icon:before {
-					color: #f8d1d2;
+					color: var(--secondary-color);
 				}
 
 			#footer input[type="submit"].special,
@@ -3927,23 +3927,23 @@
 		}
 
 		#footer ::-webkit-input-placeholder {
-			color: #f8d1d2 !important;
+			color: var(--secondary-color) !important;
 		}
-
+		
 		#footer :-moz-placeholder {
-			color: #f8d1d2 !important;
+			color: var(--secondary-color) !important;
 		}
 
 		#footer ::-moz-placeholder {
-			color: #f8d1d2 !important;
+			color: var(--secondary-color) !important;
 		}
 
 		#footer :-ms-input-placeholder {
-			color: #f8d1d2 !important;
+			color: var(--secondary-color) !important;
 		}
 
 		#footer .formerize-placeholder {
-			color: #f8d1d2 !important;
+			color: var(--secondary-color) !important;
 		}
 
 		#footer .inner {
@@ -4105,12 +4105,12 @@
  
 #sinai-logo {
 	text-align: left;
-	background-color: rgba(255,255,255, 0.3); 
+	background-color: rgba(255,255,255, 0.3);  
 }
 #sinai-logo img{
 	height: 120px;
 	border-radius: 4px;
-	padding: 20px;
+	padding: 20px; 
 }
 
 #github-logo {
@@ -4135,4 +4135,35 @@
 	text-align: left; 
 }
 
+/* Publications Table */
+#pubsTable {
+	font-size: 13px; 
+}
+
+table.dataTable td{
+	border: var(--secondary-color) solid .2px !important;
+}
+table.dataTable tbody tr:nth-child(even):hover {
+	
+	transition:  .3s ease-in-out;
+	-moz-transition:  .3s ease-in-out;
+	-webkit-transition:  .3s ease-in-out;
+    background-color: lightgray !important;
+}
+
+table.dataTable tbody tr:nth-child(odd):hover { 
+	transition:  .3s ease-in-out;
+	-moz-transition:  .3s ease-in-out;
+	-webkit-transition:  .3s ease-in-out; 
+    background-color: lightgray !important;
+}
+
+.Title {
+	font-weight: bold
+}
+.Journal {
+	font-style: italic;
+}
+ 
+ 
  
