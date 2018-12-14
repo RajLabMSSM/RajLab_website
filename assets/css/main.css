@@ -20,6 +20,9 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		-webkit-font-smoothing: antialiased; 
+		-moz-osx-font-smoothing: grayscale;
+		text-rendering: geometricPrecision;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -2557,6 +2560,9 @@
 			}
 
 		}
+	header h2 {
+		outline: black 1px;
+	}
 
 	header p {
 		position: relative;
@@ -3988,6 +3994,12 @@
 		}
 
 
+
+
+/* #######******* Modifications *******####### */
+
+
+
 .projectRow {
 	display: block;
 	margin-top: 100px;  
@@ -4087,11 +4099,12 @@
 	color: blue;
 }
 #footer h3,h4 {
-	color: var(--secondary-color); 
+	color: var(--background-color); 
 }
 #footer p {
 	color: white;
-	font-size: 15px;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 #map {
@@ -4136,8 +4149,25 @@
 }
 
 /* Publications Table */
-#pubsTable {
-	font-size: 13px; 
+#pubContainer {
+	background-color: gainsboro;
+	border-radius: 20px;
+	padding: 20px;
+}
+ 
+
+#pubsTable { 
+	font-size: 13px;  
+}
+
+table.pubsTable {
+	width: 100%;
+	clear: both;
+}
+
+
+table.dataTable {
+	border-radius: 2px;
 }
 
 table.dataTable td{
@@ -4158,12 +4188,98 @@ table.dataTable tbody tr:nth-child(odd):hover {
     background-color: lightgray !important;
 }
 
-.Title {
+table.dataTable tbody .Title {
 	font-weight: bold
+}  
+table.dataTable tbody .Journal{
+	font-style: italic; 
 }
-.Journal {
-	font-style: italic;
+
+
+ 
+table.dataTable thead .sorting, 
+table.dataTable thead .sorting_asc, 
+table.dataTable thead .sorting_desc {
+    background : none;
+}
+
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:after {
+    color: #eee;
 }
  
+table.dataTable thead .sorting:after {
+  opacity: 0.2;
+  content: "\e150";
+  color: black;
+  /* sort */
+}
+table.dataTable thead .sorting_asc:after {
+  content: "\e155";
+  color: var(--secondary-color);
+  /* sort-by-attributes */
+}
+table.dataTable thead .sorting_desc:after {
+  content: "\e156";
+  color:#00f;
+  /* sort-by-attributes-alt */
+}
+
+table.pubsTable tr {
+	/* background-color: var(--primary-color); */
+	color: white;
+	border-radius: 20px;
+}
  
+.csvButton {
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 20px;
+	margin-right: 20px;
+}
+
+table.dataTable thead .pubsHeader {
+	color: white;
+	background-color: var(--primary-color);
+	border-radius: 10px 10px 0 0;  
+}
  
+
+
+
+
+
+/* Whole page scrollbar */
+body::-webkit-scrollbar {
+    width: .5em;
+} 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  outline: 1px solid var(--secondary-color);
+}
+
+/* Mac stye scrollbar */
+/* 
+::-webkit-scrollbar {
+    width:9px;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(0,0,0,0.4);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(0,0,0,0.05);
+} */
