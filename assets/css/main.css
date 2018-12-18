@@ -27,10 +27,11 @@
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
-	}
+	} 
 
 	body {
 		line-height: 1;
+		-webkit-text-size-adjust: none;
 	}
 
 	ol, ul {
@@ -51,9 +52,38 @@
 		border-spacing: 0;
 	}
 
-	body {
-		-webkit-text-size-adjust: none;
+	a {
+		color:  var(--secondary-color);
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		text-decoration: none;
+	} 
+	a:hover {
+		text-decoration: underline;
 	}
+
+
+	h1, h2, h3, h4, h5, h6 {
+		color: var(--primary-color);
+	}
+
+	blockquote {
+		border-left-color: var(--primary-color);
+	}
+
+	code {
+		background: none;
+		border-color: var(--primary-color);
+	}
+
+	hr { 
+		border: 0;
+		border-bottom: var(--primary-color)solid 1px;
+		margin: 2em 0;
+	}
+ 
 
 /* Box Model */
 
@@ -1642,17 +1672,15 @@
 
 		}
 
-	a {
-		-moz-transition: color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out;
-		text-decoration: none;
-	}
+ 
+		
 
-		a:hover {
-			text-decoration: underline;
+	
+		input, select, textarea {
+			color: var(--primary-color);
 		}
+	
+		
 
 	strong, b {
 		font-weight: 700;
@@ -1674,7 +1702,7 @@
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: var(--secondary-color);
 			text-decoration: none;
 		}
 
@@ -1761,11 +1789,7 @@
 			overflow-x: auto;
 		}
 
-	hr {
-		border: 0;
-		border-bottom: solid 1px;
-		margin: 2em 0;
-	}
+	 
 
 		hr.major {
 			margin: 3em 0;
@@ -1783,32 +1807,6 @@
 		text-align: right;
 	}
 
-	input, select, textarea {
-		color: var(--primary-color);
-	}
-
-	a {
-		color: var(--primary-color);
-	}
-
-
-
-	h1, h2, h3, h4, h5, h6 {
-		color: var(--primary-color);
-	}
-
-	blockquote {
-		border-left-color: var(--primary-color);
-	}
-
-	code {
-		background: none;
-		border-color: var(--primary-color);
-	}
-
-	hr {
-		border-bottom-color: var(--primary-color);
-	}
 
 /* Box */
 
@@ -1846,10 +1844,10 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-moz-transition: var(--background-color) 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: var(--background-color) 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: var(--background-color) 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: var(--background-color) 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-radius: 0;
 		border: 0;
 		cursor: pointer;
@@ -4177,3 +4175,11 @@ body::-webkit-scrollbar-thumb {
 ::-webkit-scrollbar-thumb:window-inactive {
     background:rgba(0,0,0,0.05);
 } */
+
+
+a {
+	color:  blueviolet;
+}
+a:hover {
+	color: var(--secondary-color);
+}

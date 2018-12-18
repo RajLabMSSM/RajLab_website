@@ -1,42 +1,82 @@
 <!DOCTYPE HTML>
 <!-- -->
 <html>
-	<head>
-		<title>Raj Lab </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	</head>
-    
-    
-    <body>
-<style>
-p.small {
-	line-height: 1.3;
-}
-</style>
+	
+<head>
+	<title>Raj Lab @ MSSM</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="./index.html" class="logo">Raj Lab <br></a>
+	<!-- D3 -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+	<!-- Local Scripts -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/skel.min.js"></script>
+	<script src="./assets/js/util.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/makeTable.js"></script>
 
-					<nav id="nav">
-						<a href="./index.html">Home</a>
-						<a href="./people.html">Team</a>
-						<a href="./projects.html">Projects</a>
-                        <a href="./publications.html">Publications</a>
-                        <a href="./data.html">Data/Software</a>
-                        <a href="./funding.html">Funding</a>
-                        <a href="./joinus.html">Join Us</a>
-					</nav>
-				</div>
-			</header>
-<!-- Banner -->
+
+	<!-- Bootstrap-->
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<!-- jquery -->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- Datatables -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script> -->
+	<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> -->
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+	 crossorigin="anonymous">
+
+	<!--CSS-->
+	<link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+
+
+
+	<!-- React -->
+	<!-- <script src="https://unpkg.com/react@16/umd/react.production.js" crossorigin></script>
+								<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.js" crossorigin></script>
+								<script src="./assets/jsx/react.jsx"></script>  -->
+</head>
+
 <body>
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<nav id="nav">
+				<img src="./icons/brain-icon.png" class="img-logo">
+				<a href="./index.html" class="logo">Raj Lab <br></a>
+				<a href="./people.html">Team</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./publications.html">Publications</a>
+				<a href="./data.html">Data/Software</a>
+				<a href="./funding.html">Funding</a>
+				<a href="./joinus.html">Join Us</a>
+			</nav>
+		</div>
+	</header>
+
+	
+<!-- Banner --> 
 <div class="container1">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
@@ -50,23 +90,23 @@ p.small {
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="/images/banner2.jpg" style="width:100%;" style="height:20%">
+        <img src="./images/banner2.jpg" style="width:100%;" style="height:20%">
         <div class="carousel-caption">
         </div>
       </div>
 
       <div class="item">
-        <img src="images/GW_Paper.png" style="width:100%;" style="height:20%">
+        <img src="./images/GW_Paper.png" style="width:100%;" style="height:20%">
         <div class="carousel-caption">
         </div>
       </div>
     <div class="item">
-        <img src="images/banner0.jpg" style="width:100%;" style="height:20%">
+        <img src="./images/banner0.jpg" style="width:100%;" style="height:20%">
         <div class="carousel-caption">
         </div>
       </div>
       <div class="item">
-        <img src="images/MyND.png" style="width:100%;" style="height:20%">
+        <img src="./images/MyND.png" style="width:100%;" style="height:20%">
         <div class="carousel-caption">
          
         </div>
@@ -144,7 +184,7 @@ p.small {
 					</article>
 				</div>
 			</section>
-								<!-- Two -->
+							
         <!-- Footer -->
 		<section id="footer"> 
 		<h3>Contact Us</h3>
