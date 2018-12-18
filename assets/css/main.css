@@ -3570,11 +3570,7 @@
 		}
 
 
-<!--PEOPLE PAGE--->
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-body{
-    font-family: 'Quicksand', sans-serif;
-}
+/* <!--PEOPLE PAGE---> */ 
 .team{
     padding:75px 0;
 }
@@ -3897,9 +3893,7 @@ i.red{
 
 
 /* #######******* Modifications *******####### */
-
-
-
+ 
 .projectRow {
 	display: block;
 	margin-top: 100px;  
