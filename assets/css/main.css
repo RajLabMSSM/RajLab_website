@@ -73,6 +73,7 @@
 		-moz-transition:  .3s ease-in-out;
 		-webkit-transition:  .3s ease-in-out;
 	}
+	
 
 	blockquote {
 		border-left-color: var(--primary-color);
@@ -3989,19 +3990,26 @@ i.red{
 }
 
 #footer {
-	padding: 50px;
+	padding: 50px;  
+}
+#footer .col-md-3 {
+	display: inline-table;
+	margin-bottom: 40px;
+	margin-right: 10px;
 }
 
 #footer a {
 	color: blue;
 }
 #footer h3,h4 {
-	color: var(--background-color); 
+	color: var(--background-color);  
+	white-space: nowrap;
 }
 #footer p {
 	color: white;
-	font-size: 16px;
+	font-size: .8em;
 	font-weight: 400;
+	line-height: 1.3em;
 }
 
 #map {
@@ -4243,4 +4251,31 @@ a:hover {
  
 .Summary {
 	color: white;
+}
+
+
+/* Data / Software */ 
+.dataSoftware {
+	background: #202020;
+	border-radius: 4px;
+	padding: 20px;   
+}
+.dataTitle {
+	margin-right: 20%; 
+	white-space: pre-wrap;
+}
+.dataSoftware a h5:hover{ 
+	transition:  .3s ease-in-out;
+	-moz-transition:  .3s ease-in-out;
+	-webkit-transition:  .3s ease-in-out;
+}
+
+.dataSoftware a h5:hover{
+	color: var(--secondary-color); 
+}
+
+
+
+h2,h3,h4,h5 {
+	text-transform: none;
 }
