@@ -1,435 +1,172 @@
 <!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
-	<head>
-		<title>Elements - Introspect by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body>
 
-		<!-- Header -->
+<head>
+	<title>Raj Lab @ MSSM</title>
+	<meta charset="utf-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-        <head>
-                <title>Raj Lab</title>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-                <link rel="stylesheet" href="assets/css/main.css" />
-        </head>
-        <body>
+	<!-- Local Scripts -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<script src="./assets/js/skel.min.js"></script>
+	<script src="./assets/js/util.js"></script>
+	<script src="./assets/js/main.js"></script>
+
+	<!-- Bootstrap-->
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<!-- D3 -->
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+	 crossorigin="anonymous">
+	<!-- React -->
+	<!-- <script src="https://unpkg.com/react@16/umd/react.production.js" crossorigin></script>
+					<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.js" crossorigin></script>
+					<script src="./assets/jsx/react.jsx"></script>  -->
+	<!--CSS-->
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
 	<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="index.html" class="logo">Raj Lab <br></a>
+	<header id="header">
+		<div class="inner">
+			<nav id="nav">
+				<img src="./icons/brain-icon.png" class="img-logo">
+				<a href="./index.html" class="logo">Raj Lab <br></a>
+				<a href="./people.html">Team</a>
+				<a href="./projects.html">Projects</a>
+				<a href="./publications.html">Publications</a>
+				<a href="./data.html">Data/Software</a>
+				<a href="./funding.html">Funding</a>
+				<a href="./joinus.html">Join Us</a>
+			</nav>
+		</div>
+	</header>
 
-					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="people.html">Team</a>
-						<a href="elements.html">Projects</a>
-            <a href="publications.html">Publications</a>
-            <a href="data.html">Data/Software</a>
-            <a href="funding.html">Funding</a>
-            <a href="joinus.html">Join Us</a>
-					</nav>
-				</div>
+	<!-- Main -->
+	<section id="main">
+		<div class="inner">
+			<header>
+				<h1><i class="fa fa-university" aria-hidden="true"></i>
+					</i> Funding</h1>
+				<p>Our research is made possible by the generous funding provided by the following sources
+				<br>Both <a href="#activeGrants">Active</a> and <a href="#completedGrants">Completed</a> grants are provided.
+				</p>
 			</header>
-		<!-- Main -->
-			<section id="main">
-				<div class="inner">
-					<header class="major special">
-						<h1>Elements</h1>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-					</header>
 
-					<!-- Text -->
-						<section>
-							<h3>Text</h3>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+			<!-- Text -->
+			<div class="container" id="funding">
+				<!-- Active Funding -->
+				<a class="fundingButton" data-toggle="collapse" href="#activeGrants" role="button" aria-expanded="true" aria-controls="activeGrants">
+					<h2>Active Funding</h2>
+				</a>
+				<div id="activeGrants" class="collapse show"></div>
+				
+				<!-- Completed Funding -->
+				<a class="fundingButton" data-toggle="collapse" href="#completedGrants" role="button" aria-expanded="true" aria-controls="completedGrants">
+					<h2>Completed Funding</h2>
+				</a>
+				<div id="completedGrants" class="collapse show"></div>
+				
+				<script>
+					var createHTML = function(d){
+						var htmlStr = "<div class='grant'>\
+							<h3 class='Title'>"+ d.Title+"</h3>\
+							<div class='grantDetails'>\
+								<div class='row'>\
+									<div class='col-md-4'>\
+										<h5 class='GrantID'>Grant ID: <p>"+d.GrantID+"</p></h5>\
+										<h5 class='Dates'> Dates: <p>"+d.Dates+"</p></h5>\
+										<h5 class='PI'> PI: <p>"+d.PI+"</p></h5>\
+									</div>\
+									<div class='col-md-8'>\
+										<p class='Summary'>"+d.Summary+"</p>\
+									</div>\
+							</div></div>"
+						return htmlStr
+					}
+					
+					d3.csv("./documents/Raj_Grants.csv")
+						.then(function (data) {   
+							 data.forEach(d => { 
+								 if(d.Status=="Active"){ 
+									var htmlStr = createHTML(d);
+									$('#activeGrants').append(htmlStr);
+								 }
+								 if(d.Status=="Completed"){ 
+									var htmlStr = createHTML(d);
+									$('#completedGrants').append(htmlStr);  
+								 }  
+							 });
+						}) 
+				</script>
+			</div>
+	</section>
 
-							<hr />
 
-							<header>
-								<h3>Heading with a Subtitle</h3>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 
-							<hr />
+	<!-- Footer -->
+	<section id="footer">
+		<h3>Contact Us</h3>
+		<div class="row">
+			<div class="col-md-3">
+				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.789686381047!2d-73.95461098459268!3d40.78863757932357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a73c43f3a3%3A0xaf52777f7f7b2ae!2s1425+Madison+Ave%2C+New+York%2C+NY+10029!5e0!3m2!1sen!2sus!4v1543959381826"
+				 frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="col-md-3">
+				<h4>Principal Investigator</h4>
+				<p><strong>Towfique Raj, PhD</strong><br>
+					Assistant Professor <br>
+					Departments of Neuroscience, Genetics and Genomic Sciences<br>
+					Icahn School of Medicine at Mount Sinai<br>
+					1425 Madison Avenue, Icahn 10-70E<br>
+					New York, NY 10029<br>
+					Tel: 212-659-5648<br>
+					E-mail: <span><a>towfique.raj [at] mssm.edu</a></span>
+				</p>
+			</div>
 
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
+			<div class="col-md-3">
+				<h4>Computational Lab 1</h4>
+				<p>1425 Madison Avenue, Icahn 10-52<br>
+					New York, NY 10029<br>
+				</p>
 
-							<hr />
-
-							<h4>Blockquote</h4>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-
-							<h4>Preformatted</h4>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-					<!-- Lists -->
-						<section>
-							<h3>Lists</h3>
-							<div class="row">
-								<div class="6u 12u$(xsmall)">
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-
-								</div>
-							</div>
-
-							<h4>Actions</h4>
-							<ul class="actions">
-								<li><a href="#" class="button special">Special</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button alt">Alternate</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button special small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-								<li><a href="#" class="button alt small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="3u 6u(small) 12u$(xsmall)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Vertical</a></li>
-										<li><a href="#" class="button">Vertical</a></li>
-										<li><a href="#" class="button alt">Vertical</a></li>
-									</ul>
-								</div>
-								<div class="3u 6u$(small) 12u$(xsmall)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-										<li><a href="#" class="button alt small">Small</a></li>
-									</ul>
-								</div>
-								<div class="3u 6u(small) 12u$(xsmall)">
-									<ul class="actions vertical">
-										<li><a href="#" class="button special fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button alt fit">Fit</a></li>
-									</ul>
-								</div>
-								<div class="3u$ 6u$(small) 12u$(xsmall)">
-									<ul class="actions vertical small">
-										<li><a href="#" class="button special small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-										<li><a href="#" class="button alt small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-					<!-- Table -->
-						<section>
-							<h3>Table</h3>
-							<h4>Default</h4>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item 1</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 2</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 3</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 4</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-							<h4>Alternate</h4>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item 1</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 2</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 3</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item 4</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item 5</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-					<!-- Buttons -->
-						<section>
-							<h3>Buttons</h3>
-							<ul class="actions">
-								<li><a href="#" class="button special">Special</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button alt">Alternate</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button special big">Big</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button alt small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="6u 12u$(xsmall)">
-									<ul class="actions fit">
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button alt fit">Fit</a></li>
-									</ul>
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<ul class="actions fit small">
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button alt fit small">Fit + Small</a></li>
-									</ul>
-								</div>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button special icon fa-download">Icon</a></li>
-								<li><a href="#" class="button icon fa-download">Icon</a></li>
-								<li><a href="#" class="button alt icon fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button special disabled">Special</span></li>
-								<li><span class="button disabled">Default</span></li>
-								<li><span class="button alt disabled">Alternate</span></li>
-							</ul>
-						</section>
-
-					<!-- Form -->
-						<section>
-							<h3>Form</h3>
-							<form method="post" action="#">
-								<div class="row uniform 50%">
-									<div class="6u 12u$(xsmall)">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="6u$ 12u$(xsmall)">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="12u$">
-										<div class="select-wrapper">
-											<select name="demo-category" id="demo-category">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-									</div>
-									<div class="4u 12u$(xsmall)">
-										<input type="radio" id="priority-low" name="priority" checked>
-										<label for="priority-low">Low Priority</label>
-									</div>
-									<div class="4u 12u$(xsmall)">
-										<input type="radio" id="priority-normal" name="priority">
-										<label for="priority-normal">Normal Priority</label>
-									</div>
-									<div class="4u$ 12u$(xsmall)">
-										<input type="radio" id="priority-high" name="priority">
-										<label for="priority-high">High Priority</label>
-									</div>
-									<div class="6u 12u$(small)">
-										<input type="checkbox" id="copy" name="copy">
-										<label for="copy">Email me a copy of this message</label>
-									</div>
-									<div class="6u$ 12u$(small)">
-										<input type="checkbox" id="human" name="human" checked>
-										<label for="human">I am a human and not a robot</label>
-									</div>
-									<div class="12u$">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="12u$">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-					<!-- Image -->
-						<section>
-							<h3>Image</h3>
-							<h4>Fit</h4>
-							<div class="box alt">
-								<div class="row 50% uniform">
-									<div class="12u$"><span class="image fit"><img src="images/pic11.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-									<div class="4u"><span class="image fit"><img src="images/pic05.jpg" alt="" /></span></div>
-									<div class="4u$"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								</div>
-							</div>
-
-							<h4>Left &amp; Right</h4>
-							<p><span class="image left"><img src="images/pic06.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/pic06.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
+				<h4>Computational Lab 2</h4>
+				<p>19 E 98th Street, Room 6C <br>
+					New York, NY 10029<br>
+				</p>
+				<a href="https://github.com/RajLabMSSM" target="_blank">
+					<img src="./icons/github.png" id="github-logo">
+				</a>
+			</div>
+			<div class="col-md-3">
+				<h4>Wet Lab</h4>
+				<p>Icahn Building, Room 10-52<br>
+					1425 Madison Avenue<br>
+					New York, NY 10029<br><br>
+				</p>
+				<div id="sinai-logo">
+					<a href="https://icahn.mssm.edu/" target="_blank">
+						<img src="./icons/Icahn.png">
+					</a>
 				</div>
-			</section>
 
-		<!-- Footer -->
-			<section id="footer">
-				<div class="inner">
-					<header>
-						<h2>Get in Touch</h2>
-					</header>
-					<form method="post" action="#">
-						<div class="field half first">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name" />
-						</div>
-						<div class="field half">
-							<label for="email">Email</label>
-							<input type="text" name="email" id="email" />
-						</div>
-						<div class="field">
-							<label for="message">Message</label>
-							<textarea name="message" id="message" rows="6"></textarea>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="alt" /></li>
-						</ul>
-					</form>
-					<div class="copyright">
-						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
-					</div>
-				</div>
-			</section>
+			</div>
+	</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+
+</body>
+
 </html>

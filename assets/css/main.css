@@ -68,6 +68,11 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: var(--primary-color);
 	}
+	.inner h1 {
+		transition:  .3s ease-in-out;
+		-moz-transition:  .3s ease-in-out;
+		-webkit-transition:  .3s ease-in-out;
+	}
 
 	blockquote {
 		border-left-color: var(--primary-color);
@@ -4010,16 +4015,18 @@ i.red{
  
 #sinai-logo {
 	text-align: left;
-	background-color: rgba(255,255,255, 0.3);  
+	background-color: rgba(255,255,255, 0.3);   
 }
-#sinai-logo img{
-	height: 120px;
+#sinai-logo img{ 
 	border-radius: 4px;
 	padding: 20px; 
+	max-width:100%;
+	max-height:100px;  
 }
 
-#github-logo {
-	height: 100px; 
+#github-logo { 
+	max-width:100%;
+	max-height:100px;  
 	background-color: rgba(255,255,255, 0.3);
 	border-radius: 4px;
 	padding: 10px;
@@ -4142,14 +4149,14 @@ table.dataTable thead .pubsHeader {
 
 
 /* Whole page scrollbar */
-body::-webkit-scrollbar {
-    width: .5em;
+::-webkit-scrollbar {
+	width: .5em; 
 } 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track { 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
  
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb { 
   background-color: var(--primary-color);
   outline: 1px solid var(--secondary-color);
 }
@@ -4182,4 +4189,58 @@ a {
 }
 a:hover {
 	color: var(--secondary-color);
+}
+
+
+
+/* Grants */
+.fundingButton h2 {
+	color: var(--background-color);
+	background: var(--primary-color);
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+
+	transition:  .3s ease-in-out;
+	-moz-transition:  .3s ease-in-out;
+	-webkit-transition:  .3s ease-in-out;
+}
+.fundingButton h2:hover {
+	background: var(--secondary-color);
+
+}
+
+#activeGrants, #completedGrants {
+	border: var(--tertiary-color) solid .5px;
+	border-radius: 4px;
+	padding: 50px;
+	margin-bottom: 80px;
+
+	transition:  .3s ease-in-out;
+	-moz-transition:  .3s ease-in-out;
+	-webkit-transition:  .3s ease-in-out;
+}
+.grant {
+	margin-bottom: 60px;
+	margin-left: 20px; 
+}
+.grantDetails {
+	background: #202020;
+	border-radius: 4px;
+	padding: 20px;  
+	display:flex;
+}
+.Title {
+	color: var(--secondary-color);
+	padding-right: 20%;
+} 
+
+.GrantID p, .Dates p, .PI p {
+	display: inline-block;
+	color: var(--secondary-color);
+	padding-left: 10px;
+}
+ 
+.Summary {
+	color: white;
 }
