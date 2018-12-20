@@ -3498,6 +3498,7 @@ i.red{
 	background: var(--primary-color);
 	padding: 50px; 
 	margin:0;
+	margin-top: 80px;
 	bottom: 0;
 
 }
