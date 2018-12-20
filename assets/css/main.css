@@ -3771,19 +3771,30 @@ a:hover {
 .dataSoftware {
 	background: #202020;
 	border-radius: 4px;
-	padding: 20px;   
+	padding: 20px;
+	text-align: left; 
+	white-space: normal;   
 }
-.dataTitle {
-	margin-right: 20%; 
-	white-space: pre-wrap;
+
+.dataTitle, .dataAuthors{ 
+	white-space: normal; 
+	text-align: left;
 }
-.dataSoftware a h5:hover{ 
+
+.dataAuthors {
+	padding-right: 50%;
+}
+.dataSoftware a:hover{ 
 	transition:  .3s ease-in-out;
 	-moz-transition:  .3s ease-in-out;
 	-webkit-transition:  .3s ease-in-out;
 }
 
-.dataSoftware a h5:hover{
+.dataSoftware a p {
+	font-size: 1.2em;
+}
+
+.dataSoftware a:hover{
 	color: var(--secondary-color); 
 }
 
