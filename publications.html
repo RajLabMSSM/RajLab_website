@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
- 
+
 <head>
 	<title>Raj Lab - [Publications]</title>
 	<meta charset="utf-8" />
@@ -60,19 +60,22 @@
 <body>
 	<!-- Header -->
 	<header id="header">
-		<div class="inner">
-			<nav id="nav">
+		<div class="container">
+			<a class="logo" href="./index.html">
 				<img src="./icons/brain-icon.png" class="img-logo">
-				<a href="./index.html" class="logo">Raj Lab <br></a>
-				<a href="./people.html">Team</a>
-				<a href="./projects.html">Projects</a>
-				<a href="./publications.html">Publications</a>
-				<a href="./data.html">Data/Software</a>
-				<a href="./funding.html">Funding</a>
-				<a href="./joinus.html">Join Us</a>
-			</nav>
+				Raj Lab
+			</a>
+			<a href="./people.html" class="nav-link">Team</a>
+			<a href="./projects.html" class="nav-link">Projects</a>
+			<a href="./publications.html" class="nav-link">Publications</a>
+			<a href="./data.html" class="nav-link">Data/Software</a>
+			<a href="./funding.html" class="nav-link">Funding</a>
+			<a href="./joinus.html" class="nav-link">Join Us</a>
 		</div>
 	</header>
+
+
+
 	<!-- Main -->
 	<section id="main">
 		<div class="inner">
@@ -85,8 +88,6 @@
 		<!-- Publications -->
 		<!-- Automatically generate publications from file -->
 		<script>
-			console.log("start JS")
-
 			d3.csv("./documents/publications_rajlab.csv")
 				.then(function (data) {
 					// console.log(typeof (data[1]))
@@ -101,7 +102,7 @@
 						return Object.values(entry)
 					});
 					result.pop(); // Remove header info as row
-					console.log(result)
+					// console.log(result)
 					return result
 				})
 				.then(function (result) {
@@ -117,7 +118,7 @@
 						scroller: true,
 						paging: false,
 						dom: 'Bfrtip',
-						buttons: [{ "extend": "csv", "text":"<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
+						buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
 						columns: [
 							{ "title": "Authors", "className": "pubsHeader" },
 							{ "title": "Title", "className": "pubsHeader" },
@@ -147,7 +148,7 @@
 
 				})
 
- 
+
 
 		</script>
 		<div id="pubContainer" class="container">
@@ -160,9 +161,7 @@
 
 
 
-
-
-	<!-- Footer -->
+ 
 	<!-- Footer -->
 	<section id="footer">
 		<h3>Contact Us</h3>
@@ -189,8 +188,7 @@
 				<h4>Computational Lab 1</h4>
 				<p>1425 Madison Avenue, Icahn 10-52<br>
 					New York, NY 10029<br>
-				</p>
->>>>>>> 88d3fa3d4f9ea7323e73fba4dc8373b36f365268
+				</p> 
 
 				<h4>Computational Lab 2</h4>
 				<p>19 E 98th Street, Room 6C <br>
