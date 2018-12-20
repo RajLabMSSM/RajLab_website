@@ -3436,15 +3436,19 @@ i.red{
 	text-transform: none;
 	font-size:  1.5vw;
 	color: var(--background-color);
-	padding: 20px 10px 0 0;
+	padding: 20px 10px 10px 10px;
+	margin: 10px;
 	display: inline-block;
+	vertical-align: middle;
 
-	transition: color .3s ease-in-out;
-	-moz-transition: color .3s ease-in-out;
-	-webkit-transition: color .3s ease-in-out;
+	transition: .3s ease-in-out;
+	-moz-transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
 }
 .project:hover h3 {
 	color: var(--secondary-color);
+	background: #202020;
+	border-radius: 20px;
 }
 .project img {
 	height:150px;
