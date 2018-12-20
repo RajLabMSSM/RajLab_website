@@ -3858,7 +3858,7 @@ h2,h3,h4,h5 {
 
 		#header .logo {
 			font-family: var(--logo-font);
-			font-size: 1.75em;
+			font-size: 2em;
 			font-weight: normal;
 			/* letter-spacing: 8px; */
 		} 
