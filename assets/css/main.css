@@ -3514,7 +3514,7 @@ i.red{
 #footer a {
 	color: blue;
 }
-#footer h3,h4 {
+#footer h3, #footer h4 {
 	color: var(--background-color);  
 	white-space: nowrap;
 }
