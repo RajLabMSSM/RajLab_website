@@ -3226,7 +3226,7 @@
 		padding: 0em 0 0em 0;
 	} */
 	.AboutUs {
-		background-color: rgb(25,25,25);
+		background-color: rgba(25,25,25, 1);
 		color: white;
 		text-align: center;
  
@@ -3873,7 +3873,7 @@ h2,h3,h4,h5 {
 
 	#header {  
 		font-weight: bold; 
-		background: rgb(25,25,25,.9);
+		background: rgba(25,25,25,.9);
 		color: #d5d5d5;
 		cursor: default;
 		letter-spacing: 2px;
@@ -4177,6 +4177,7 @@ h2,h3,h4,h5 {
 	 /* min-height: 300px; */
 	max-height: 500px;
 	height:70vh;
+	
 }
 
 
@@ -4185,4 +4186,10 @@ h2,h3,h4,h5 {
 	margin: 0;
 	padding: 20px 100px;
 }
+ 
+.img {
+	max-width:100%;
+	height:auto;
+}
+ 
  
