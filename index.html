@@ -24,7 +24,9 @@
 	 crossorigin="anonymous">
 
 	<!--CSS-->
+	<link href="./assets/css/arrow_bounce.css" rel="stylesheet" type="text/css" />
 	<link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+	
 	<!-- Bootstrap-->
 	<script src="./assets/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -84,43 +86,114 @@
 		</a>
 	</div>
 
-	<!-- One -->
+	<!-- Intro -->
 	<section id="three" class="homepageContent">
-		<div class="inner">
-			<p class="small" align="left" style="font-size: 95%; color: #264d73"><br>
-				We are a member of the <a href="https://icahn.mssm.edu/research/loeb-alzheimers"> Ronald Loeb Center for
+		<div  id="Intro container">
+			<h5>
+				We are a member of the <a href="https://icahn.mssm.edu/research/loeb-alzheimers" target="_blank"> Ronald Loeb Center for
 					Alzheimer’s disease </a>, the Departments of Neuroscience, Genetics and Genomic Sciences, and Neurology at Icahn
-				School of Medicine at Mount Sinai in New York. We are part of the <a href="https://datascience.icahn.mssm.edu/data-science/">
-					Icahn Institute for Data Science and Genomic Technology </a>, <a href="https://icahn.mssm.edu/research/friedman">
-					the Friedman Brain Institute (FBI) </a>, <a href="https://icahn.mssm.edu/research/immunology"> the Precision
-					Immunology Institute (PrIISM) </a>, and <a href="https://icahn.mssm.edu/research/adrc">the Alzheimer's Disease
-					Research Center (ADRC). </a></p>
+				School of Medicine at Mount Sinai in New York. We are part of the <a href="https://datascience.icahn.mssm.edu/data-science/" target="_blank">
+					Icahn Institute for Data Science and Genomic Technology </a>, <a href="https://icahn.mssm.edu/research/friedman" target="_blank">
+					the Friedman Brain Institute (FBI) </a>, <a href="https://icahn.mssm.edu/research/immunology" target="_blank"> the Precision
+					Immunology Institute (PrIISM) </a>, and <a href="https://icahn.mssm.edu/research/adrc" target="_blank">the Alzheimer's Disease
+					Research Center (ADRC). </a>
+			</h5>
+
+			<div class="arrow bounce">  
+					<div>
+						<img src="./icons/brain-icon.png" height="70px">
+					</div>
+					 
+					<!-- <h5 > Scroll for News </h5> -->
+					<i class="fas fa-chevron-down" style="font-size: 5em; color:deepskyblue"></i> 
+			</div>
 		</div>
-		<!-- Three -->
+
+		<!-- Main Content --> 
+		<div class="AboutUs "> 
+				<div class="col-md-12 container"> 
+						<h2>About Us</h2>
+						<h5>The Raj Laboratory is dedicated to understanding the molecular mechanisms of neurodegenerative disorders,
+							including Alzheimer’s disease, Parkinson’s disease, and Amyotrophic Lateral Sclerosis. 
+							<br><br>
+							To achieve these goals,
+							we leverage the fields of genomics, computational biology, neuroscience, and immunology coupled with molecular
+							biology to obtain a systems level understanding of disease. We are a hybrid lab with a strong computational
+							biology that is mainly focused on performing data analyses and an experimental side, where wet-lab experiments
+							are performed.
+						</h5> 
+					</div>
+				</div>
+		<div class="inner" id="homepageCols"> 
+			<div class="row container"> 
+				<div class="col-md-4 homepageColumn"> 
+					<h3>Recent Publications</h3>
+					<ul>
+						<li> 
+							<strong>Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease
+							susceptibility. </strong><br>
+							<i>Nature Genetics, October 8, 2018</i><br>
+							<a href="https://www.nature.com/articles/s41588-018-0238-1" target="_blank">
+								<i class="fas fa-book"></i> Paper
+							</a> 
+							<a href="https://directorsblog.nih.gov/2018/10/16/a-new-piece-of-the-alzheimers-puzzle/" target="_blank">
+								<i class="fas fa-external-link-alt"></i> News Coverage
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="button alt">More Publications</a> 
+				</div> 
+
+				<div class="col-md-4 homepageColumn news">
+				<h3>News and Events</h3><br>
+				<div class="scroll">  
+						
+						<ul>
+							<li><b>12.05.18:</b><p> Research associate Madison was accepted to medical school!</p></li>
+							<li><b>11.12.18:</b><p> New members Brian and Katia have joined our lab! Welcome Brian and Katia!</p></li>
+							<li><b>10.08.18:</b><p> Our work on alternative splicing in AD was published in Nature Genetics! Great job team!</p></li>
+							<li><b>10.09.18:</b><p> New member Maojuan joined our lab. Welcome Maojuan!</p></li>
+							<li><b>07.15.18:</b><p> Post-doctoral Fellow Elisa was awarded the Ramon Areces Foundation Fellowship. Congrats
+							Elisa! </p></li>
+						</ul>  
+					</div>
+					<a href="./projects.html" target="_blank" class="button alt">More News</a>
+				</div>
+
+			<div class="col-md-4 homepageColumn">
+				<h3>Recent Tweets</h3><br>
+				<a class="twitter-timeline" href="https://twitter.com/trajnp?ref_src=twsrc%5Etfw" height=75%>
+					Tweets by trajnp</a> 
+					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+
+						
+			</div>
+		</div>
+
+<!-- 
 
 		<div class="inner">
+			<div class="row">
 			<article>
-				<div class="content">
-					<header>
-						<h3>Welcome</h3><br>
+				<div class="content"> 
+						<h3>About Us</h3><br>
 
-						<p class="small" align="justify" style="font-size: 95%; color: #264d73">
+						<p class="small" align="justify" style="width: 30%;">
 							The Raj Laboratory is dedicated to understanding the molecular mechanisms of neurodegenerative disorders,
 							including Alzheimer’s disease, Parkinson’s disease, and Amyotrophic Lateral Sclerosis. To achieve these goals,
 							we leverage the fields of genomics, computational biology, neuroscience, and immunology coupled with molecular
 							biology to obtain a systems level understanding of disease. We are a hybrid lab with a strong computational
 							biology that is mainly focused on performing data analyses and an experimental side, where wet-lab experiments
-							are performed. <br>
-
+							are performed.
 						</p>
 				</div>
 			</article>
 			<article>
-				<div class="content">
-					</header>
-					<header>
+				
+				<div class="content"> 
 						<h3>Recent Publications</h3><br>
-						<p class="small" align="justify" style="font-size: 95%; color: #264d73">
+						<p class="small scroll"   style="font-size: 95%; color: #264d73">
 							Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease
 							susceptibility. <br>
 							<i>Nature Genetics, October 8, 2018</i><br>
@@ -134,11 +207,9 @@
 				</div>
 			</article>
 			<article>
-				<div class="content">
-					</header>
-					<header>
+				<div class="content"> 
 						<h3>News and Events</h3><br>
-						<p class="small" align="justify" style="font-size: 90%">
+						<p class="small scroll" align="justify" style="font-size: 90%">
 							<b>12.05.18:</b><br> Research associate Madison was accepted to medical school!<br><br>
 							<b>11.12.18:</b><br> New members Brian and Katia have joined our lab! Welcome Brian and Katia!<br><br>
 							<b>10.08.18:</b><br> Our work on alternative splicing in AD was published in Nature Genetics! Great job team!<br><br>
@@ -155,7 +226,7 @@
 				</div>
 			</article>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- Footer -->
 	<section id="footer">

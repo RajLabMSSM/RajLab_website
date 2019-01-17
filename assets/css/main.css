@@ -3225,6 +3225,67 @@
 	/* #three {
 		padding: 0em 0 0em 0;
 	} */
+	.AboutUs {
+		background-color: rgb(25,25,25);
+		color: white;
+		text-align: center;
+ 
+		align-content: center;
+		
+		padding: 20px 50px 50px 50px;
+		margin-bottom: 70px;
+	}
+	.AboutUs h2 {  
+		background-color: var(--secondary-color);
+		border-radius: 10px;
+		padding:5px; 
+		margin-bottom: 40px;
+	} 
+	
+	.homepageColumn {
+		display: block;
+		height: 500px;
+		border-left: var(--tertiary-color) solid 1px;
+		text-align: center;
+	}
+	.homepageContent h3 {
+		margin-bottom: 30px;
+		color: var(--background-color);
+		background-color: var(--primary-color);
+		padding: 10px;
+		border-radius: 10px; 
+	}
+	.scroll { 
+		align-content: center;
+		/* display: inline-table; */
+		height: 75%;
+		overflow-y: auto;
+		overflow-y: scroll;
+		border-bottom: rgba(0, 0, 0, 0.1) solid 5px;
+	}
+	.homepageColumn ul {
+		text-align: center;
+		list-style-type: none; 
+	}
+	.homepageColumn li {
+		background-color: whitesmoke; 
+		padding: 10px;
+		margin-bottom: 10px; 
+		border-radius: 10px;
+		display:inline-block;
+        *display:inline; /*IE7*/
+        *zoom:1; /*IE7*/  
+		margin-right:10px; 
+	}
+	.homepageColumn li p {
+		color: gray;
+		font-style: italic;
+	}
+	.homepageColumn .button { 
+		margin-top: 10px;
+	}
+	
+	
 
 		#three .inner {
 			display: -ms-flexbox;
@@ -3243,12 +3304,12 @@
 			-ms-flex-pack: justify;
 		}
 
-			#three .inner article {
-				width: 26%;
+			#three .inner article .scroll {
+				/* width: 26%; */
                 height: 400px;
 				display: block;
                 overflow-y: auto;
-                overflow-y: scroll;
+                overflow-y: scroll;  
 }
 
 				#three .inner article p {
@@ -4113,5 +4174,14 @@ h2,h3,h4,h5 {
 	max-height: 100vh;
 }
 .carousel-inner {
-	min-height: 600px;
+	 /* min-height: 300px; */
+	max-height: 500px;
+	height:70vh;
 }
+
+
+#Intro {
+	text-align: center;
+	margin: 0;
+}
+ 
