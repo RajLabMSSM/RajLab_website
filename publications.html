@@ -27,6 +27,7 @@
 	<!-- Datatables -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 	<script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
@@ -106,12 +107,36 @@
 					return result
 				})
 				.then(function (result) {
-					$('#pubsTable thead tr:eq(1) th').each(function () {
-						var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
-						$(this).html('<input type="text" placeholder="Search ' + title + '" />');
-					});
+					// $('#pubsTable thead tr:eq(1) th').each(function () {
+					// 	var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
+					// 	$(this).html('<input type="text" placeholder="Search ' + title + '" />');
+					// });
+				 
+						$('#example').DataTable({
+							initComplete: function () {
+								this.api().columns().every(function () {
+									var column = this;
+									var select = $('<select><option value=""></option></select>')
+										.appendTo($(column.footer()).empty())
+										.on('change', function () {
+											var val = $.fn.dataTable.util.escapeRegex(
+												$(this).val()
+											);
 
-					var table = $('#pubsTable').DataTable({
+											column
+												.search(val ? '^' + val + '$' : '', true, false)
+												.draw();
+										});
+
+									column.data().unique().sort().each(function (d, j) {
+										select.append('<option value="' + d + '">' + d + '</option>')
+									});
+								});
+							}
+						});
+					 
+
+					var table = $('#pubsTable').DataTable({ 
 						data: result,
 						scrollY: "500px",
 						scrollCollapse: true,
@@ -120,7 +145,7 @@
 						dom: 'Bfrtip',
 						buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
 						columns: [
-							{ "title": "Authors", "className": "pubsHeader" },
+							{ "title": "Authors", "className": "pubsHeader", },
 							{ "title": "Title", "className": "pubsHeader" },
 							{ "title": "Journal", "className": "pubsHeader" },
 							{ "title": "Volume", "className": "pubsHeader" },
@@ -133,18 +158,42 @@
 							{ targets: 1, className: 'Title' },
 							{ targets: 2, className: 'Journal' }],
 						order: [],
-						orderCellsTop: true
+						orderCellsTop: true,
+						fixedHeader: true, 
+						initComplete: function () {
+								this.api().columns().every(function () {
+									var column = this;
+									var select = $('<input type="text" placeholder="Search '+column+'" />' )
+										.appendTo($(column.footer()).empty())
+										.on('change', function () {
+											var val = $.fn.dataTable.util.escapeRegex(
+												$(this).val()
+											);
+
+											column
+												.search(val ? '^' + val + '$' : '', true, false)
+												.draw();
+										});
+
+									column.data().unique().sort().each(function (d, j) {
+										select.append('<input type="text" placeholder="Search '+column+'" />')
+									});
+								});
+							}
 					})
+
+
+
 					//table.draw();
 
-					// Apply the search
-					table.columns().every(function (index) {
-						$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
-							table.column($(this).parent().index() + ':visible')
-								.search(this.value)
-								.draw();
-						});
-					});
+					// // Apply the search
+					// table.columns().every(function (index) {
+					// 	$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
+					// 		table.column($(this).parent().index() + ':visible')
+					// 			.search(this.value)
+					// 			.draw();
+					// 	});
+					// });
 
 				})
 
@@ -156,26 +205,36 @@
 			 width="100%"></table>
 		</div>
 
-	<br><br>
-	
-	<div class="inner">
-		<header>
-			<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
-			<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings</p>
-		</header>
-		<div id="slideshare"> 
-			<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/github-presentation-128406831" title="GitHub Presentation" target="_blank">GitHub Presentation</a> </strong> from <strong><a href="//www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
-			<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation" title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018 Presentation</a> </strong> from <strong><a href="https://www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
+		<br><br>
+
+		<div class="inner">
+			<header>
+				<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
+				<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings</p>
+			</header>
+			<div id="slideshare">
+				<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485" frameborder="0"
+				 marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+				 allowfullscreen> </iframe>
+				<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/github-presentation-128406831"
+						 title="GitHub Presentation" target="_blank">GitHub Presentation</a> </strong> from <strong><a href="//www.slideshare.net/BrianSchilder"
+						 target="_blank">BrianSchilder</a></strong> </div>
+				<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485" frameborder="0"
+				 marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+				 allowfullscreen> </iframe>
+				<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation"
+						 title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018 Presentation</a> </strong> from
+					<strong><a href="https://www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
+			</div>
+
 		</div>
 
-	</div>
-
-</section>
+	</section>
 
 
 
 
- 
+
 	<!-- Footer -->
 	<section id="footer">
 		<h3>Contact Us</h3>
@@ -202,7 +261,7 @@
 				<h4>Computational Lab 1</h4>
 				<p>1425 Madison Avenue, Icahn 10-52<br>
 					New York, NY 10029<br>
-				</p> 
+				</p>
 
 				<h4>Computational Lab 2</h4>
 				<p>19 E 98th Street, Room 6C <br>

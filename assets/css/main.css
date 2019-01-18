@@ -3767,7 +3767,7 @@ table.dataTable thead .pubsHeader {
 
 
 a {
-	color:  blueviolet;
+	color: magenta;
 }
 a:hover {
 	color: var(--secondary-color);
@@ -3835,6 +3835,16 @@ a:hover {
 	padding: 20px;
 	text-align: left; 
 	white-space: normal;   
+}
+.dataSoftware h3 {
+	color: var(--background-color);
+} 
+.dataSoftware h4 { 
+	color: var(--primary-color);
+}
+
+.dataSoftware h4 p{
+	color: var(--secondary-color);
 }
 
 .dataTitle, .dataAuthors{ 
@@ -4174,12 +4184,11 @@ h2,h3,h4,h5 {
 	max-height: 100vh;
 }
 .carousel-inner {
-	 /* min-height: 300px; */
+	 min-height: 300px;
 	max-height: 500px;
-	height:70vh;
-	
+	height:70vh; 
 }
-
+ 
 
 #Intro { 
 	text-align: center;
