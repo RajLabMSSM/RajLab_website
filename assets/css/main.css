@@ -3784,8 +3784,10 @@ a:hover {
 	-webkit-transition:  .3s ease-in-out;
 }
 .fundingButton h2:hover {
-	background: var(--secondary-color);
-
+	background: var(--secondary-color); 
+}
+.fundingButton:hover { 
+	text-decoration: none;
 }
 
 #activeGrants, #completedGrants {
@@ -3798,6 +3800,8 @@ a:hover {
 	-moz-transition:  .3s ease-in-out;
 	-webkit-transition:  .3s ease-in-out;
 }
+
+
 .grant {
 	margin-bottom: 60px;
 	margin-left: 20px; 
@@ -3812,6 +3816,9 @@ a:hover {
 	color: var(--secondary-color);
 	padding-right: 20%;
 } 
+.GrantID, .Dates, .PI {
+	color: var(--primary-color);
+}
 
 .GrantID p, .Dates p, .PI p {
 	display: inline-block;
