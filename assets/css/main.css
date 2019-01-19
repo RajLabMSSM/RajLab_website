@@ -3486,9 +3486,7 @@ i.red{
 	background-color: var(--background-color);
 	margin-right: 10px;
 	padding: 10px;
-	border-radius: 2px; 
-	/* font-size:  1vw;  */
-
+	border-radius: 2px;   
 	opacity: .8;
 
 	transition: opacity .3s ease-in-out;
@@ -3523,9 +3521,7 @@ i.red{
 
 }
 
-.project:hover {
-	cursor: pointer;
-
+.project:hover {  
 	transition:  .3s ease-in-out;
 	-moz-transition:  .3s ease-in-out;
 	-webkit-transition:  .3s ease-in-out;
