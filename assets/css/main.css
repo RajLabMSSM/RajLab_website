@@ -3475,6 +3475,7 @@ i.red{
 	border-radius: 2px; 
 	margin-left: 0;
 	margin-top: 10px;
+	margin-bottom: 250px;
 } 
  
 
@@ -3486,7 +3487,7 @@ i.red{
 	margin-right: 10px;
 	padding: 10px;
 	border-radius: 2px; 
-	font-size:  1vw; 
+	/* font-size:  1vw;  */
 
 	opacity: .8;
 
@@ -3498,8 +3499,7 @@ i.red{
 
 
 .project h3 {
-	text-transform: none;
-	font-size:  1.5vw;
+	text-transform: none; 
 	color: var(--background-color);
 	padding: 20px 10px 10px 10px;
 	margin: 10px;
