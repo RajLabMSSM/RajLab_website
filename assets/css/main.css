@@ -3248,6 +3248,10 @@
 		border-left: var(--tertiary-color) solid 1px;
 		text-align: center;
 	}
+	.homepageContent {
+		display: block; 
+	}
+	
 	.homepageContent h3 {
 		margin-bottom: 30px;
 		color: var(--background-color);
@@ -3677,11 +3681,11 @@ table.dataTable tbody .Journal{
 }
 
 
- 
+ /* 
 table.dataTable thead .sorting, 
 table.dataTable thead .sorting_asc, 
 table.dataTable thead .sorting_desc {
-    background : none;
+	background : none; 
 }
 
 table.dataTable thead .sorting_asc_disabled:after,
@@ -3692,22 +3696,18 @@ table.dataTable thead .sorting_desc_disabled:after {
 table.dataTable thead .sorting:after {
   opacity: 0.2;
   content: "\e150";
-  color: black;
-  /* sort */
+  color: black; 
 }
 table.dataTable thead .sorting_asc:after {
   content: "\e155";
-  color: var(--secondary-color);
-  /* sort-by-attributes */
+  color: var(--secondary-color); 
 }
 table.dataTable thead .sorting_desc:after {
   content: "\e156";
-  color:#00f;
-  /* sort-by-attributes-alt */
-}
+  color:#00f; 
+} */
 
-table.pubsTable tr {
-	/* background-color: var(--primary-color); */
+table.pubsTable tr { 
 	color: white;
 	border-radius: 20px;
 }
@@ -3880,14 +3880,13 @@ h2,h3,h4,h5 {
 
  
   /* Header */
-
+/* 
 	#header {  
 		font-weight: bold; 
 		background: rgba(25,25,25,.9);
 		color: #d5d5d5;
 		cursor: default;
-		letter-spacing: 2px;
-		/* height: 5em; */
+		letter-spacing: 2px; 
 		left: 0;
 		line-height: 5em;
 		position: fixed;
@@ -3896,8 +3895,7 @@ h2,h3,h4,h5 {
 		top: 0;
 		width: 100%;
 		z-index: 10001; 
-
-		/* width: 70%; */
+ 
 		margin: 0 auto;
 		min-width: 500px;
 		
@@ -3947,7 +3945,7 @@ h2,h3,h4,h5 {
 			font-family: var(--logo-font);
 			font-size: 2em;
 			font-weight: normal;
-			/* letter-spacing: 8px; */
+			 
 		} 
 		#header .logo a{ 
 			display: inline-block;
@@ -3960,26 +3958,7 @@ h2,h3,h4,h5 {
 			font-weight: normal;
 			padding: 0;
 			padding-bottom: 10px;  
-		} 
-		
-		#header .img-logo {
-			max-height: 60px; 
-			display: inline-block; 
-			vertical-align: middle;  
-
-		}
-		
-		#header .logo:hover{
-			color: var(--secondary-color); 
-		}
-
-
-			 
-			
-			/* 
-			#header a:last-child {
-				padding-right: 0em;
-			} */
+		}  
 
 			@media screen and (max-width: 736px) {
 
@@ -3997,177 +3976,7 @@ h2,h3,h4,h5 {
 		}
 
 	}
-
-  /* Nav */
-	#nav {
-		display: inline-block;
-	}
-
-		@media screen and (max-width: 980px) {
-
-			#nav {
-				display: none;
-			}
-
-		}
-
-	.navPanelToggle {
-		position: fixed;
-		text-decoration: none;
-		height: 4em;
-		right: 3em;
-		top: .75em;
-		width: 4em;
-		display: none;
-		z-index: 10002;
-	}
-
-		.navPanelToggle:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: var(--main-font);
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-			color: var(--background-color);
-			display: block;
-			font-size: 16px;
-			height: 2.25em;
-			left: 0.5em;
-			line-height: 2.25em;
-			position: absolute;
-			text-align: center;
-			top: 0.5em;
-			width: 3.5em;
-		}
-
-		@media screen and (max-width: 980px) {
-
-			.navPanelToggle {
-				display: block;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			.navPanelToggle {
-				right: 1em;
-			}
-
-		}
-
-		.navPanelToggle *:before {
-			color: var(--background-color);
-			display: block;
-			font-size: 16px;
-			height: 2.25em;
-			left: 0.5em;
-			line-height: 2.25em;
-			position: absolute;
-			text-align: center;
-			top: 0.5em;
-			width: 3.5em;
-		}
-
-	#navPanel {
-		-moz-transform: translatex(20em);
-		-webkit-transform: translatex(20em);
-		-ms-transform: translatex(20em);
-		transform: translatex(20em);
-		-moz-transition: -moz-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
-		-webkit-transition: -webkit-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
-		-ms-transition: -ms-transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
-		transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
-		-webkit-overflow-scrolling: touch;
-		visibility: hidden;
-		overflow-y: auto;
-		position: fixed;
-		right: 0;
-		top: 0;
-		background: #1c1c1c;
-		color: var(--background-color);
-		height: 100%;
-		max-width: 80%;
-		width: 20em;
-		padding: 1.5em;
-		text-transform: uppercase;
-		z-index: 10003;
-		display: none;
-	}
-
-		#navPanel.visible {
-			-moz-transform: translatex(0);
-			-webkit-transform: translatex(0);
-			-ms-transform: translatex(0);
-			transform: translatex(0);
-			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
-			visibility: visible;
-		}
-
-		#navPanel a:not(.close) {
-			border-top: solid 1px rgba(255, 255, 255, 0.1);
-			color: var(--background-color);
-			font-weight: 700;
-			display: block;
-			padding: 0.75em 0;
-			text-decoration: none;
-		}
-
-			#navPanel a:not(.close):first-child {
-				border: none;
-			}
-
-		#navPanel .close {
-			text-decoration: none;
-			-moz-transition: color 0.2s ease-in-out;
-			-webkit-transition: color 0.2s ease-in-out;
-			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
-			-webkit-tap-highlight-color: transparent;
-			border: 0;
-			color: #484848;
-			cursor: pointer;
-			display: block;
-			height: 4em;
-			padding-right: 1.25em;
-			position: absolute;
-			right: 0;
-			text-align: right;
-			top: 0;
-			vertical-align: middle;
-			width: 5em;
-		}
-
-			#navPanel .close:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: var(--main-font);
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-				content: '\f00d';
-				width: 3em;
-				height: 3em;
-				line-height: 3em;
-				display: block;
-				position: absolute;
-				right: 0;
-				top: 0;
-				text-align: center;
-			}
-
-			#navPanel .close:hover {
-				color: inherit;
-			}
-
-		@media screen and (max-width: 980px) {
-
-			#navPanel {
-				display: block;
-			}
-
-		}
+  */
 
 #contactUs {
 	background-color: #202020;
@@ -4178,27 +3987,16 @@ h2,h3,h4,h5 {
 }
 
 
-/* Carousel */
-.carousel-item {
-	max-width: 100%; 
-	max-height: 100vh;
-}
-.carousel-inner {
-	 min-height: 300px;
-	max-height: 500px;
-	height:70vh; 
-}
+ 
+ 
  
 
 #Intro { 
 	text-align: center;
 	margin: 0;
+	margin-top: 50px;
 	padding: 20px 100px;
 }
  
-.img {
-	max-width:100%;
-	height:auto;
-}
  
  

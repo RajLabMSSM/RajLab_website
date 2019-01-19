@@ -19,20 +19,9 @@
   <script src="./assets/js/makeTable.js"></script>
 
 
-  <!-- Bootstrap-->
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  
   <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <!-- Datatables -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
-  <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
-  <script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
-  <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
 
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -48,6 +37,9 @@
 
   <!--CSS-->
   <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+  <!-- Bootstrap-->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <!-- <style>
       @import url(https://fonts.googleapis.com/css?family=Abel);
 
@@ -64,26 +56,43 @@
 
 <body>
 
-  <!-- Header -->
-  <header id="header">
-    <div class="container">
-      <a class="logo" href="./index.html">
-        <img src="./icons/brain-icon.png" class="img-logo">
-        Raj Lab
+  <!-- Navbar -->
+	<nav class="nav navbar navbar-expand-lg  navbar-collapse  ">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./icons/brain-icon.png"  class="d-inline-block align-top" alt="">
+        RAJ LAB
       </a>
-      <a href="./people.html" class="nav-link">Team</a>
-      <a href="./projects.html" class="nav-link">Projects</a>
-      <a href="./publications.html" class="nav-link">Publications</a>
-      <a href="./data.html" class="nav-link">Data/Software</a>
-      <a href="./funding.html" class="nav-link">Funding</a>
-      <a href="./joinus.html" class="nav-link">Join Us</a>
-    </div>
-  </header>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+       aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa fa-toggle-down"></i>  
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./people.html">Team </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./publications.html">Publications /<br>Presentations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./data.html">Data /<br>Software</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./funding.html">Funding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./joinus.html">Join Us</a>
+          </li>
+           
+        </ul>
+      </div>
+    </nav> 
 
 
-  <!-- Main -->
-
-
+  <!-- Main --> 
   <section class="team">
     <div class="container">
       <div class="row">
