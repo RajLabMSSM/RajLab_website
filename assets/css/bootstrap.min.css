@@ -5394,7 +5394,7 @@ button.close {
 } 
 .carousel-inner img {
     width: 260px;
-	object-fit: cover;
+  /* object-fit: cover; */  
 }
 .carousel-item {
   position: relative;
