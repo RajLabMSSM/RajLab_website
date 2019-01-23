@@ -4078,9 +4078,8 @@ h5 {
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-.activities img:hover { 
-  margin: 15px;
-  border: var(--primary-color) inset 5px;  
+.activities img:hover {  
+  border: var(--primary-color) inset 3px;  
 }
 .activities h4 {
 	color: var(--background-color);
