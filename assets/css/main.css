@@ -3558,6 +3558,10 @@ i.red{
 
 
 /* Footer */
+#footer email {
+	color: var(--secondary-color);
+	font-weight: bold;
+}
 
 #footer {
 	background: var(--primary-color);
