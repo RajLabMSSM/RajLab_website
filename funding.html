@@ -85,14 +85,14 @@
 			<!-- Text -->
 			<div class="container" id="funding">
 				<!-- Active Funding -->
-				<a class="fundingButton" data-toggle="collapse" href="#activeGrants" role="button" aria-expanded="true"
+				<a class="collapseButton" data-toggle="collapse" href="#activeGrants" role="button" aria-expanded="true"
 				 aria-controls="activeGrants">
 					<h2>Active Funding</h2>
 				</a>
 				<div id="activeGrants" class="collapse show"></div>
 
 				<!-- Completed Funding -->
-				<a class="fundingButton" data-toggle="collapse" href="#completedGrants" role="button" aria-expanded="true"
+				<a class="collapseButton" data-toggle="collapse" href="#completedGrants" role="button" aria-expanded="true"
 				 aria-controls="completedGrants">
 					<h2>Completed Funding</h2>
 				</a>
@@ -105,9 +105,9 @@
 							<div class='grantDetails'>\
 								<div class='row'>\
 									<div class='col-md-4'>\
-										<h5 class='GrantID'>Grant ID: <p>"+ d.GrantID + "</p></h5>\
-										<h5 class='Dates'> Dates: <p>"+ d.Dates + "</p></h5>\
-										<h5 class='PI'> PI: <p>"+ d.PI + "</p></h5>\
+										<h5 class='GrantID'>Grant ID: <br><p>"+ d.GrantID + "</p></h5>\
+										<h5 class='Dates'> Dates: <br><p>"+ d.Dates + "</p></h5>\
+										<h5 class='PI'> PI: <br><p>"+ d.PI + "</p></h5>\
 									</div>\
 									<div class='col-md-8'>\
 										<p class='Summary'>"+ d.Summary + "</p>\

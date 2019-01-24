@@ -112,6 +112,7 @@ body {
   line-height: 1;
   -webkit-text-size-adjust: none;
   position: relative;
+ 
 }
 
 article,
@@ -2106,7 +2107,8 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-  background-color: #676767;
+	color: var(--secondary-color);
+  	background-color: rgba(25, 25, 25, 1);
 }
 
 input[type="submit"]:active,
@@ -2896,8 +2898,8 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"],
 .wrapper.style1 button,
 .wrapper.style1 .button {
-  background-color: var(--tertiary-color);
-  color: var(--background-color) !important;
+ color: var(--secondary-color);
+  	background-color: rgba(25, 25, 25, 1);
 }
 
 .wrapper.style1 input[type="submit"]:hover,
@@ -2905,7 +2907,8 @@ table.alt tbody tr td {
 .wrapper.style1 input[type="button"]:hover,
 .wrapper.style1 button:hover,
 .wrapper.style1 .button:hover {
-  background-color: #676767;
+	color: var(--secondary-color);
+	background-color: rgba(25, 25, 25, 1);
 }
 
 .wrapper.style1 input[type="submit"]:active,
@@ -3416,8 +3419,7 @@ table.alt tbody tr td {
 .AboutUs {
   background-color: rgba(25, 25, 25, 1);
   color: white;
-  text-align: center;
-
+  text-align: center; 
   align-content: center;
 
   padding: 20px 50px 50px 50px;
@@ -3432,7 +3434,7 @@ table.alt tbody tr td {
 
 .homepageColumn {
   display: block;
-  height: 500px;
+  height: 500px; 
   border-left: var(--tertiary-color) solid 1px;
   text-align: center;
 }
@@ -3441,11 +3443,16 @@ table.alt tbody tr td {
 }
 
 .homepageContent h3 {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   color: var(--background-color);
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
+  margin-bottom: 20px; 
+  
+	transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out; 
 }
 .scroll {
   align-content: center;
@@ -3453,6 +3460,13 @@ table.alt tbody tr td {
   height: 75%;
   overflow-y: auto;
   overflow-y: scroll;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 5px;
+} 
+
+.no-scroll {
+	align-content: center;
+  /* display: inline-table; */
+  height: 75%; 
   border-bottom: rgba(0, 0, 0, 0.1) solid 5px;
 }
 .homepageColumn ul {
@@ -3475,6 +3489,20 @@ table.alt tbody tr td {
 }
 .homepageColumn .button {
   margin-top: 10px;
+  bottom: 0;
+
+
+	transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out; 
+}
+.homepageColumn .button:hover {
+	background-color: rgba(0, 0, 0, 1);
+	color: var(--secondary-color);
+} 
+.homepageColumn a {
+	color: var(--secondary-color);
+	margin-right: 15px;
 }
 
 #three .inner {
@@ -3798,7 +3826,7 @@ i.red {
 
 /* Publications Table */
 #pubContainer {
-  background-color: gainsboro;
+  background-color: rgba(25, 25, 25, 1);
   border-radius: 20px;
   padding: 20px;
 }
@@ -3807,10 +3835,12 @@ i.red {
   font-size: 0.8em;
 }
 
+
+/* IMPORTANT! Makes sure headers span whole table */
 table.pubsTable {
   width: 100%;
   clear: both;
-}
+}  
 
 table.dataTable {
   border-radius: 2px;
@@ -3818,27 +3848,33 @@ table.dataTable {
 
 table.dataTable td {
   border: var(--secondary-color) solid 0.2px !important;
+  color: white;
+  background-color: var(--primary-color);
 }
 table.dataTable tbody tr:nth-child(even):hover {
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
-  background-color: lightgray !important;
+  background-color: rgba(25, 25, 25, .8) !important;
+  color: white;
 }
 
 table.dataTable tbody tr:nth-child(odd):hover {
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
-  background-color: lightgray !important;
+  background-color: rgba(25, 25, 25, .6) !important;
+  color: white;
 }
-
-table.dataTable tbody .Title {
+ 
+table.dataTable tbody .tbl_Title {
   font-weight: bold;
 }
-table.dataTable tbody .Journal {
+table.dataTable tbody .tbl_Journal {
   font-style: italic;
 }
+
+
 
 /* 
 table.dataTable thead .sorting, 
@@ -3865,11 +3901,7 @@ table.dataTable thead .sorting_desc:after {
   content: "\e156";
   color:#00f; 
 } */
-
-table.pubsTable tr {
-  color: white;
-  border-radius: 20px;
-}
+ 
 
 .csvButton {
   background-color: var(--primary-color);
@@ -3880,45 +3912,31 @@ table.pubsTable tr {
 
 table.dataTable thead .pubsHeader {
   color: white;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 10px 10px 0 0;
 }
+
+
 
 /* Whole page scrollbar */
 ::-webkit-scrollbar {
   width: 0.5em;
 }
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
   outline: 1px solid var(--secondary-color);
 }
+ 
 
-/* Mac stye scrollbar */
-/* 
-::-webkit-scrollbar {
-    width:9px;
-}
-::-webkit-scrollbar-track {
-    -webkit-border-radius:5px;
-    border-radius:5px;
-    background:rgba(0,0,0,0.1);
-}
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius:5px;
-    border-radius:5px;
-    background:rgba(0,0,0,0.2);
-}
-::-webkit-scrollbar-thumb:hover {
-    background:rgba(0,0,0,0.4);
-}
-::-webkit-scrollbar-thumb:window-inactive {
-    background:rgba(0,0,0,0.05);
-} */
 
+
+
+/* GENERAL */
 a {
   color: magenta;
 }
@@ -3927,7 +3945,8 @@ a:hover {
 }
 
 /* Grants */
-.fundingButton h2 {
+.collapseButton h2, 
+.collapseButton h3 {
   color: var(--background-color);
   background: var(--primary-color);
   padding: 20px;
@@ -3938,15 +3957,17 @@ a:hover {
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
 }
-.fundingButton h2:hover {
+.collapseButton h2:hover,
+.collapseButton h3:hover {
   background: var(--secondary-color);
 }
-.fundingButton:hover {
+.collapseButton:hover {
   text-decoration: none;
 }
 
 #activeGrants,
-#completedGrants {
+#completedGrants,
+.publicationsDiv {
   border: var(--tertiary-color) solid 0.5px;
   border-radius: 4px;
   padding: 50px;
@@ -3955,39 +3976,57 @@ a:hover {
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
+} 
+.publicationsDiv i {
+	font-size: .5em;
+	color: var(--primary-color);
 }
 
-.grant {
+.grant, .publicationsDiv{
   margin-bottom: 60px;
   margin-left: 20px;
 }
-.grantDetails {
+.grantDetails, 
+.pubDetails {
   background: #202020;
   border-radius: 4px;
   padding: 20px;
   display: flex;
 }
-.Title {
+.TitleDiv {
   color: var(--secondary-color);
-  padding-right: 20%;
+  font-size: 1.7em;
+  /* padding-right: 20%; */
 }
 .GrantID,
 .Dates,
-.PI {
+.PI,
+.Authors,
+.Issue, 
+.Publication {
   color: var(--primary-color);
 }
 
 .GrantID p,
 .Dates p,
-.PI p {
+.PI p, 
+.Year p,
+.Authors p,
+.Issue p  {
   display: inline-block;
-  color: var(--secondary-color);
-  padding-left: 10px;
+  color: var(--secondary-color);  
+}
+.Publication p{
+	color: white;
+	font-size: 1.5em;
 }
 
 .Summary {
   color: white;
 }
+
+/* Publications */ 
+
 
 /* Data / Software */
 .dataSoftware {
@@ -4059,11 +4098,10 @@ h5 {
   padding: 20px 100px;
 }
 
-.column .activities {
-  margin: 0;
+ .activities {
+  margin: 20px 0 0 0;
   padding: 0;
-  position: relative;
-
+  position: relative;  
 }
 .activities img {
   display: block;
@@ -4073,6 +4111,7 @@ h5 {
   width: auto; 
   border: white solid 3px;
   margin: 5px;
+  padding: 0;
 
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -4087,6 +4126,7 @@ h5 {
 	border-radius: 10px;
 	padding: 10px;  
 	padding-top: 5%;
+	margin: 5px;
 }
 .activities .row {
 	background-color: rgba(25, 25, 25, .9);
@@ -4094,6 +4134,25 @@ h5 {
 	margin-top: 0px;
 	border-radius: 10px;
 	border-top: var(--primary-color) groove 2px;
-	border-right: var(--primary-color) groove 5px;
+	border-right: var(--primary-color) groove 5px; 
+}
 
+.JumpTo{
+	text-align: center;
+}
+.JumpTo a { 
+	border: var(--primary-color) solid  1px;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px;
+
+	transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out; 
+} 
+.JumpTo a:hover {
+	background-color: black;
+	border: var(--secondary-color) solid  1px;
+	color: var(--background-color); 
+	text-decoration: none;
 }

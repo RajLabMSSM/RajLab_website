@@ -90,98 +90,175 @@
 
 	<!-- Main -->
 	<section id="main">
-		<div class="inner">
-			<header>
+		<div class="inner" id="Publications"> 
+			<header> 
 				<h1><i class="fas fa-book-open"></i> Publications</h1>
-				<p>Dynamically search all of our publications</p>
+				<p>Dynamically search and download all of our publications via the Datatable View
+					<br><br>
+					Jump to <a href="#Presentations">Presentations</a> 
+				</p>
 			</header>
 		</div>
 
-		<!-- Publications -->
+
+
+
+ <div class="container publicationTabs">
+		<div class="row">
+		  <div class="col-xs-12 ">
+			<nav>
+			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="pubsSections_tab_button" data-toggle="tab" href="#pubsSections_tab" role="tab" aria-controls="nav-home" aria-selected="true">
+					Section View
+				</a>
+				<a class="nav-item nav-link" id="pubsTable_tab_button" data-toggle="tab" href="#pubsTable_tab" role="tab" aria-controls="nav-profile" aria-selected="false">
+					Datatable View
+				</a> 
+			  </div>
+			</nav> 
+			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+				<!-- Section View -->
+			  <div class="tab-pane fade show active" id="pubsSections_tab" role="tabpanel" aria-labelledby="nav-home-tab"> 
+				<div id="pubDivContainer" class="container"> </div> 
+			  </div>
+			  <!-- Datatable View -->
+				<div class="tab-pane fade" id="pubsTable_tab" role="tabpanel" aria-labelledby="nav-profile-tab"> 
+				<div id="pubContainer" class="container">
+					<table id="pubsTable" class="pubsTable compact" cellspacing="0" cellpadding="0" border="0" width="100%">
+					</table>
+				</div>  
+				</div> 
+			</div>
+		  
+		  </div>
+		</div>
+  </div>
+</div>
+
+</div>
+		
+		
 		<!-- Automatically generate publications from file -->
 		<script>
-			d3.csv("./documents/publications_rajlab.csv")
-				.then(function (data) {
-					// console.log(typeof (data[1]))
-					// console.log(data[1])
+			d3.csv("./documents/publications_Raj_Lab.csv")
+			.then(function (data) {
+			// Method 2: As Divs
+			var createDivs = function(data){
+						var createHTML = function (d) {
+							var htmlStr = 
+							"<div class='publicationsDiv'>\
+								<a href='"+d.Link+"' target='_blank'> <h3 class='TitleDiv'><i class='fas fa-external-link-alt'></i> "+ d.Title + "</h3></a>\
+								<div class='pubDetails'>\
+									<div class='row'>\
+										<div class='col-md-5'>\
+											<h5 class='Publication'>Publication:<br><p>"+ d.Journal + " <year><br>(" + d.Year + ")</year>" +"</p></h5>\
+											<h5 class='Issue'> <p>"+ ["Vol.",d.Volume,"Num.",d.Number,"Pgs.",d.Pages].join(" ")+ "</p></h5>\
+										</div>\
+										<div class='col-md-7'>\
+											<h5 class='Authors'>Authors: <br><p>"+ d.Authors + "</p></h5>\
+										<div>\
+									</div>\
+								</div>"
+							return htmlStr
+						}  
+						data.forEach(d => { 
+							var htmlStr = createHTML(d);
+							$('#pubDivContainer').append(htmlStr); 
+						});
+					}
+					createDivs(data);
+				});  
+		</script>
 
+		<!-- Method 1: Publication as Datatable -->
+		<script >
+			d3.csv("./documents/publications_Raj_Lab.csv")
+				.then(function (data) { 
+					// Remove empty rows
 					const obj = Object.values(data)
-						.filter(({ Authors }) => Authors !== "")
-
-
+						.filter(({ Authors }) => Authors !== "")  
 					var result = Object.keys(obj).map(function (key) {
 						var entry = obj[key]
 						return Object.values(entry)
 					});
-					result.pop(); // Remove header info as row
-					// console.log(result)
+					result.pop(); // Remove header info as row  
 					return result
 				})
-				.then(function (result) {  
-					$('#pubsTable thead tr:eq(1) th').each(function () {
-						var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
-						$(this).html('<input type="text" placeholder="Search ' + title + '" />');
-					});
-				 
-					 
-					 
+				.then(function (result) {    
+					var createDatatable = function (result){ 
+						$('#pubsTable thead tr:eq(1) th').each(function () {
+							var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
+							$(this).html('<input type="text" placeholder="Search ' + title + '" />');
+						});  
 
-					var table = $('#pubsTable').DataTable({
+					
+						var table = $('#pubsTable').DataTable({ 
+							data: result,
+							scrollY: "500px",
+							scrollCollapse: true,
+							scroller: true,
+							paging: false,
+							responsive: true,
+							dom: 'Bfrtip',
+							buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
+							columns: [
+								{ "title": "Authors", "className": "pubsHeader", },
+								{ "title": "Title", "className": "pubsHeader" },
+								{ "title": "Journal", "className": "pubsHeader" },
+								{ "title": "Volume", "className": "pubsHeader" },
+								{ "title": "Number", "className": "pubsHeader" },
+								{ "title": "Pages", "className": "pubsHeader" },
+								{ "title": "Year", "className": "pubsHeader" },
+								{ "title": "Publisher", "className": "pubsHeader" }
+							],
+							columnDefs: [
+								{ targets: 1, className: 'Title' },
+								{ targets: 2, className: 'Journal' }],  
+							order: [],
+							orderCellsTop: true,
+							fixedHeader: true
+							
+						}) 
 						
-						data: result,
-						scrollY: "500px",
-						scrollCollapse: true,
-						scroller: true,
-						paging: false,
-						dom: 'Bfrtip',
-						buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
-						columns: [
-							{ "title": "Authors", "className": "pubsHeader", },
-							{ "title": "Title", "className": "pubsHeader" },
-							{ "title": "Journal", "className": "pubsHeader" },
-							{ "title": "Volume", "className": "pubsHeader" },
-							{ "title": "Number", "className": "pubsHeader" },
-							{ "title": "Pages", "className": "pubsHeader" },
-							{ "title": "Year", "className": "pubsHeader" },
-							{ "title": "Publisher", "className": "pubsHeader" }
-						],
-						columnDefs: [
-							{ targets: 1, className: 'Title' },
-							{ targets: 2, className: 'Journal' }],
-						order: [],
-						orderCellsTop: true,
-						fixedHeader: true
-					})
+						
+						// Apply the search
+						table.columns().every(function (index) {
+							$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
+								table.column($(this).parent().index() + ':visible')
+									.search(this.value)
+									.draw();
+									});
+							});   
 
+					}
+					createDatatable(result);   
 
-
-					//table.draw();
-
-					// Apply the search
-					table.columns().every(function (index) {
-						$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
-							table.column($(this).parent().index() + ':visible')
-								.search(this.value)
-								.draw();
-						});
+				})  
+				// !IMPORTANT! Resize column headers after tab is clicked
+				$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+					$($.fn.dataTable.tables(true)).DataTable()
+						.columns.adjust();
 					});
-
-				})
-
-
-
 		</script>
-		<div id="pubContainer" class="container">
-			<table id="pubsTable" class="cell-border compact stripe hover order-column" cellspacing="0" cellpadding="0" border="0"
-			 width="100%"></table>
-		</div>
+
+		<!-- Correct vertical alignment of in-page links-->
+		<script>
+			var shiftWindow = function() { scrollBy(0, -120) };
+			if (location.hash) shiftWindow();
+			window.addEventListener("hashchange", shiftWindow);
+		</script>
+
 
 		<br><br>
 
-		<div class="inner">
+		<div class="inner" id="Presentations">
 			<header>
 				<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
-				<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings</p>
+				<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings
+					<br>
+					Jump to <a href="#Publications">Publications</a>
+				</p>
+				
 			</header>
 			<div id="slideshare">
 				<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485" frameborder="0"

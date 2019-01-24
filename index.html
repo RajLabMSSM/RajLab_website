@@ -143,42 +143,43 @@
 		</div>
 		<div class="inner" id="homepageCols">
 			<div class="row container">
-				<div class="col-md-4 homepageColumn">
+				<div class="col-md-4 homepageColumn" id="recent_pubs">
 					<h3>Recent Publications</h3>
-					<ul>
-						<li>
-							<strong>Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease
-								susceptibility. </strong><br>
-							<i>Nature Genetics, October 8, 2018</i><br>
-							<a href="https://www.nature.com/articles/s41588-018-0238-1" target="_blank">
-								<i class="fas fa-book"></i> Paper
-							</a>
-							<a href="https://directorsblog.nih.gov/2018/10/16/a-new-piece-of-the-alzheimers-puzzle/" target="_blank">
-								<i class="fas fa-external-link-alt"></i> News Coverage
-							</a>
-						</li>
-					</ul>
-					<a href="#" class="button alt">More Publications</a>
+					<div class="no-scroll">
+						<ul>
+							<li>
+								<strong>Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease
+									susceptibility. </strong><br>
+								<i>Nature Genetics, October 8, 2018</i><br>
+								<a href="https://www.nature.com/articles/s41588-018-0238-1" target="_blank">
+									<i class="fas fa-book"></i> Paper
+								</a>
+								<a href="https://directorsblog.nih.gov/2018/10/16/a-new-piece-of-the-alzheimers-puzzle/" target="_blank">
+									<i class="fa fa-newspaper-o"></i> Press
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="./publications.html" target="_blank" class="button alt">More Publications</a>
 				</div>
 
-				<div class="col-md-4 homepageColumn news">
-					<h3>News and Events</h3><br>
-					<div class="scroll">
-
+				<div class="col-md-4 homepageColumn news" id="news">
+					<h3>News and Events</h3>
+					<div class="scroll"> 
 						<ul>
-							<li><b>12.05.18:</b>
+							<li><b>12 . 05 . 2018</b>
 								<p> Research associate Madison was accepted to medical school!</p>
 							</li>
-							<li><b>11.12.18:</b>
+							<li><b>11 . 12 . 2018</b>
 								<p> New members Brian and Katia have joined our lab! Welcome Brian and Katia!</p>
 							</li>
-							<li><b>10.08.18:</b>
+							<li><b>10 . 08 . 2018</b>
 								<p> Our work on alternative splicing in AD was published in Nature Genetics! Great job team!</p>
 							</li>
-							<li><b>10.09.18:</b>
+							<li><b>10 . 09 . 2018</b>
 								<p> New member Maojuan joined our lab. Welcome Maojuan!</p>
 							</li>
-							<li><b>07.15.18:</b>
+							<li><b>07 . 15 . 2018</b>
 								<p> Post-doctoral Fellow Elisa was awarded the Ramon Areces Foundation Fellowship. Congrats
 									Elisa! </p>
 							</li>
@@ -187,9 +188,9 @@
 					<a href="./projects.html" target="_blank" class="button alt">More News</a>
 				</div>
 
-				<div class="col-md-4 homepageColumn">
-					<h3>Recent Tweets</h3><br>
-					<a class="twitter-timeline" href="https://twitter.com/trajnp?ref_src=twsrc%5Etfw" height=75%>
+				<div class="col-md-4 homepageColumn" id="twitter">
+					<h3>Recent Tweets</h3>
+					<a class="twitter-timeline" href="https://twitter.com/trajnp?ref_src=twsrc%5Etfw" height=84%>
 						Tweets by trajnp</a>
 					<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
@@ -199,53 +200,75 @@
 		</div>
 
 		<br><br><br><br>
+		<!-- Correct vertical alignment of in-page links-->
+		<script>
+			var shiftWindow = function() { scrollBy(0, -120) };
+			if (location.hash) shiftWindow();
+			window.addEventListener("hashchange", shiftWindow);
+		</script>
+ 
 
 		<!-- Activities -->
 		<div class="inner" class="Activities">
-			<h3>Lab Activities!</h3> 
-			<div class="row container">
-				<p>Jump to:</p>
-				<a href="#gallery3">Holiday Party Painting</a>
-				<a href="#gallery2">Friedman Brain Institute Holiday Party</a>
-				<a href="#gallery1">Science-ing</a>
-			</div>
-		 
-			<div class="row container"> 
-				<div class="column activities"> 
-					
-					<div class="row" id="gallery3">
-						<h4>Holiday Party Painting</h4> 
-						<img src="./images/Action/holiday_painting4.jpg"> 
-						<img src="./images/Action/holiday_painting3.jpg"> 
-						<img src="./images/Action/holiday_painting2.jpg"> 
-						<img src="./images/Action/holiday_painting1.jpg">  
+			<a class="collapseButton" data-toggle="collapse" href="#activitiesCollapse" 
+			role="button" aria-expanded="true" aria-controls="activitiesCollapse">
+				<h3>Lab Activities!</h3> 
+			</a>
+			
+			<div class="collapse show" id="activitiesCollapse"> 
+				<div class="row container JumpTo">
+					<p>Jump to:</p>
+					<div>
+						<a href="#gallery4">Bull Hill Hiking</a>
+						<a href="#gallery3">Holiday Party Painting</a>
+						<a href="#gallery2">Friedman Brain Institute Holiday Party</a>
+						<a href="#gallery1">Science-ing</a>
 					</div> 
+				</div>
+			
+				<div class="row container" > 
+					<div class="col-md-12 activities"> 
 
-					<div class="row" id="gallery2">
+						<div class="row" id="gallery4">
+							<h4>Bull Hill Hiking</h4> 
+							<img src="./images/Action/BullHill_hike1.jpg"> 
+							<img src="./images/Action/BullHill_hike2.jpg"> 
+							<img src="./images/Action/BullHill_hike3.jpg">   
+						</div> 
+						
+						<div class="row" id="gallery3">
+							<h4>Holiday Party Painting</h4> 
+							<img src="./images/Action/holiday_painting4.jpg"> 
+							<img src="./images/Action/holiday_painting3.jpg"> 
+							<img src="./images/Action/holiday_painting2.jpg"> 
+							<img src="./images/Action/holiday_painting1.jpg">  
+						</div> 
+
+						<div class="row" id="gallery2">
 							<h4>Friedman Brain Institute Holiday Party</h4>
 							<img src="./images/Action/FBI_holiday1.jpg">
 							<img src="./images/Action/FBI_holiday2.jpg"> 
+						</div>
+						
+						<div class="row" id="gallery1"> 
+							<h4>Science-ing</h4> 
+							<img src="./images/Action/elisa_computer_good.jpg">
+							<img src="./images/Action/elisa_thumbs.jpg"> 
+							<img src="./images/Action/evan_computer.jpg">  
+							<img src="./images/Action/lab_girls.jpg">
+							<img src="./images/Action/labcoats.jpg"> 
+							<img src="./images/Action/denim_twinsies.jpg">  
+							<img src="./images/Action/madison_maual_sorter.jpg">
+							<img src="./images/Action/madison_pipet.jpg">
+							<img src="./images/Action/mao_macs.jpg"> 
+							<img src="./images/Action/office_window.jpg"> 
+							<img src="./images/Action/plant.jpg"> 
+							<img src="./images/Action/lab_bar.jpg"> 
+							<img src="./images/Action/old_lab_centralPark.jpg"> 
+						</div> 
 					</div>
-					
-					<div class="row" id="gallery1"> 
-						<h4>Science-ing</h4> 
-						<img src="./images/Action/elisa_computer_good.jpg">
-						<img src="./images/Action/elisa_thumbs.jpg"> 
-						<img src="./images/Action/evan_computer.jpg">  
-						<img src="./images/Action/lab_girls.jpg">
-						<img src="./images/Action/labcoats.jpg"> 
-						<img src="./images/Action/denim_twinsies.jpg">  
-						<img src="./images/Action/madison_maual_sorter.jpg">
-						<img src="./images/Action/madison_pipet.jpg">
-						<img src="./images/Action/mao_macs.jpg"> 
-						<img src="./images/Action/office_window.jpg"> 
-						<img src="./images/Action/plant.jpg"> 
-						<img src="./images/Action/lab_bar.jpg"> 
-						<img src="./images/Action/old_lab_centralPark.jpg"> 
-					</div> 
 				</div>
-			</div>
-
+			</div> 
 		</div>
 
  

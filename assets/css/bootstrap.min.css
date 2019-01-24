@@ -3698,10 +3698,10 @@ input[type="submit"].btn-block {
   text-align: center;
 }
 .tab-content > .tab-pane {
-  display: none;
+  display: none; 
 }
 .tab-content > .active {
-  display: block;
+  display: block; 
 }
 .navbar {
   position: absolute;
@@ -3768,6 +3768,10 @@ input[type="submit"].btn-block {
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
+}
+
+.publicationTabs .nav-link {
+  color: var(--tertiary-color);
 }
 .navbar-nav .dropdown-menu {
   position: static;
