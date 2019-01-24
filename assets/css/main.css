@@ -3916,6 +3916,14 @@ table.dataTable thead .pubsHeader {
   border-radius: 10px 10px 0 0;
 }
 
+#tabLink {
+	color: magenta;
+	cursor: pointer;
+}
+#tabLink:hover {
+	color: var(--primary-color);
+}
+
 
 
 /* Whole page scrollbar */
@@ -3929,8 +3937,9 @@ table.dataTable thead .pubsHeader {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  outline: 1px solid var(--secondary-color);
+  outline: 1px solid var(--primary-color); 
 }
+ 
  
 
 
@@ -3939,6 +3948,9 @@ table.dataTable thead .pubsHeader {
 /* GENERAL */
 a {
   color: magenta;
+  transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
 }
 a:hover {
   color: var(--secondary-color);

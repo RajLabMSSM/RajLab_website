@@ -93,7 +93,8 @@
 		<div class="inner" id="Publications"> 
 			<header> 
 				<h1><i class="fas fa-book-open"></i> Publications</h1>
-				<p>Dynamically search and download all of our publications via the Datatable View
+				<p>Dynamically search and download all of our publications 
+					via the <a id="tabLink"> Datatable View </a>
 					<br><br>
 					Jump to <a href="#Presentations">Presentations</a> 
 				</p>
@@ -103,26 +104,27 @@
 
 
 
- <div class="container publicationTabs">
+ <div class="container publicationTabs" id="publicationTabs">
 		<div class="row">
 		  <div class="col-xs-12 ">
 			<nav>
 			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link active" id="pubsSections_tab_button" data-toggle="tab" href="#pubsSections_tab" role="tab" aria-controls="nav-home" aria-selected="true">
+				<a class="nav-item nav-link active" id="pubsSections_tab_button" data-toggle="tab" href="#pubsSections_tab" role="tab" aria-controls="pubsSections_tab" aria-selected="true">
 					Section View
 				</a>
-				<a class="nav-item nav-link" id="pubsTable_tab_button" data-toggle="tab" href="#pubsTable_tab" role="tab" aria-controls="nav-profile" aria-selected="false">
+				<a class="nav-item nav-link" id="pubsTable_tab_button" data-toggle="tab" href="#pubsTable_tab" role="tab" aria-controls="pubsTable_tab" aria-selected="false">
 					Datatable View
 				</a> 
 			  </div>
 			</nav> 
 			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
 				<!-- Section View -->
-			  <div class="tab-pane fade show active" id="pubsSections_tab" role="tabpanel" aria-labelledby="nav-home-tab"> 
+			  <div class="tab-pane fade show active" id="pubsSections_tab" role="tabpanel" aria-labelledby="pubsSections_tab"> 
+				<!-- <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
 				<div id="pubDivContainer" class="container"> </div> 
 			  </div>
 			  <!-- Datatable View -->
-				<div class="tab-pane fade" id="pubsTable_tab" role="tabpanel" aria-labelledby="nav-profile-tab"> 
+				<div class="tab-pane fade" id="pubsTable_tab" role="tabpanel" aria-labelledby="pubsTable_tab"> 
 				<div id="pubContainer" class="container">
 					<table id="pubsTable" class="pubsTable compact" cellspacing="0" cellpadding="0" border="0" width="100%">
 					</table>
@@ -140,6 +142,11 @@
 		
 		<!-- Automatically generate publications from file -->
 		<script>
+
+			$('#tabLink').click(function(e){ 
+				$('#publicationTabs a[href="#pubsTable_tab"]').tab('show');
+			})
+
 			d3.csv("./documents/publications_Raj_Lab.csv")
 			.then(function (data) {
 			// Method 2: As Divs
