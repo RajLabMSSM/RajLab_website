@@ -105,15 +105,14 @@ video {
 body {
   font-family: var(--main-font);
   position: relative;
-  padding-top: 5em;
+  padding-top: 5em; 
   background-color: var(--background-color);
   color: #111111;
 
   line-height: 1;
   -webkit-text-size-adjust: none;
-  position: relative;
- 
-}
+  position: relative; 
+}  
 
 article,
 aside,
@@ -3842,7 +3841,7 @@ table.pubsTable {
   clear: both;
 }  
 
-table.dataTable {
+table.dataTable { 
   border-radius: 2px;
 }
 
@@ -3872,6 +3871,25 @@ table.dataTable tbody .tbl_Title {
 }
 table.dataTable tbody .tbl_Journal {
   font-style: italic;
+}
+
+.paperlink {
+	cursor: pointer;
+}
+.paperLink a{
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.paperLink:hover a{
+	color: blue;
+	text-decoration: none; 
+}
+.paperLink i {
+	color: blue; 
+}
+.paperLink:hover i {
+	color: magenta;
 }
 
 
@@ -3988,7 +4006,7 @@ a:hover {
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
-} 
+}  
 .publicationsDiv i {
 	font-size: .5em;
 	color: var(--primary-color);
@@ -4009,7 +4027,8 @@ a:hover {
   color: var(--secondary-color);
   font-size: 1.7em;
   /* padding-right: 20%; */
-}
+} 
+
 .GrantID,
 .Dates,
 .PI,

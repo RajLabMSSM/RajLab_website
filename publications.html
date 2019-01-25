@@ -10,18 +10,7 @@
 
 	<!-- D3 -->
 	<script src="https://d3js.org/d3.v5.min.js"></script>
-	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
-	<!-- Local Scripts -->
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/skel.min.js"></script>
-	<script src="./assets/js/util.js"></script>
-	<script src="./assets/js/main.js"></script>
-	<script src="./assets/js/makeTable.js"></script>
-
-
-	<!-- Bootstrap-->
-	<!-- <script src="./assets/js/bootstrap.min.js"></script> -->
-	
+	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->   
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!-- Datatables -->
@@ -134,158 +123,169 @@
 		  
 		  </div>
 		</div>
-  </div>
-</div>
+  </div> 
+  
+	<br><br>
 
-</div>
-		
-		
-		<!-- Automatically generate publications from file -->
-		<script>
+	<div class="inner" id="Presentations">
+		<header>
+			<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
+			<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings
+				<br>
+				Jump to <a href="#Publications">Publications</a>
+			</p>
+			
+		</header>
+		<div id="slideshare">
+			<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485" frameborder="0"
+				marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+				allowfullscreen> </iframe>
+			<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/github-presentation-128406831"
+						title="GitHub Presentation" target="_blank">GitHub Presentation</a> </strong> from <strong><a href="//www.slideshare.net/BrianSchilder"
+						target="_blank">BrianSchilder</a></strong> </div>
+			<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485" frameborder="0"
+				marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
+				allowfullscreen> </iframe>
+			<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation"
+						title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018 Presentation</a> </strong> from
+				<strong><a href="https://www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
+		</div>
 
-			$('#tabLink').click(function(e){ 
-				$('#publicationTabs a[href="#pubsTable_tab"]').tab('show');
-			})
+	</div>
 
-			d3.csv("./documents/publications_Raj_Lab.csv")
-			.then(function (data) {
-			// Method 2: As Divs
-			var createDivs = function(data){
-						var createHTML = function (d) {
-							var htmlStr = 
-							"<div class='publicationsDiv'>\
-								<a href='"+d.Link+"' target='_blank'> <h3 class='TitleDiv'><i class='fas fa-external-link-alt'></i> "+ d.Title + "</h3></a>\
-								<div class='pubDetails'>\
-									<div class='row'>\
-										<div class='col-md-5'>\
-											<h5 class='Publication'>Publication:<br><p>"+ d.Journal + " <year><br>(" + d.Year + ")</year>" +"</p></h5>\
-											<h5 class='Issue'> <p>"+ ["Vol.",d.Volume,"Num.",d.Number,"Pgs.",d.Pages].join(" ")+ "</p></h5>\
-										</div>\
-										<div class='col-md-7'>\
-											<h5 class='Authors'>Authors: <br><p>"+ d.Authors + "</p></h5>\
-										<div>\
+	</section>
+
+<!-- Automatically generate publications from file -->
+<script>
+
+		$('#tabLink').click(function(e){ 
+			$('#publicationTabs a[href="#pubsTable_tab"]').tab('show');
+		})
+
+		d3.csv("./documents/publications_Raj_Lab.csv")
+		.then(function (data) {
+		// Method 2: As Divs
+		var createDivs = function(data){
+					var createHTML = function (d) {
+						var issue = "";
+						if(d.Volume!==""){issue += "Vol. "+d.Volume+", "}
+						if(d.Number!==""){issue += "Num. "+d.Number+", "}
+						if(d.Pages!==""){issue += "Pgs. "+d.Pages}
+
+						var htmlStr = 
+						"<div class='publicationsDiv'>\
+							<a href='"+d.Link+"' target='_blank' class='TitleLink'> <h3 class='TitleDiv'><i class='fas fa-external-link-alt'></i> "+ d.Title + "</h3></a>\
+							<div class='pubDetails'>\
+								<div class='row'>\
+									<div class='col-md-5'>\
+										<h5 class='Publication'>Publication:<br><p>"+ d.Journal + " <year><br>(" + d.Year + ")</year>" +"</p></h5>\
+										<h5 class='Issue'> <p>"+ issue + "</p></h5>\
 									</div>\
-								</div>"
-							return htmlStr
-						}  
-						data.forEach(d => { 
-							var htmlStr = createHTML(d);
-							$('#pubDivContainer').append(htmlStr); 
-						});
-					}
-					createDivs(data);
-				});  
-		</script>
-
-		<!-- Method 1: Publication as Datatable -->
-		<script >
-			d3.csv("./documents/publications_Raj_Lab.csv")
-				.then(function (data) { 
-					// Remove empty rows
-					const obj = Object.values(data)
-						.filter(({ Authors }) => Authors !== "")  
-					var result = Object.keys(obj).map(function (key) {
-						var entry = obj[key]
-						return Object.values(entry)
+									<div class='col-md-7'>\
+										<h5 class='Authors'>Authors: <br><p>"+ d.Authors + "</p></h5>\
+									<div>\
+								</div>\
+							</div>"
+						return htmlStr
+					}  
+					data.forEach(d => { 
+						var htmlStr = createHTML(d);
+						$('#pubDivContainer').append(htmlStr); 
 					});
-					result.pop(); // Remove header info as row  
-					return result
-				})
-				.then(function (result) {    
-					var createDatatable = function (result){ 
-						$('#pubsTable thead tr:eq(1) th').each(function () {
-							var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
-							$(this).html('<input type="text" placeholder="Search ' + title + '" />');
-						});  
+				}
+				createDivs(data);
+			});  
+	</script>
 
-					
-						var table = $('#pubsTable').DataTable({ 
-							data: result,
-							scrollY: "500px",
-							scrollCollapse: true,
-							scroller: true,
-							paging: false,
-							responsive: true,
-							dom: 'Bfrtip',
-							buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
-							columns: [
-								{ "title": "Authors", "className": "pubsHeader", },
-								{ "title": "Title", "className": "pubsHeader" },
-								{ "title": "Journal", "className": "pubsHeader" },
-								{ "title": "Volume", "className": "pubsHeader" },
-								{ "title": "Number", "className": "pubsHeader" },
-								{ "title": "Pages", "className": "pubsHeader" },
-								{ "title": "Year", "className": "pubsHeader" },
-								{ "title": "Publisher", "className": "pubsHeader" }
-							],
-							columnDefs: [
-								{ targets: 1, className: 'Title' },
-								{ targets: 2, className: 'Journal' }],  
-							order: [],
-							orderCellsTop: true,
-							fixedHeader: true
-							
-						}) 
+	<!-- Method 1: Publication as Datatable -->
+	<script >
+		d3.csv("./documents/publications_Raj_Lab.csv")
+			.then(function (data) { 
+				// Remove empty rows
+				const obj = Object.values(data)
+					.filter(({ Authors }) => Authors !== "")  
+				var result = Object.keys(obj).map(function (key) {
+					var entry = obj[key]
+					return Object.values(entry)
+				});
+				result.pop(); // Remove header info as row  
+				return result
+			})
+			.then(function (result) {    
+				var createDatatable = function (result){ 
+					$('#pubsTable thead tr:eq(1) th').each(function () {
+						var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
+						$(this).html('<input type="text" placeholder="Search ' + title + '" />');
+					});  
+
+				
+					var table = $('#pubsTable').DataTable({ 
+						data: result,
+						scrollY: "500px",
+						scrollCollapse: true,
+						scroller: true,
+						paging: false,
+						responsive: true,
+						dom: 'Bfrtip',
+						buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
+						columns: [
+							{ "title": "Authors", "className": "pubsHeader"},
+							{ "title": "Title", "className": "pubsHeader", 
+								"render": function(data, type, row, meta){
+									if(type === 'display'){
+										data = '<div class="paperLink"><a href="' + row[8] + '" target="_blank"> <i class=\'fas fa-external-link-alt\'></i> ' + data + '</a></div>';
+									} 
+									return data;
+								}
+							 },
+							{ "title": "Journal", "className": "pubsHeader" },
+							{ "title": "Issue", "className": "pubsHeader",
+								"render": function(data, type, row, meta){
+									if(type === 'display'){ 
+										var issue = "";
+										if(row[3]!==""){issue += "Vol. "+row[3]+", "}
+										if(row[4]!==""){issue += "<br>Num. "+row[4]+", "}
+										if(row[5]!==""){issue += "<br>Pgs. "+row[5]}
+										data = issue; 
+									} 
+									return data;
+								}
+							},
+							{ "title": "Year", "className": "pubsHeader", 
+								"render": function(data, type, row, meta){return(row[6])}} 
+						],
+						columnDefs: [
+							{ targets: 1, className: 'Title', width: "40%"},
+							{ targets: 2, className: 'Journal' }],  
+						order: [],
+						orderCellsTop: true,
+						fixedHeader: true
 						
-						
-						// Apply the search
-						table.columns().every(function (index) {
-							$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
-								table.column($(this).parent().index() + ':visible')
-									.search(this.value)
-									.draw();
-									});
-							});   
-
-					}
-					createDatatable(result);   
-
-				})  
+					})   
+					// Apply the search
+					table.columns().every(function (index) {
+						$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
+							table.column($(this).parent().index() + ':visible')
+								.search(this.value)
+								.draw();
+								});
+						});   
+				}
+				createDatatable(result);
+			}).then(function(){
 				// !IMPORTANT! Resize column headers after tab is clicked
 				$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
 					$($.fn.dataTable.tables(true)).DataTable()
 						.columns.adjust();
-					});
-		</script>
-
-		<!-- Correct vertical alignment of in-page links-->
-		<script>
-			var shiftWindow = function() { scrollBy(0, -120) };
-			if (location.hash) shiftWindow();
-			window.addEventListener("hashchange", shiftWindow);
-		</script>
-
-
-		<br><br>
-
-		<div class="inner" id="Presentations">
-			<header>
-				<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
-				<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings
-					<br>
-					Jump to <a href="#Publications">Publications</a>
-				</p>
-				
-			</header>
-			<div id="slideshare">
-				<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485" frameborder="0"
-				 marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-				 allowfullscreen> </iframe>
-				<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/github-presentation-128406831"
-						 title="GitHub Presentation" target="_blank">GitHub Presentation</a> </strong> from <strong><a href="//www.slideshare.net/BrianSchilder"
-						 target="_blank">BrianSchilder</a></strong> </div>
-				<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485" frameborder="0"
-				 marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-				 allowfullscreen> </iframe>
-				<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation"
-						 title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018 Presentation</a> </strong> from
-					<strong><a href="https://www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
-			</div>
-
-		</div>
-
-	</section>
-
+				}); 
+			})
+			
+		// <!-- Correct vertical alignment of in-page links-->
+		var shiftWindow = function() { scrollBy(0, -120) };
+		if (location.hash) shiftWindow();
+		window.addEventListener("hashchange", shiftWindow);
+			
+	</script>  
 
 
 
@@ -341,6 +341,8 @@
 			</div>
 	</section>
 
-</body>
+</body> 
 
 </html>
+
+
