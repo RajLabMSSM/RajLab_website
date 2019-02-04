@@ -238,7 +238,10 @@
 								"render": function(data, type, row, meta){return(row[9])}
 							},
 							{ "title": "Authors", "className": "pubsHeader", 
-								"render": function(data, type, row, meta){return(row[0])} 
+								"render": function(data, type, row, meta){
+									// row[0].split(", ")
+									return(row[0])
+								} 
 							},
 							{ "title": "Title", "className": "pubsHeader", "width": "40%",
 								"render": function(data, type, row, meta){ 
