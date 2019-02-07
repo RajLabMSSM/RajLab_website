@@ -2,349 +2,616 @@
 <html>
 
 <head>
-  <title>Raj Lab @ MSSM - Team</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>Raj Lab @ MSSM - Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- D3 -->
-  <script src="https://d3js.org/d3.v5.min.js"></script> 
-  
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <!-- <script src="https://nightly.datatables.net/js/jquery.dataTables.js"></script> -->
-  <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> -->
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-    crossorigin="anonymous">
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <!-- Local Scripts -->
+    <script src="./assets/js/jquery.min.js"></script>
 
-  <!--CSS-->
-  <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
-  <!-- Bootstrap-->
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-   
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+
+    <!--CSS-->
+    <link href="./assets/css/arrow_bounce.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap-->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link href="./assets/css/thumbnail-gallery.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
 </head>
 
 
 <body>
 
-  <!-- Navbar -->
-	<nav class="nav navbar navbar-expand-lg  navbar-collapse  ">
-      <a class="navbar-brand" href="./index.html">
-        <img src="./icons/brain-icon.png"  class="d-inline-block align-top" alt="">
-        RAJ LAB
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-       aria-expanded="false" aria-label="Toggle navigation">
-         <i class="fa fa-toggle-down"></i>  
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./people.html">Team </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./publications.html">Publications /<br>Presentations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./data.html">Data /<br>Software</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./funding.html">Funding</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./joinus.html">Join Us</a>
-          </li>
-           
-        </ul>
-      </div>
-    </nav> 
+    <!-- Navbar -->
+    <nav class="nav navbar navbar-expand-lg navbar-collapse">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./icons/brain-icon.png" class="d-inline-block align-top" alt="">
+            RAJ LAB
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-toggle-down"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./people.html">Team </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./publications.html">Publications / <br>Presentations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./data.html">Data /<br>Software</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./funding.html">Funding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./joinus.html">Join Us</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
 
 
-  <!-- Main --> 
-  <section class="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="col-lg-12">
-            <h2><i class="fas fa-users"></i> Team Members</h2>
-            <div class="row pt-md">
+    <!-- Main -->
+    <section id="main">
+        <div class="inner">
+            <header>
+                <h1><i class="fas fa-user" aria-hidden="true"></i>
+                    Team Members
+                </h1>
+            </header>
 
+            <!-- Team -->
+            <div class="container">
+                <div class="row">
+                    <!-- Team member -->
+                    <div class="tf">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Towfique.jpg" alt="card image"></p>
+                                            <h4 class="card-title">Towfique Raj, Ph.D.</h4>
+                                            <p class="card-text"> Principal Investigator</p>
+                                            <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Towfique Raj, Ph.D.</h4>
+                                            <p class="card-text">Towfique Raj, PhD, is a core faculty member in the <a
+                                                    href="https://icahn.mssm.edu/research/loeb-alzheimers">Ronald M.
+                                                    Loeb Center for Alzheimer's Disease</a> and an assistant professor
+                                                in the <a href="https://icahn.mssm.edu/about/departments/neuroscience">Department
+                                                    of Neuroscience</a> and the <a href="https://icahn.mssm.edu/research/genomics">Department
+                                                    of Genetics and Genomics</a> at Icahn School of Medicine at Mount
+                                                Sinai, New York. Dr. Raj received his PhD in genetics from <a href="https://www.graduate.study.cam.ac.uk/courses/directory/blgepdphg">Cambridge
+                                                    University</a> and completed a postdoctoral fellowship at the <a
+                                                    href="https://www.broadinstitute.org/">Broad Institute</a> of MIT
+                                                and Harvard. Before joining Mount Sinai, Dr. Raj was an instructor of
+                                                neurology at <a href="https://hms.harvard.edu/">Harvard Medical School</a>
+                                                and a visiting scholar at <a href="https://www.stanford.edu/">Stanford
+                                                    University</a>. Dr. Raj received the <a href="https://www.gatescambridge.org/">Gates-Cambridge
+                                                    Scholarship</a>, <a href="https://researchtraining.nih.gov/programs/fellowships">NIH
+                                                    Ruth L. Kirschstein Research Service Award</a> and the <a href="https://www.donorscure.org/conference/about">Charleston
+                                                    Conference on Alzheimer's Disease Award</a>. His research group
+                                                uses powerful computational and experimental tools for genetic research
+                                                and interdisciplinary approaches to understand the genetic factors
+                                                driving neurodegenerative diseases with the ultimate goal of finding a
+                                                cure. More recently, Dr. Raj's group is interested in linking genetic
+                                                risk factors for Alzheimer's and Parkinson's disease to detectable
+                                                changes in innate immune cells that may contribute to disease
+                                                progression. A major direction of his laboratory has been to understand
+                                                the role of peripheral immune cells in neurodegenerative disease
+                                                pathogenesis (see the MyND study). His group is leading efforts to set
+                                                up human cohorts for deep multi-omics profiling of immune cells. His
+                                                long-term interest is to translate findings from these studies to
+                                                potentially identify novel immune therapeutic targets and biomarkers.
+                                            </p>
 
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="./images/Towfique.jpg" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en">
-                      <li><i class="fa fa-google-scholar"></i></li>
-                    </a>
-                    <a href="https://twitter.com/trajnp?lang=en">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/towfique-raj-8120836/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/trajnp?lang=en">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/towfique-raj-8120836/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h1>Towfique Raj</h1>
-                <h2>Principal Investigator</h2>
-                <p>He's a core faculty member in the Ronald M. Loeb Center. </p>
-              </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Elisa.jpeg" alt="card image"></p>
+                                            <h4 class="card-title">Elisa Navarro, Ph.D.</h4>
+                                            <p class="card-text">Post-Doctoral Fellow</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Elisa Navarro, Ph.D.</h4>
+                                            <p class="card-text">Currently, Elisa is working as postdoctoral fellow at the Icahn School of Medicine at Mount Sinai. 
+                                                She is studying the role of the innate immune system in the development of Alzheimer´s disease.</p>
+                                            <ul class="list-inline">
 
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="./images/Elisa.jpeg" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="https://scholar.google.com/citations?user=xgDw-mMAAAAJ&hl=en&oi=ao">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="https://twitter.com/Elisa_Navarro_?lang=en">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/elisa-navarro-267058118/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/Elisa_Navarro_?lang=en">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/elisa-navarro-267058118/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://scholar.google.com/citations?user=xgDw-mMAAAAJ&hl=en&oi=ao">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="images/Ricardo.jpeg" alt="card image"></p>
+                                            <h4 class="card-title">Ricardo Vialle, Ph.D.</h4>
+                                            <p class="card-text">Post-Doctoral Fellow</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Ricardo Vialle, Ph.D.</h4>
+                                            <p class="card-text">Ricardo is working with state-of-the-art computational
+                                                methods and sequencing technologies to unveil the role of genomic
+                                                structural variation in brain diseases. He obtained his PhD in
+                                                Bioinformatics in 2017 from the<a href="https://ufmg.br/cursos/pos-graduacao/doutorado/2573/01">
+                                                    Federal University of Minas Gerais</a> in Brazil. When not in the
+                                                lab, Ricardo enjoys playing guitar and video games</p>
+                                            <ul class="list-inline">
+
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/ricardovialle?lang=en">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/ricardovialle/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li>  
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://scholar.google.com/citations?user=rhThrMcAAAAJ&hl=en">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Guilietta.jpeg" alt="card image"></p>
+                                            <h4 class="card-title">Giulietta Riboldi, M.D.</h4>
+                                            <p class="card-text">Physician</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Giulietta Riboldi, M.D.</h4>
+                                            <p class="card-text">Giulietta is a post-doctoral fellow at the <a href="https://med.nyu.edu/parkinson/fresco-institute-parkinsons-movement-disorders">
+                                                    Fresco Institute for Parkinson’s disease and Movement Disorders</a>at
+                                                NYU Langone Health. She received her MD and completed her Neurology
+                                                Residency at the <a href="http://www.unimi.it/ENG/university/31941.htm">University
+                                                    of Milan</a>. Her current project in the Raj lab is focusing on the
+                                                understating of the role of risk factor gene, GBA, in Parkinson's
+                                                disease.</p>
+                                            <ul class="list-inline"> 
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/giulietta-riboldi-70b91027/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href=" https://www.researchgate.net/profile/Giulietta_Riboldi">
+                                                        <i class="fab fa-researchgate"></i>
+                                                    </a>
+                                                </li>  
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://scholar.google.com/citations?user=YPtjK4cAAAAJ&hl=en">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Katia.JPG" alt="card image"></p>
+                                            <h4 class="card-title">Katia Lopes, Ph.D.</h4>
+                                            <p class="card-text">Data Analyst</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Katia Lopes, Ph.D.</h4>
+                                            <p class="card-text">Katia's academic background includes a Bachelor’s
+                                                degree in Computer Information System followed by a Master’s degree in
+                                                Bioinformatics where she worked with transcriptome analysis. In 2017
+                                                she received her PhD from UFMG (Brazil) after a period as a visiting
+                                                student at Salamanca University, Spain. Her thesis focused on the
+                                                application of phylostratigraphy strategies to depict evolutionary gene
+                                                co-expression networks in human tissues. Later on, she studied the
+                                                identification of miRNAs as potential prognostic/diagnostic biomarkers
+                                                in human diseases. Katia has experience working with database design
+                                                and maintenance, gene expression analysis and bioinformatics-specific
+                                                pipeline development. When not in the lab, Katia likes travelling,
+                                                cycling and collecting "The Little Prince" books from different
+                                                countries and languages!</p>
+                                            <ul class="list-inline">
+
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/lopeskp?lang=en">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.instagram.com/katiapaivalopes/">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li> 
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href=" https://www.researchgate.net/profile/Katia_De_Paiva_Lopes">
+                                                        <i class="fab fa-researchgate"></i>
+                                                    </a>
+                                                </li>  
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://scholar.google.com/citations?user=y2ttJsIAAAAJ&hl=en">
+                                                        <i class="fa fa-google"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://github.com/katiaplopes">
+                                                        <i class="fab fa-github"></i>
+                                                    </a>
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Brian.JPG" alt="card image"></p>
+                                            <h4 class="card-title">Brian Schilder, M.Phil.</h4>
+                                            <p class="card-text">Bioinformatician II</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Brian Schilder, M.Phil.</h4>
+                                            <p class="card-text">
+                                                Brian earned his Sc.B. from Brown University in Cognitive Neuroscience
+                                                (2011). Afterwards, he simultaneously held two jobs conducting research on
+                                                 evolutionary/developmental social cognition (Subiaul Lab)
+                                                 and evolutionary neuroscience (Sherwood Lab).
+                                                 He earned his M.Phil. at GWU in Human Paleobiology (2017), 
+                                                 researching the ecological, neuroanatomical, transcriptomic, and genomic 
+                                                 evolution of the hippocampus and episodic memory.
+                                                <br>
+                                                He is currently investigating the molecular mechanisms underlying 
+                                                Parkinson's and Alzheimer's disease. He develops computational pipelines 
+                                                that integrate and analyze large-scale multi-omics and clinical data 
+                                                using a wide variety of advanced statistical methodologies, including deep learning.  
+                                            </p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://bschilder.github.io/BMSchilder/">
+                                                        <p class="cvText"> Digital CV </p> <i class="fas fa-address-card"> </i> 
+                                                    </a>
+                                                </li> 
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/BMSchilder">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/brian-schilder/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li>
+                                                
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://scholar.google.com/citations?user=PR6KaQQAAAAJ&hl=en">
+                                                        <i class="fa fa-google"></i> 
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://github.com/bschilder">
+                                                        <i class="fab fa-github"></i>
+                                                    </a>
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/evan.JPG" alt="card image"></p>
+                                            <h4 class="card-title">Evan Udine, M.S.</h4>
+                                            <p class="card-text">Research Associate</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Evan Udine, M.S.</h4>
+                                            <p class="card-text">Evan received his B.A. in Neuroscience and Behavior
+                                                from <a href="https://neuroscienceandbehavior.vassar.edu/"> Vassar
+                                                    College </a> in 2016 and M.S. in Neuroscience from <a href="https://neuroscience.columbia.edu/">
+                                                    Columbia University </a> in 2018. He's currently involved in the
+                                                MyND project and is working to integrate clinical and mutli-omic data
+                                                to elucidate genetic drivers of disease. When not working, you can find
+                                                Evan on the tennis court or enjoying the occasional fast food run.</p>
+                                            <ul class="list-inline">
+
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://twitter.com/EvanUdine?lang=en">
+                                                        <i class="fa fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/evan-udine-2487bab2/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li> 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+
+
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Madison.jpeg" alt="card image"></p>
+                                            <h4 class="card-title">Madison Parks, B.S.</h4>
+                                            <p class="card-text">Research Associate</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Madison Parks, B.S.</h4>
+                                            <p class="card-text">Madison is a recent graduate of <a href="https://www.dickinson.edu/homepage/41/neuroscience">
+                                                    Dickinson College </a>where she obtained her B.S. in Neuroscience.
+                                                In the lab, Madison uses molecular techniques to elucidate genetic
+                                                contributors to neurodegenerative diseases. She will be attending
+                                                medical school in the fall with the ambition to increase accessibility
+                                                to healthcare in underprivilaged communities. </p>
+                                            <ul class="list-inline"> 
+                                                <li class="list-inline-item">
+                                                    <a class="social-icon text-xs-center" target="_blank" href="https://www.linkedin.com/in/madison-parks-000458157/">
+                                                        <i class="fa fa-linkedin-square"></i>
+                                                    </a>
+                                                </li>  
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ./Team member -->
+
+
+                    <!-- Team member -->
+                    <div class="col-md-4">
+                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                            <div class="mainflip">
+                                <div class="frontside">
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <p><img class=" img-fluid" src="./images/Maojuan.JPG" alt="card image"></p>
+                                            <h4 class="card-title">Maojuan Zhuang, M.D.</h4>
+                                            <p class="card-text">Research Associate</p>
+                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="backside">
+                                    <div class="card">
+                                        <div class="card-body text-center mt-4">
+                                            <h4 class="card-title">Maojuan Zhuang, M.D.</h4>
+                                            <p class="card-text">Maojuan earned her medical degree from Weifang Medical
+                                                College in China, and was a pediatrician before relocating to the U.S.
+                                                In the lab, she has been instrumental in sample processing and
+                                                organization, as well as nucleic acid extraction and genotyping. When
+                                                not in the lab, Maojuan enjoys spending time with her family.</p>
+                                            <ul class="list-inline"> 
+                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <h1>Elisa Navarro</h1>
-                <h2>Post-Doctoral Fellow</h2>
-                <p>She's interested in the role of myeloid cells in neurodegenerative diseases.</p>
-              </div>
+                <!-- ./Team member -->
+            </div>
+    </section>
+    <!-- Team -->
 
 
+    <script>jQuery(".card-text").fitText();</script>
 
+    <!-- Footer -->
+    <section id="footer">
+        <h3>Contact Us</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.789686381047!2d-73.95461098459268!3d40.78863757932357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a73c43f3a3%3A0xaf52777f7f7b2ae!2s1425+Madison+Ave%2C+New+York%2C+NY+10029!5e0!3m2!1sen!2sus!4v1543959381826"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3">
+                <h4>Principal Investigator</h4>
+                <p><strong>Towfique Raj, PhD</strong><br>
+                    Assistant Professor <br>
+                    Departments of Neuroscience, Genetics and Genomic Sciences<br>
+                    Icahn School of Medicine at Mount Sinai<br>
+                    1425 Madison Avenue, Icahn 10-70E<br>
+                    New York, NY 10029<br>
+                    Tel: 212-659-5648<br>
+                    E-mail: <span><a>towfique.raj [at] mssm.edu</a></span>
+                </p>
+            </div>
 
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Ricardo.jpeg" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="https://scholar.google.com/citations?user=rhThrMcAAAAJ&hl=en">
-                      <li><i class="fa fa-facebook"></i></li>
+            <div class="col-md-3">
+                <h4>Computational Lab 1</h4>
+                <p>1425 Madison Avenue, Icahn 10-52<br>
+                    New York, NY 10029<br>
+                </p>
+
+                <h4>Computational Lab 2</h4>
+                <p>19 E 98th Street, Room 6C <br>
+                    New York, NY 10029<br>
+                </p>
+                <a href="https://github.com/RajLabMSSM" target="_blank">
+                    <img src="./icons/github.png" id="github-logo">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h4>Wet Lab</h4>
+                <p>Icahn Building, Room 10-52<br>
+                    1425 Madison Avenue<br>
+                    New York, NY 10029<br><br>
+                </p>
+                <div id="sinai-logo">
+                    <a href="https://icahn.mssm.edu/" target="_blank">
+                        <img src="./icons/Icahn.png">
                     </a>
-                    <a href="https://twitter.com/ricardovialle?lang=en">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ricardovialle/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
                 </div>
-                <h1>Ricardo Vialle</h1>
-                <h2>Post-Doctoral Fellow</h2>
-                <p>He's working to elucidated structural variants in disease. </p>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Guilietta.jpeg" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="https://scholar.google.com/citations?user=YPtjK4cAAAAJ&hl=en">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/giulietta-riboldi-70b91027/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Giulietta Riboldi</h1>
-                <h2>Physician</h2>
-                <p>She's interested in the role of GBA in Parkinson's disease.</p><br>
-
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Katia.JPG" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="https://scholar.google.com/citations?user=y2ttJsIAAAAJ&hl=en">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="https://twitter.com/lopeskp?lang=en">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Katia Lopes</h1>
-                <h2>Data Analyst</h2>
-                <p>She's building co-expression networks in neurodegerative disease.</p>
-              </div>
-
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Brian.JPG" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="https://scholar.google.com/citations?user=PR6KaQQAAAAJ&hl=en">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/brian-schilder/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Brian Schilder</h1>
-                <h2>Data Analyst</h2>
-                <p>He's analyzing single-cell RNA sequencing data from Parkinson's patients. </p>
-              </div>
-
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Madison.jpeg" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="#">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/madison-parks-000458157/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Madison Parks</h1>
-                <h2>Associate Researcher</h2>
-                <p>She's helping to functionally validate candidate genes. </p>
-              </div>
-
-
-
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/evan.JPG" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="#">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="https://twitter.com/EvanUdine?lang=en">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/evan-udine-2487bab2/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Evan Udine</h1>
-                <h2>Associate Researcher</h2>
-                <p>He's building a pipeline for our RNA sequencing analysis.</p>
-              </div>
-
-
-
-
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Tamjeed.jpg" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="#">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/tamjeed-sikder-88205934/">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Tamjeed Sikder</h1>
-                <h2>Research Coordinator</h2>
-                <p>He's recruting samples for human microglial isolations. </p>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                <div class="img-box">
-                  <img src="images/Maojuan.JPG" class="img-responsive">
-                  <ul class="text-center">
-                    <a href="#">
-                      <li><i class="fa fa-facebook"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-twitter"></i></li>
-                    </a>
-                    <a href="#">
-                      <li><i class="fa fa-linkedin"></i></li>
-                    </a>
-                  </ul>
-                </div>
-                <h1>Maojuan Zhuang</h1>
-                <h2>Associate Resarcher</h2>
-                <p>She's processing the blood of our recruited samples. </p>
-              </div>
 
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <section id="footer">
-    <h3>Contact Us</h3>
-    <div class="row">
-      <div class="col-md-3">
-        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.789686381047!2d-73.95461098459268!3d40.78863757932357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a73c43f3a3%3A0xaf52777f7f7b2ae!2s1425+Madison+Ave%2C+New+York%2C+NY+10029!5e0!3m2!1sen!2sus!4v1543959381826"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="col-md-3">
-        <h4>Principal Investigator</h4>
-        <p><strong>Towfique Raj, PhD</strong><br>
-          Assistant Professor <br>
-          Departments of Neuroscience, Genetics and Genomic Sciences<br>
-          Icahn School of Medicine at Mount Sinai<br>
-          1425 Madison Avenue, Icahn 10-70E<br>
-          New York, NY 10029<br>
-          Tel: 212-659-5648<br>
-          E-mail: <br><email>towfique.raj [at] mssm.edu</email>
-        </p>
-      </div>
-
-      <div class="col-md-3">
-        <h4>Computational Lab 1</h4>
-        <p>1425 Madison Avenue, Icahn 10-52<br>
-          New York, NY 10029<br>
-        </p>
-
-        <h4>Computational Lab 2</h4>
-        <p>19 E 98th Street, Room 6C <br>
-          New York, NY 10029<br>
-        </p>
-        <a href="https://github.com/RajLabMSSM" target="_blank">
-          <img src="./icons/github.png" id="github-logo">
-        </a>
-      </div>
-      <div class="col-md-3">
-        <h4>Wet Lab</h4>
-        <p>Icahn Building, Room 10-52<br>
-          1425 Madison Avenue<br>
-          New York, NY 10029<br><br>
-        </p>
-        <div id="sinai-logo">
-          <a href="https://icahn.mssm.edu/" target="_blank">
-            <img src="./icons/Icahn.png">
-          </a>
-        </div>
-
-      </div>
-  </section>
-  </section>
+    </section>
+    </section>
 
 </body>
 
