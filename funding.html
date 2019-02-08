@@ -29,40 +29,15 @@
 </head>
 
 <body> 
-	<!-- Navbar -->
-	<nav class="nav navbar navbar-expand-lg navbar-collapse">
-		<a class="navbar-brand" href="./index.html">
-			<img src="./icons/brain-icon.png"  class="d-inline-block align-top" alt="">
-			RAJ LAB
-		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-		 aria-expanded="false" aria-label="Toggle navigation">
-			 <i class="fa fa-toggle-down"></i>  
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="./people.html">Team </a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./projects.html">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./publications.html">Publications /<br>Presentations</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./data.html">Data /<br>Software</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./funding.html">Funding</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./joinus.html">Join Us</a>
-				</li>
-				 
-			</ul>
-		</div>
-	</nav> 
+	<!-- Insert html files -->
+    <script> 
+		$(function(){ 
+			$("#footer").load("./footer.html");
+			$("#navbar").load("./navbar.html");  
+		});
+	</script> 
+	<!-- Navbar --> 
+	<section id="navbar"></section>
 
 
 
@@ -134,57 +109,9 @@
 	</section>
 
 
-
 	<!-- Footer -->
-	<section id="footer">
-		<h3>Contact Us</h3>
-		<div class="row">
-			<div class="col-md-3">
-				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.789686381047!2d-73.95461098459268!3d40.78863757932357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258a73c43f3a3%3A0xaf52777f7f7b2ae!2s1425+Madison+Ave%2C+New+York%2C+NY+10029!5e0!3m2!1sen!2sus!4v1543959381826"
-				 frameborder="0" allowfullscreen></iframe>
-			</div>
-			<div class="col-md-3">
-				<h4>Principal Investigator</h4>
-				<p><strong>Towfique Raj, PhD</strong><br>
-					Assistant Professor <br>
-					Departments of Neuroscience, Genetics and Genomic Sciences<br>
-					Icahn School of Medicine at Mount Sinai<br>
-					1425 Madison Avenue, Icahn 10-70E<br>
-					New York, NY 10029<br>
-					Tel: 212-659-5648<br>
-					E-mail: <br><email>towfique.raj [at] mssm.edu</email>
-				</p>
-			</div>
+	<section id="footer"></section>
 
-			<div class="col-md-3">
-				<h4>Computational Lab 1</h4>
-				<p>1425 Madison Avenue, Icahn 10-52<br>
-					New York, NY 10029<br>
-				</p>
-
-				<h4>Computational Lab 2</h4>
-				<p>19 E 98th Street, Room 6C <br>
-					New York, NY 10029<br>
-				</p>
-				<a href="https://github.com/RajLabMSSM" target="_blank">
-					<img src="./icons/github.png" id="github-logo">
-				</a>
-			</div>
-			<div class="col-md-3">
-				<h4>Wet Lab</h4>
-				<p>Icahn Building, Room 10-52<br>
-					1425 Madison Avenue<br>
-					New York, NY 10029<br><br>
-				</p>
-				<div id="sinai-logo">
-					<a href="https://icahn.mssm.edu/" target="_blank">
-						<img src="./icons/Icahn.png">
-					</a>
-				</div>
-
-			</div>
-		</div>
-	</section>
 </body>
 
 </html>
