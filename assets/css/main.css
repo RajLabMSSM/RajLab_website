@@ -2744,10 +2744,7 @@ header h6 + p {
   font-size: 0.9em;
   margin-top: -0.6em;
 }
-
-header p {
-  color: #717171;
-}
+ 
 
 /* Table */
 
@@ -3557,7 +3554,7 @@ table.dataTable thead .pubsHeader {
 .collapseButton:hover {
   text-decoration: none;
 }
-
+ 
 #activeGrants,
 #completedGrants,
 .publicationsDiv {
@@ -3761,15 +3758,18 @@ h5 {
     /* height: 580px; */
     padding-right: 6%;
     padding-top: 2%;
+    margin-bottom: 30px;
     width: 100%; 
     /* min-height: 500px;  */
+    position: relative;
 }
 
 .tf .frontside .card .card-body img{
   max-width: 45%; 
 } 
-.tf .backside .card {
-  max-height: 500px; 
+.tf .backside   .card-body{
+  max-height: 400px !important;
+  max-height: 40vw !important; 
 }
 
 
@@ -3925,4 +3925,4 @@ h5 {
 .leadLetter {
   display: inline;
   font-family: var(--logo-font);
-}
+} 

@@ -5383,33 +5383,40 @@ button.close {
   padding: 0.5rem 0.75rem;
   color: #212529;
 }
+
+
+/* Carousel */
+/* #carouselIndicators { 
+  background-color: black;
+} */
 .carousel {
   position: relative;  
-}
+}  
 .carousel-inner {
-  position: relative;
-  width: 100%;
-  
-  overflow: hidden;
-
-  height:60vh; 
+   /* object-fit: cover;   */
+  display: block;
   position:relative; 
-  margin-top: 1rem; 
-} 
-.carousel-inner img {
-    width: 260px;
-  /* object-fit: cover; */  
-}
-.carousel-item {
+  margin-top: 1rem;  
+  margin-left: auto;
+  margin-right: auto; 
+  width: 100%;
+  max-width: 1300px;
+  height:60vh !important;  
+ 
+  overflow: hidden;  
+  
+}  
+.carousel-item { 
   position: relative;
   display: none;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
-  perspective: 1000px; 
+  perspective: 1000px;  
+ 
 }
 .carousel-item-next,
 .carousel-item-prev,
@@ -5518,19 +5525,22 @@ button.close {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 15%;
-  color: #fff;
+  width: 15%; 
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.5; 
+
+  transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out; 
 }
 .carousel-control-next:focus,
 .carousel-control-next:hover,
 .carousel-control-prev:focus,
 .carousel-control-prev:hover {
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 .carousel-control-prev {
   left: 0;
@@ -5541,17 +5551,22 @@ button.close {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   background: transparent no-repeat center center;
-  background-size: 100% 100%;
+  background-size: 100% 100%; 
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
 }
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='https://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+.carousel-control-prev-icon { 
+  content: url("../../icons/chevron-left-solid.svg ");  
 }
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='https://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
+.carousel-control-next-icon { 
+  content: url("../../icons/chevron-right-solid.svg ");
+} 
+
+
 .carousel-indicators {
   position: absolute;
   right: 0;
@@ -5611,6 +5626,7 @@ button.close {
   color: #fff;
   text-align: center;
 }
+ 
 .align-baseline {
   vertical-align: baseline !important;
 }

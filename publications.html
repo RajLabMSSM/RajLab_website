@@ -10,12 +10,13 @@
 
 	<!-- D3 -->
 	<script src="https://d3js.org/d3.v5.min.js"></script>
-	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->   
+	<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
 	<!-- jquery -->
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<!-- Datatables -->
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf8"
+		src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 	<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
 	<script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
@@ -23,12 +24,12 @@
 	<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
 	<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
 
- 	<link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" /> 
-	<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script> 
-	 
+	<link href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+
 	<!-- Icons -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 	<!--CSS-->
 	<link href="./assets/css/arrow_bounce.css" rel="stylesheet" type="text/css" />
@@ -36,129 +37,134 @@
 
 	<!-- Bootstrap-->
 	<script src="./assets/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" /> 
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 </head>
 
 <body>
 	<!-- Insert html files -->
-    <script> 
-		$(function(){ 
+	<script>
+		$(function () {
 			$("#footer").load("./footer.html");
-			$("#navbar").load("./navbar.html");  
+			$("#navbar").load("./navbar.html");
 		});
-	</script> 
-	<!-- Navbar --> 
+	</script>
+	<!-- Navbar -->
 	<section id="navbar"></section>
 
 
 	<!-- Main -->
 	<section id="main">
-		<div class="inner" id="Publications"> 
-			<header> 
+		<div class="inner" id="Publications">
+			<header>
 				<h1><i class="fas fa-book-open"></i> Publications</h1>
-				<p>Dynamically search and download a list of all of our publications 
+				<p>Dynamically search and download a list of all of our publications
 					via the <a id="tabLink"> Datatable View </a>.
 					<br>
-					Also available on 
+					Also available on
 					<a href="https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en" target="_blank">
 						Google Scholar
 					</a>.
 					<br><br>
-					Jump to <a href="#Presentations">Presentations</a> 
-					
+					Jump to <a href="#Presentations">Presentations</a>
+
 				</p>
 			</header>
 		</div>
+ 
 
+		<div class="container publicationTabs" id="publicationTabs">
+			<div class="row">
+				<div class="col-xs-12 ">
+					<nav>
+						<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+							<a class="nav-item nav-link" id="pubsSections_tab_button" data-toggle="tab" href="#pubsSections_tab"
+								role="tab" aria-controls="pubsSections_tab" aria-selected="true">
+								Section View
+							</a>
+							<a class="nav-item nav-link active" id="pubsTable_tab_button" data-toggle="tab" href="#pubsTable_tab"
+								role="tab" aria-controls="pubsTable_tab" aria-selected="false">
+								Datatable View
+							</a>
+						</div>
+					</nav>
+					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+						<!-- Section View -->
+						<div class="tab-pane fade" id="pubsSections_tab" role="tabpanel" aria-labelledby="pubsSections_tab">
+							<!-- <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
+							<div id="pubDivContainer" class="container"> </div>
+						</div>
+						<!-- Datatable View -->
+						<div class="tab-pane fade show active" id="pubsTable_tab" role="tabpanel" aria-labelledby="pubsTable_tab">
+							<div id="pubContainer" class="container">
+								<table id="pubsTable" class="pubsTable compact" cellspacing="0" cellpadding="0" border="0" width="100%">
+								</table>
+							</div>
+						</div>
+					</div>
 
-
-
- <div class="container publicationTabs" id="publicationTabs">
-		<div class="row">
-		  <div class="col-xs-12 ">
-			<nav>
-			  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link" id="pubsSections_tab_button" data-toggle="tab" href="#pubsSections_tab" role="tab" aria-controls="pubsSections_tab" aria-selected="true">
-					Section View
-				</a>
-				<a class="nav-item nav-link active" id="pubsTable_tab_button" data-toggle="tab" href="#pubsTable_tab" role="tab" aria-controls="pubsTable_tab" aria-selected="false">
-					Datatable View
-				</a> 
-			  </div>
-			</nav> 
-			<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-				<!-- Section View -->
-			  <div class="tab-pane fade" id="pubsSections_tab" role="tabpanel" aria-labelledby="pubsSections_tab"> 
-				<!-- <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
-				<div id="pubDivContainer" class="container"> </div> 
-			  </div>
-			  <!-- Datatable View -->
-				<div class="tab-pane fade show active" id="pubsTable_tab" role="tabpanel" aria-labelledby="pubsTable_tab"> 
-				<div id="pubContainer" class="container">
-					<table id="pubsTable" class="pubsTable compact" cellspacing="0" cellpadding="0" border="0" width="100%">
-					</table>
-				</div>  
-				</div> 
+				</div>
 			</div>
-		  
-		  </div>
-		</div>
-  </div> 
-  
-	<br><br>
-
-	<div class="inner" id="Presentations">
-		<header>
-			<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
-			<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings
-				<br>
-				Jump to <a href="#Publications">Publications</a>
-			</p>
-			
-		</header>
-		<div id="slideshare">
-			<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485" frameborder="0"
-				marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-				allowfullscreen> </iframe>
-			<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/github-presentation-128406831"
-						title="GitHub Presentation" target="_blank">GitHub Presentation</a> </strong> from <strong><a href="//www.slideshare.net/BrianSchilder"
-						target="_blank">BrianSchilder</a></strong> </div>
-			<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485" frameborder="0"
-				marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-				allowfullscreen> </iframe>
-			<div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation"
-						title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018 Presentation</a> </strong> from
-				<strong><a href="https://www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
 		</div>
 
-	</div>
+		<br><br>
+
+		<div class="inner" id="Presentations">
+			<header>
+				<h1> <i class="far fa-file-powerpoint"></i> Presentations</h1>
+				<p>View, share, or download our presentations from professional conferences, journal clubs, and lab meetings
+					<br>
+					Jump to <a href="#Publications">Publications</a>
+				</p>
+
+			</header>
+			<div id="slideshare">
+				<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485"
+					frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+					style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+				</iframe>
+				<div style="margin-bottom:5px"> <strong> <a
+							href="//www.slideshare.net/BrianSchilder/github-presentation-128406831" title="GitHub Presentation"
+							target="_blank">GitHub Presentation</a> </strong> from <strong><a
+							href="//www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
+				<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485"
+					frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+					style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+				</iframe>
+				<div style="margin-bottom:5px"> <strong> <a
+							href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation"
+							title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018 Presentation</a> </strong>
+					from
+					<strong><a href="https://www.slideshare.net/BrianSchilder" target="_blank">BrianSchilder</a></strong> </div>
+			</div>
+
+		</div>
 
 	</section>
 
-<!-- Automatically generate publications from file -->
-<script>
+	<!-- Automatically generate publications from file -->
+	<script>
 
-		$('#tabLink').click(function(e){ 
+		$('#tabLink').click(function (e) {
 			$('#publicationTabs a[href="#pubsTable_tab"]').tab('show');
 		})
 
 		d3.csv("./documents/publications_Raj_Lab.csv")
-		.then(function (data) {
-		// Method 2: As Divs
-		var createDivs = function(data){
+			.then(function (data) {
+				// Method 2: As Divs
+				var createDivs = function (data) {
 					var createHTML = function (d) {
 						var issue = "";
-						if(d.Volume!==""){issue += "Vol. "+d.Volume+", "}
-						if(d.Number!==""){issue += "Num. "+d.Number+", "}
-						if(d.Pages!==""){issue += "Pgs. "+d.Pages}
+						if (d.Volume !== "") { issue += "Vol. " + d.Volume + ", " }
+						if (d.Number !== "") { issue += "Num. " + d.Number + ", " }
+						if (d.Pages !== "") { issue += "Pgs. " + d.Pages }
 
-						var htmlStr = 
-						"<div class='publicationsDiv'>\
-							<a href='"+d.Link+"' target='_blank' class='TitleLink'> <h3 class='TitleDiv'><i class='fas fa-external-link-alt'></i> "+ d.Title + "</h3></a>\
+						var htmlStr =
+							"<div class='publicationsDiv'>\
+							<a href='"+ d.Link + "' target='_blank' class='TitleLink'> <h3 class='TitleDiv'><i class='fas fa-external-link-alt'></i> " + d.Title + "</h3></a>\
 							<div class='pubDetails'>\
 								<div class='row'>\
 									<div class='col-md-5'>\
-										<h5 class='Publication'>Publication:<br><p>"+ d.Journal + " <year><br>(" + d.Year + ")</year>" +"</p></h5>\
+										<h5 class='Publication'>Publication:<br><p>"+ d.Journal + " <year><br>(" + d.Year + ")</year>" + "</p></h5>\
 										<h5 class='Issue'> <p>"+ issue + "</p></h5>\
 									</div>\
 									<div class='col-md-7'>\
@@ -167,10 +173,10 @@
 								</div>\
 							</div>"
 						return htmlStr
-					}  
-					data.forEach(d => { 
+					}
+					data.forEach(d => {
 						var htmlStr = createHTML(d);
-						$('#pubDivContainer').append(htmlStr); 
+						$('#pubDivContainer').append(htmlStr);
 					});
 				}
 				createDivs(data);
@@ -178,12 +184,12 @@
 	</script>
 
 	<!-- Method 1: Publication as Datatable -->
-	<script >
+	<script>
 		d3.csv("./documents/publications_Raj_Lab.csv")
-			.then(function (data) { 
+			.then(function (data) {
 				// Remove empty rows
 				const obj = Object.values(data)
-					.filter(({ Authors }) => Authors !== "")  
+					.filter(({ Authors }) => Authors !== "")
 				var result = Object.keys(obj).map(function (key) {
 					var entry = obj[key]
 					return Object.values(entry)
@@ -191,14 +197,14 @@
 				result.pop(); // Remove header info as row  
 				return result
 			})
-			.then(function (result) {    
-				var createDatatable = function (result){ 
+			.then(function (result) {
+				var createDatatable = function (result) {
 					// $('#pubsTable thead tr:eq(1) th').each(function () {
 					// 	var title = $('#pubsTable thead tr:eq(0) th').eq($(this).index()).text();
 					// 	$(this).html('<input type="text" placeholder="Search ' + title + '" />');
 					// }); 
-					
-					var table = $('#pubsTable').DataTable({ 
+
+					var table = $('#pubsTable').DataTable({
 						data: result,
 						scrollY: "800px",
 						scrollCollapse: true,
@@ -208,42 +214,50 @@
 						dom: 'Bfrtip',
 						buttons: [{ "extend": "csv", "text": "<i class='fas fa-file-csv' style='font-size: 35px;vertical-align: middle; padding-bottom: 7px;'></i>", "className": "csvButton" }],
 						aoColumns: [
-							{ "title": "#", "className": "pubsHeader", 
-								"render": function(data, type, row, meta){return(row[9])}
+							{
+								"title": "#", "className": "pubsHeader",
+								"render": function (data, type, row, meta) { return (row[9]) }
 							},
-							{ "title": "Authors", "className": "pubsHeader", 
-								"render": function(data, type, row, meta){
+							{
+								"title": "Authors", "className": "pubsHeader",
+								"render": function (data, type, row, meta) {
 									// row[0].split(", ")
-									return(row[0])
-								} 
-							},
-							{ "title": "Title", "className": "pubsHeader", "width": "40%",
-								"render": function(data, type, row, meta){ 
-										data = '<div class="paperLink"><a class="paperLink" href="' + row[8] + '" target="_blank"> <i class=\'fas fa-external-link-alt\'></i> ' + row[1] + '</a></div>';
-									 	return data
+									return (row[0])
 								}
-							 },
-							{ "title": "Journal", "className": "pubsHeader", 
-								"render": function(data, type, row, meta){return(row[2])} },
-							{ "title": "Issue", "className": "pubsHeader",
-								"render": function(data, type, row, meta){
-									if(type === 'display'){ 
+							},
+							{
+								"title": "Title", "className": "pubsHeader", "width": "40%",
+								"render": function (data, type, row, meta) {
+									data = '<div class="paperLink"><a class="paperLink" href="' + row[8] + '" target="_blank"> <i class=\'fas fa-external-link-alt\'></i> ' + row[1] + '</a></div>';
+									return data
+								}
+							},
+							{
+								"title": "Journal", "className": "pubsHeader",
+								"render": function (data, type, row, meta) { return (row[2]) }
+							},
+							{
+								"title": "Issue", "className": "pubsHeader",
+								"render": function (data, type, row, meta) {
+									if (type === 'display') {
 										var issue = "";
-										if(row[3]!==""){issue += "Vol. "+row[3]+", "}
-										if(row[4]!==""){issue += "<br>Num. "+row[4]+", "}
-										if(row[5]!==""){issue += "<br>Pgs. "+row[5]}
-										data = issue; 
-									} 
+										if (row[3] !== "") { issue += "Vol. " + row[3] + ", " }
+										if (row[4] !== "") { issue += "<br>Num. " + row[4] + ", " }
+										if (row[5] !== "") { issue += "<br>Pgs. " + row[5] }
+										data = issue;
+									}
 									return data;
 								}
 							},
-							{ "title": "Year", "className": "pubsHeader", 
-								"render": function(data, type, row, meta){return(row[6])}} 
-						], 
+							{
+								"title": "Year", "className": "pubsHeader",
+								"render": function (data, type, row, meta) { return (row[6]) }
+							}
+						],
 						order: [],
 						orderCellsTop: true,
-						fixedHeader: true 
-					})   
+						fixedHeader: true
+					})
 					// Apply the search 
 					// table.columns().every(function (index) {
 					// 	$('#pubsTable thead tr:eq(1) th:eq(' + index + ') input').on('keyup change', function () {
@@ -254,27 +268,25 @@
 					// 	});   
 				}
 				createDatatable(result);
-			}).then(function(){
+			}).then(function () {
 				// !IMPORTANT! Resize column headers after tab is clicked
-				$('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+				$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 					$($.fn.dataTable.tables(true)).DataTable()
 						.columns.adjust();
-				});  
+				});
 			})
-			
+
 		// <!-- Correct vertical alignment of in-page links-->
-		var shiftWindow = function() { scrollBy(0, -120) };
+		var shiftWindow = function () { scrollBy(0, -120) };
 		if (location.hash) shiftWindow();
 		window.addEventListener("hashchange", shiftWindow);
-			
-	</script>  
+
+	</script>
 
 
 	<!-- Footer -->
 	<section id="footer"> </section>
 
-</body> 
+</body>
 
 </html>
-
-
