@@ -28,20 +28,25 @@
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" /> 
 </head>
 
-<body>
+<body> 
 	<!-- Insert html files -->
-    <script> 
+  <script> 
 		$(function(){ 
+			$("#background_video").load("./background_video.html");
 			$("#footer").load("./footer.html");
 			$("#navbar").load("./navbar.html");  
 		});
 	</script> 
+	<!-- Video -->
+	<section id="background_video"></section> 
 	<!-- Navbar --> 
 	<section id="navbar"></section> 
 
-
+	
+	
 	<!-- Main -->
-	<section id="main">
+	<section id="main" class="project_page">
+	
 		<div class="inner">
 			<header class="major special">
 
@@ -54,9 +59,13 @@
 					and <a href="#Technology">Technology</a></p>
 			</header>
 
+			 
+			<!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="opacity: 1; position: absolute; min-width: 1310px; min-height: 737px; left: -165px; top: 0px;" muted="" id="SITE_BACKGROUNDcurrentVideovideo" class="bgVideovideo" width="1310" height="737" src="https://video.wixstatic.com/video/11062b_6a134fc09ea34833a17d295e295ab517/1080p/mp4/file.mp4"></video> -->
+		
 			<!-- Text -->
 			<div class="container allProjects">
-				<div class="projectRow" id="Neuroimmunology">
+				
+				<div class="row" id="Neuroimmunology">
 					<h2>Neuroimmunology</h2>
 					<div class="row projectContent">
 						<div class="col-md-3 project">
@@ -83,7 +92,7 @@
 				</div>
 				<!--End projectRow-->
 
-				<div class="projectRow" id="FunctionalGenomics">
+				<div class="row" id="FunctionalGenomics">
 					<h2>Functional Genomics and Gene Regulation</h2>
 					<div class="row projectContent">
 						<div class="col-md-3 project">
@@ -110,9 +119,9 @@
 				</div>
 				<!--End projectRow-->
 
-				<div class="projectRow" id="Technology">
+				<div class="row" id="Technology">
 					<h2>Technology</h2>
-					<div class="row projectContent">
+					<div class="row projectContent container">
 						<div class="col-md-3 project">
 							<h3>Big Data Integration</h3><br><br>
 							<img src="./icons/DNA.png">

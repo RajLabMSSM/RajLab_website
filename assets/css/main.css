@@ -2719,8 +2719,15 @@ section .inner {
     width: 90%;
   }
 }
+#main .inner header {
+  color: rgba(255, 255, 255, 1)
+}
 header h2 {
   outline: black 1px;
+}
+
+.inner p {
+  color: rgba(255,255,255,1);
 }
 
 header p {
@@ -2997,11 +3004,20 @@ table.alt tbody tr td {
 .homepageColumn {
   display: block;
   height: 500px; 
-  border-left: var(--tertiary-color) solid 1px;
+  border-left: rgb(255,255,255,0.5) solid 1px;
   text-align: center;
 }
 .homepageContent {
-  display: block;
+  display: block; 
+}
+.homepageContent h5 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  color: rgba(255,255,255,1);
+}
+.homepageContent h5 a {
+  color: var(--primary-color); 
 }
 
 .homepageContent h3 {
@@ -3034,9 +3050,10 @@ table.alt tbody tr td {
 .homepageColumn ul {
   text-align: center;
   list-style-type: none;
+  color: rgba(255,255,255,1);
 }
 .homepageColumn li {
-  background-color: whitesmoke;
+  background-color: rgba(255,255,255,0.2);
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -3046,25 +3063,31 @@ table.alt tbody tr td {
   margin-right: 10px;
 }
 .homepageColumn li p {
-  color: gray;
+  color: rgba(255,255,255,.9);
   font-style: italic;
 }
 .homepageColumn .button {
+  
   margin-top: 10px;
-  bottom: 0;
-
-
+  bottom: 0;  
 	transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
 	-webkit-transition: 0.3s ease-in-out; 
 }
 .homepageColumn .button:hover {
-	background-color: rgba(0, 0, 0, 1);
+	background-color: rgba(0, 0, 0, .5);
 	color: var(--secondary-color);
 } 
 .homepageColumn a {
-	color: var(--secondary-color);
+  background-color: rgba(0, 0, 0, .5);
+  padding: 5px;
+  border-radius: 10px;
+	/* color: var(--secondary-color); */
 	margin-right: 15px;
+}
+.homepageColumn a:hover {
+  color: var(--secondary-color); 
+  text-decoration: none;
 }
 
 #three .inner {
@@ -3246,11 +3269,12 @@ i.red {
 .project p {
   display: block;
   border: solid 1px var(--tertiary-color);
-  background-color: var(--background-color);
+  background-color: var(--background-color); 
   margin-right: 10px;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   opacity: 0.8;
+  color: rgba(0,0,0,.9);
 
   transition: opacity 0.3s ease-in-out;
   -moz-transition: opacity 0.3s ease-in-out;
@@ -3388,7 +3412,7 @@ i.red {
 
 /* Publications Table */
 #pubContainer {
-  background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, .4);
   border-radius: 20px;
   padding: 20px;
 }
@@ -3571,6 +3595,9 @@ table.dataTable thead .pubsHeader {
 	font-size: .5em;
 	color: var(--primary-color);
 }
+.Title {
+  color: rgba(255,255,255,.9);
+}
 
 .grant, .publicationsDiv{
   margin-bottom: 60px;
@@ -3578,7 +3605,7 @@ table.dataTable thead .pubsHeader {
 }
 .grantDetails, 
 .pubDetails {
-  background: #202020;
+  background: rgba(0,0,0,.7);
   border-radius: 4px;
   padding: 20px;
   display: flex;
@@ -3607,7 +3634,7 @@ table.dataTable thead .pubsHeader {
   display: inline-block;
   color: var(--secondary-color);  
 }
-.Publication p{
+.Publication p {
 	color: white;
 	font-size: 1.5em;
 }
@@ -3621,7 +3648,7 @@ table.dataTable thead .pubsHeader {
 
 /* Data / Software */
 .dataSoftware {
-  background: #202020;
+  background: rgba(0,0,0,.7);
   border-radius: 4px;
   padding: 20px;
   text-align: left;
@@ -3636,6 +3663,9 @@ table.dataTable thead .pubsHeader {
 
 .dataSoftware h4 p {
   color: var(--secondary-color);
+}
+.dataTitle {
+  color: rgba(255,255,255,.9);
 }
 
 .dataTitle,
@@ -3720,7 +3750,7 @@ h5 {
 	margin: 5px;
 }
 .activities .row {
-	background-color: rgba(25, 25, 25, .9);
+	background-color: rgba(25, 25, 25, .7);
 	padding: 15px;
 	margin-top: 0px;
 	border-radius: 10px;
@@ -3735,16 +3765,17 @@ h5 {
 	border: var(--primary-color) solid  1px;
 	border-radius: 10px;
 	padding: 5px;
-	margin: 5px;
+  margin: 5px;
+  color: rgba(255,255,255,0.7);
 
 	transition: 0.3s ease-in-out;
 	-moz-transition: 0.3s ease-in-out;
 	-webkit-transition: 0.3s ease-in-out; 
 } 
 .JumpTo a:hover {
-	background-color: black;
-	border: var(--secondary-color) solid  1px;
-	color: var(--background-color); 
+	background-color: rgba(0,0,0,.4);
+	/* border: var(--secondary-color) solid  1px; */
+	color: var(--secondary-color); 
 	text-decoration: none;
 }
 
@@ -3762,6 +3793,7 @@ h5 {
     width: 100%; 
     /* min-height: 500px;  */
     position: relative;
+    
 }
 
 .tf .frontside .card .card-body img{
@@ -3769,7 +3801,7 @@ h5 {
 } 
 .tf .backside   .card-body{
   max-height: 400px !important;
-  max-height: 40vw !important; 
+  max-height: 40vw !important;  
 }
 
 
@@ -3784,8 +3816,7 @@ h5 {
     color: var(--primary-color);
 } 
 .card {
-    border: none;
-    background: #ffffff;  
+    border: none; 
 }  
 .image-flip:hover .backside,
 .image-flip.hover .backside {
@@ -3830,7 +3861,6 @@ h5 {
     position: absolute;
     top: 0;
     left: 0;
-    background: white;
     margin-bottom: 30px;
     -webkit-transform: rotateY(-180deg);
     -moz-transform: rotateY(-180deg);
@@ -3863,13 +3893,16 @@ h5 {
 
 #team .frontside .card,
 #team .backside .card {  
-   height: 500px;
+   height: 500px; 
+} 
+ .frontside .card,
+ .backside .card {
+  background: rgba(255,255,255,.9);
 }
 
 .backside .card { 
   /* font-size: 1.7vh !important;  */
-  font-size: calc(.65vw + .65vh + .25vmin);
-
+  font-size: calc(.65vw + .65vh + .25vmin); 
   overflow-y: scroll; 
 } 
 
@@ -3926,3 +3959,33 @@ h5 {
   display: inline;
   font-family: var(--logo-font);
 } 
+
+
+/* BACKGROUND VIDEO */
+video {
+   position: fixed; 
+   /* width: 100%;  */
+   height:100%;
+   z-index: -2;  
+   background-size: 150px;
+  background-repeat: space;
+  filter:opacity(60%);
+}
+
+#home-top-video:before {
+  content:"";
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index:-1;
+  /* height: 100vh; */
+  width: 100vw;
+  background:linear-gradient(to right,rgba(65, 0, 255, 0.4),rgba(255, 0, 232, 0.3));
+} 
+.project_page header p { 
+  color: white;
+}
+
+ 

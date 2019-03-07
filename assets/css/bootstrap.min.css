@@ -3630,7 +3630,7 @@ input[type="submit"].btn-block {
     font-size: .8em;
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--background-color); 
+  color: rgba(255, 255, 255, .9); 
   letter-spacing: .2em;
   margin-left: .3em;
   border-left: rgba(255, 255, 255, .1) solid 1px;
@@ -3644,11 +3644,8 @@ input[type="submit"].btn-block {
   color: var(--primary-color);
 }
 .nav-link.disabled {
-  color: #6c757d;
-}
-.nav-tabs {
-  border-bottom: 1px solid #dee2e6;
-}
+  color: rgba(255, 255, 255, .5);
+} 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
@@ -3659,7 +3656,7 @@ input[type="submit"].btn-block {
 }
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: rgba(255, 255, 255, .5); 
 }
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
@@ -3669,8 +3666,8 @@ input[type="submit"].btn-block {
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  background-color: rgba(255, 255, 255, .5);
+  /* border-color: rgba(255, 255, 255, .2); */
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -5386,9 +5383,9 @@ button.close {
 
 
 /* Carousel */
-/* #carouselIndicators { 
-  background-color: black;
-} */
+#carouselIndicators { 
+  background-color: rgba(0, 0, 0, 0.5);
+}
 .carousel {
   position: relative;  
 }  
@@ -5403,7 +5400,7 @@ button.close {
   max-width: 1300px;
   height:60vh !important;  
  
-  overflow: hidden;  
+  overflow: hidden;   
   
 }  
 .carousel-item { 
@@ -5416,6 +5413,10 @@ button.close {
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;  
+
+    -webkit-transition: ease-in-out 0.6s;
+    -moz-transition: ease-in-out 0.6s;
+    transition: ease-in-out 0.6s;
  
 }
 .carousel-item-next,
@@ -5427,21 +5428,21 @@ button.close {
   transition: transform 0.6s ease, -webkit-transform 0.6s ease;
 }
 @media screen and (prefers-reduced-motion: reduce) {
-  .carousel-item-next,
+  /* .carousel-item-next,
   .carousel-item-prev,
   .carousel-item.active {
     transition: none;
-  }
+  } */
 }
 .carousel-item-next,
 .carousel-item-prev {
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0; */
 }
 .carousel-item-next.carousel-item-left,
 .carousel-item-prev.carousel-item-right {
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+  transform: translateX(0); 
 }
 @supports (
   (-webkit-transform-style: preserve-3d) or (transform-style: preserve-3d)
@@ -5482,17 +5483,20 @@ button.close {
 }
 .carousel-fade .carousel-item {
   opacity: 0;
-  transition-duration: 0.6s;
-  transition-property: opacity;
+  /* transition-duration: 0.6s;
+  transition-property: opacity; */
+  transition: opacity 0.6s ;
+	-moz-transition:  opacity 0.6s ;
+	-webkit-transition:  opacity 0.6s ;  
 }
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right,
 .carousel-fade .carousel-item.active {
-  opacity: 1;
+  opacity: 1;  
 }
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-right {
-  opacity: 0;
+  opacity: 0; 
 }
 .carousel-fade .active.carousel-item-left,
 .carousel-fade .active.carousel-item-prev,
