@@ -2987,7 +2987,7 @@ table.alt tbody tr td {
 		padding: 0em 0 0em 0;
 	} */
 .AboutUs {
-  background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, .7);
   color: white;
   text-align: center; 
   align-content: center;
@@ -3334,7 +3334,7 @@ i.red {
   text-transform: none;
   margin: 0;
 }
-
+ 
 /* Footer */
 #footer email {
   color: var(--secondary-color);
@@ -3342,7 +3342,7 @@ i.red {
 }
 
 #footer {
-  background: var(--primary-color);
+  background: rgba(0,0,0,.7);
   padding: 50px;
   margin: 0;
   margin-top: 80px;
@@ -3352,6 +3352,9 @@ i.red {
   display: inline-table;
   margin-bottom: 10px;
 } 
+#footer h3 { 
+  background: rgba(255,255,255,.2)
+}
 #footer h3,
 #footer h4 {
   color: var(--tertiary-color);
@@ -3373,17 +3376,17 @@ i.red {
 }
 
 #sinai-logo {
-  text-align: left;
+  text-align: left; 
  } 
 #github-logo {
   max-width: 100%;
-  max-height: 100px; 
+  max-height: 150px; 
   border-radius: 4px;
   padding: 10px; 
 } 
 #sinai-logo,
 #github-logo {
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgba(255, 255, 255, 0.3); */
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
@@ -3393,7 +3396,7 @@ i.red {
   border-radius: 4px;
   padding: 20px;
   max-width: 100%;
-  max-height: 100px; 
+  max-height: 150px; 
 }
 
 
@@ -3401,6 +3404,7 @@ i.red {
 #github-logo:hover {
   background-color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
+  border-radius: 10px;
   
   -webkit-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
