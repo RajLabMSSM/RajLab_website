@@ -3386,6 +3386,7 @@ i.red {
   max-height: 150px; 
   border-radius: 4px;
   padding: 10px; 
+  opacity: .7;  
 } 
 #sinai-logo,
 #github-logo {
@@ -3395,7 +3396,7 @@ i.red {
   -webkit-transition: 0.3s ease-in-out;
 }
 
-#sinai-logo img {
+#sinai-logo img {  
   border-radius: 4px;
   padding: 20px;
   max-width: 100%;
