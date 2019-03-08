@@ -3347,13 +3347,16 @@ i.red {
   margin: 0;
   margin-top: 80px;
   bottom: 0;
+  padding-bottom: 100px;
 }
 #footer .col-md-3 {
   display: inline-table;
   margin-bottom: 10px;
 } 
 #footer h3 { 
-  background: rgba(255,255,255,.2)
+  background: rgba(255,255,255,.2);
+  padding: 10px;
+  border-radius: 10px;
 }
 #footer h3,
 #footer h4 {
@@ -3361,7 +3364,7 @@ i.red {
   white-space: nowrap;
 }
 #footer p {
-  color: white;
+  color: rgba(255,255,255,.7);
   font-size: 0.8em;
   font-weight: 400;
   line-height: 1.3em;
@@ -3397,9 +3400,7 @@ i.red {
   padding: 20px;
   max-width: 100%;
   max-height: 150px; 
-}
-
-
+} 
 #sinai-logo:hover,
 #github-logo:hover {
   background-color: rgba(255, 255, 255, 0.7);
@@ -3409,6 +3410,10 @@ i.red {
   -webkit-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
+}
+#copyright {
+  height: 20px;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .special p {
