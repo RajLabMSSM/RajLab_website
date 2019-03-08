@@ -3928,7 +3928,7 @@ h5 {
 
 .frontside .card .card-body img { 
     border-radius: 40%;
-    max-height: 200px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 
