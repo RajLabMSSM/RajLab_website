@@ -3446,7 +3446,7 @@ table.dataTable {
 table.dataTable td {
   border: var(--secondary-color) solid 0.2px !important;
   color: white;
-  background-color: var(--primary-color);
+  background-color: rgba(0,0, 0, .9);
 }
 table.dataTable tbody tr:nth-child(even):hover {
   transition: 0.3s ease-in-out;
@@ -3995,21 +3995,18 @@ h5 {
 
 
 /* BACKGROUND VIDEO */
-video {
+video, source {
    position: fixed;   
    top:0;
-  right:0;
-  left:0;
-  bottom:0;
-  z-index:-1;
-  /* height: 100vh; */ 
-  /* width: 100vw; */
-
+   right:0;
+   left:0;
+   bottom:0; 
    z-index: -2;  
-   /* background-size: 150px; */
+}
+
+  /* background-size: 150px; */
   /* background-repeat: repeat; */
   /* filter:opacity(60%); */
-}
 
 #home-top-video:before {
   content:"";
