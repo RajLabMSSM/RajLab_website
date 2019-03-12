@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Raleway|Lato|Abel");
 @import url(font-awesome.min.css);
 
+ 
 :root {
-  --logo-font: "Josefin Slab", serif;
-  --main-font: "Abel";
+  --logo-font: "Josefin Slab", serif, font-weight:400; font-style:regular;
+  --main-font: "Abel", sans-serif, font-weight:400; font-style:regular;
   --primary-color: #38afec; /* #e5474b; */
   --secondary-color: #d51c8c;
   --tertiary-color: lightgray;
@@ -3005,7 +3006,7 @@ table.alt tbody tr td {
 .homepageColumn {
   display: block;
   height: 500px; 
-  border-left: rgb(255,255,255,0.5) solid 1px;
+  border-left: rgba(255,255,255,0.5) solid 1px;
   text-align: center;
 }
 .homepageContent {
@@ -3879,9 +3880,9 @@ h5 {
     -ms-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 
-    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -webkit-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgba(158, 158, 158);
     
 } 
 .frontside,
@@ -3932,9 +3933,9 @@ h5 {
     width: 100%;
     object-fit: cover;
 
-    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -webkit-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158,1);
+    -moz-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158,1);
+    box-shadow: 5px 7px 9px -4px rgba(158, 158, 158, 1);
 } 
 
 
@@ -3995,13 +3996,14 @@ h5 {
 
 
 /* BACKGROUND VIDEO */
-video, source {
+video {
    position: fixed;   
    top:0;
    right:0;
    left:0;
    bottom:0; 
-   z-index: -2;  
+   z-index: -2;
+   -webkit-transform:translate3d(0,0,0);  
 }
 
   /* background-size: 150px; */
@@ -4016,9 +4018,16 @@ video, source {
   left:0;
   bottom:0;
   z-index:-1;
+  -webkit-transform:translate3d(0,0,0);
   /* height: 100vh; */ 
   width: 100vw;
   background:linear-gradient(to right,rgba(65, 0, 255, 0.4),rgba(255, 0, 232, 0.3));
+  background: -moz-linear-gradient(top,  rgba(65, 0, 255, 0.4) 0%,rgba(255, 0, 232, 0.3) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65, 0, 255, 0.4)), color-stop(100%,rgba(255, 0, 232, 0.3))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(65, 0, 255, 0.4) 0%,rgba(255, 0, 232, 0.3) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(65, 0, 255, 0.4) 0%,rgba(255, 0, 232, 0.3) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(65, 0, 255, 0.4) 0%,rgba(255, 0, 232, 0.3) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(65, 0, 255, 0.4) 0%,rgba(255, 0, 232, 0.3) 100%); /* W3C */
 } 
 .project_page header p { 
   color: white;
