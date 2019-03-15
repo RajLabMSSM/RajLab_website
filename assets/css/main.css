@@ -3800,20 +3800,27 @@ h5 {
 .tf {
     /* height: 580px; */
     padding-right: 6%;
+    padding-left: 6%;
     padding-top: 2%;
     margin-bottom: 30px;
-    width: 100%; 
-    /* min-height: 500px;  */
-    position: relative;
-    
+    margin-right: 10%;
+    margin-left:10%;
+    width: 100%;
+    max-width: 75%;   
+    position: relative;  
+}
+.tf .frontside .card-body,
+.tf .backside .card-body  {
+   height: 400px; 
 }
 
 .tf .frontside .card .card-body img{
-  max-width: 45%; 
+  max-width: 45%;  
 } 
 .tf .backside   .card-body{
-  max-height: 400px !important;
-  max-height: 40vw !important;  
+  position: relative;
+  max-height: 25vw !important;   
+  max-height: 375px !important; 
 }
 
 
@@ -3931,6 +3938,7 @@ h5 {
     border-radius: 40%;
     height: 200px;
     width: 100%;
+    max-width: 300px;
     object-fit: cover;
 
     -webkit-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158,1);
