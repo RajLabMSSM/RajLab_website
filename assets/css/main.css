@@ -3836,6 +3836,7 @@ h5 {
 } 
 .card {
     border: none; 
+    
 }  
 .image-flip:hover .backside,
 .image-flip.hover .backside {
@@ -3871,9 +3872,11 @@ h5 {
 .frontside {
     position: relative;
     -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
     -ms-transform: rotateY(0deg);
     z-index: 2;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;  
 }
 
 .backside {
@@ -3887,15 +3890,18 @@ h5 {
     -ms-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 
-    -webkit-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158);
-    -moz-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158);
-    box-shadow: 5px 7px 9px -4px rgba(158, 158, 158);
+    -webkit-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158, 1);
+    -moz-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158, 1);
+    -o-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158, 1);
+    -ms-box-shadow: 5px 7px 9px -4px rgba(158, 158, 158, 1);
+    box-shadow: 5px 7px 9px -4px rgba(158, 158, 158, 1);
     
 } 
 .frontside,
 .backside {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transition: 1s;
@@ -3906,16 +3912,18 @@ h5 {
     -o-transform-style: preserve-3d;
     -ms-transition: 1s;
     -ms-transform-style: preserve-3d;
-    transition: 1s;
-    transform-style: preserve-3d;
+    
+    transition: 1s; 
+    transform-style: preserve-3d; 
+    
 }
 
 #team .frontside .card,
 #team .backside .card {  
    height: 500px; 
 } 
- .frontside .card,
- .backside .card {
+.frontside .card,
+.backside .card {
   background: rgba(255,255,255,.9);
 }
 
@@ -3952,13 +3960,14 @@ h5 {
   font-size: calc(1.5vw + 1.5vh + .5vmin);
    
   -webkit-transition: .5s;
-  -webkit-transform-style: preserve-3d;
+  /* -webkit-transform-style: preserve-3d; */
   -moz-transition: .5s;
-  -moz-transform-style: preserve-3d;
+  /* -moz-transform-style: preserve-3d; */
   -o-transition: .5s;
-  -o-transform-style: preserve-3d;
+  /* -o-transform-style: preserve-3d; */
   -ms-transition: .5s;
-  -ms-transform-style: preserve-3d;
+  /* -ms-transform-style: preserve-3d; */
+  
   transition: .5s;
 }
 
@@ -3973,7 +3982,7 @@ h5 {
 }
 
 .frontside p,
-.backside p{
+.backside p {
   color: rgba(0,0,0,.7);
 }
 
@@ -4011,7 +4020,7 @@ video {
    left:0;
    bottom:0; 
    z-index: -2;
-   -webkit-transform:translate3d(0,0,0);  
+   -webkit-transform: translate3d(0,0,0);  
 }
 
   /* background-size: 150px; */
