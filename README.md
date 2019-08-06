@@ -1,9 +1,11 @@
 # RajLab_website
 www.rajlab.org  
 
-## The official website for the lab of Dr. Towfique Raj 
+## The official website for the lab of Dr. Towfique Raj  
 Icahn School of Medicine at Mount Sinai  
-Departments of Neuroscience, Genetics and Genomic Sciences, and Neurology  
+Department of Neuroscience
+Department of Genetics & Genomic Sciences
+Ronald M. Loeb Center for Alzheimer's Disease
 Icahn Building, 1425 Madison Avenue  
 New York, NY 10029  
 
@@ -59,6 +61,18 @@ New York, NY 10029
 - And voilà! Your website will now be updated, all with no or minimal HTML coding:
     + **Note**: You may have to wait a little bit for all the changes to fully appear in the website (GitHub Pages can take some time to update). 
 
+<hr><hr>
+
+### Web Creators:  
+**Brian M. Schilder** & **Madison Parks**
+Icahn School of Medicine at Mount Sinai
+Department of Neuroscience
+Department of Genetics & Genomic Sciences
+Ronald M. Loeb Center for Alzheimer's Disease
+Icahn Building, 1425 Madison Avenue  
+New York, NY 10029  
+
+* Tutorial created by **Brian M. Schilder**
 
 
 
