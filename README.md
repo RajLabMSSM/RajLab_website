@@ -18,19 +18,19 @@ New York, NY 10029
 - All other pages must be updated by editing the HTML files. A good IDE is recommended to do this; I reccommend [Visual Studio Code](https://code.visualstudio.com) combined with the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), to see how your edits change the website in real-time.
 - If you want to edit the Navbar or the Footer, you only need to edit the `navbar.html` and/or `footer.html` files in order to propogate these changes to the whole website.
 
+<br><br>
 
-**[1] Clone GitHub Repo**
-    - Go to the location on your computer where you want to copy the repo:
+**[1] Clone GitHub Repo**  
+    - Go to the location on your computer where you want to copy the repo:  
     ```sh
     cd <desired_folder_location>
-    ```
-
+    ```  
     - Clone the repo:  
     ```sh
     git clone https://github.com/RajLabMSSM/RajLab_website.git
-    ```
+    ```  
 
-**[2] Edit CSV Files**
+**[2] Edit CSV Files**  
     - In the folder `documents` you will find the following files:  
         + `publications_Raj_Lab.csv`: A table of all publications.  
         + `Raj_Grants.csv`: A table of all grants awarded.
@@ -38,17 +38,21 @@ New York, NY 10029
         + *Important!*: Aside from entering new rows, you must keep the exact same table structure. Do NOT edit the number or names of columns as the javascript code uses these.
 **[3] Push Changes to GitHub**
     - Make sure you're within the `RajLab_website` folder:
-    ```sh cd RajLab_website```
-
+    ```sh
+    cd RajLab_website
+    ```  
     - Stage changes: 
-    ```sh git add .
-    ```
-    
-    - Commit changes: 
-    ```sh git commit -m <write_commit_message_here>```
-    
+    ```sh
+    git add .
+    ```  
+    - Commit changes:  
+    ```sh
+    git commit -m <write_commit_message_here>
+    ```  
     - Push changes to GitHub: 
-    ```sh git push```
+    ```sh
+    git push
+    ```
 
 
 
