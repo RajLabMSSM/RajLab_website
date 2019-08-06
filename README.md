@@ -20,7 +20,7 @@ New York, NY 10029
 
 <br><br>
 
-**[1] Clone GitHub Repo**  
+1. **Clone GitHub Repo**  
     - Go to the location on your computer where you want to copy the repo:  
     ```sh
     cd <desired_folder_location>
@@ -30,13 +30,13 @@ New York, NY 10029
     git clone https://github.com/RajLabMSSM/RajLab_website.git
     ```  
 
-**[2] Edit CSV Files**  
+2. **Edit CSV Files**  
     - In the folder `documents` you will find the following files:  
         + `publications_Raj_Lab.csv`: A table of all publications.  
         + `Raj_Grants.csv`: A table of all grants awarded.
     - Open these files in Excel, add new rows, and save the file (without changing the name or extension)
         + *Important!*: Aside from entering new rows, you must keep the exact same table structure. Do NOT edit the number or names of columns as the javascript code uses these.
-**[3] Push Changes to GitHub**
+3. **Push Changes to GitHub**
     - Make sure you're within the `RajLab_website` folder:
     ```sh
     cd RajLab_website
