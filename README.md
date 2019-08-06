@@ -20,12 +20,16 @@ New York, NY 10029
 
 
 1.	Clone GitHub Repo 
-    - ```sh
+    - Go to the location on your computer where you want to copy the repo:
+    ```sh
     cd <desired_folder_location>
     ```
-    - ```sh
+
+    - Clone the repo:
+    ```sh
     git clone https://github.com/RajLabMSSM/RajLab_website.git
     ```
+
 2. Edit CSV Files
     - In the folder `documents` you will find the following files:
         + `publications_Raj_Lab.csv`: A table of all publications.
@@ -36,14 +40,17 @@ New York, NY 10029
     - Make sure you're within the `RajLab_website` folder: ```sh
     cd RajLab_website
     ```
+    
     - Stage changes: 
     ```sh
     git add .
     ```
+    
     - Commit changes: 
     ```sh
     git commit -m <write_commit_message_here>
     ```
+    
     - Push changes to GitHub: 
     ```sh
     git push
