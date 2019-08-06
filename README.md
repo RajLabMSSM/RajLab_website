@@ -13,10 +13,9 @@ New York, NY 10029*
 
 # Updating the Website - Tutorial  
 * All `code` is to be executed in the terminal/command line.
-- The website uses javascript to take data CSVs and automatically construct the webpage. The following pages are currently updatable by editing the CSVs:
-    + [Publications & Presentations](https://rajlabmssm.github.io/RajLab_website/publications.html): Currently only the Publications table is automated. Presentations must be updated by editing the HTML itself.
-    + [Publications & Presentations](https://rajlabmssm.github.io/RajLab_website/publications.html)
-    + [Funding](https://rajlabmssm.github.io/RajLab_website/funding.html): Fully automated.
+- The website uses javascript to take data CSVs and automatically construct the webpages. The following pages are currently updatable by editing the CSVs:
+    + [**Publications & Presentations**](https://rajlabmssm.github.io/RajLab_website/publications.html): Currently only the Publications table is automated. Presentations must be updated by editing the HTML itself.
+    + [**Funding**](https://rajlabmssm.github.io/RajLab_website/funding.html): Fully automated.
 - All other pages must be updated by editing the HTML files. A good IDE is recommended to do this; I reccommend [Visual Studio Code](https://code.visualstudio.com) combined with the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), to see how your edits change the website in real-time.
 - If you want to edit the Navbar or the Footer, you only need to edit the `navbar.html` and/or `footer.html` files in order to propogate these changes to the whole website.
 
