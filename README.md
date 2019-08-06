@@ -26,7 +26,7 @@ New York, NY 10029*
     ```sh
     cd <desired_folder_location>
     ```  
-    - Clone the repo:  
+    - Clone the repo (*only necessary the first time*):  
     ```sh
     git clone https://github.com/RajLabMSSM/RajLab_website.git
     ```  
