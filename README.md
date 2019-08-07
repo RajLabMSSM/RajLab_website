@@ -16,7 +16,7 @@ New York, NY 10029*
 
 Let's say you have a website for a lab where the team is constantly rotating, you're producing lots of new publications, and/or you'd like to make frequent news updates.
 <br><br>
-Entering new HTML elements (e.g. a *div*) every time you want to update a webpage can be repetitive and tedious. Not to mention prone to typos and bugs, especially to someone who might not have a lot of experience in web development. Even commerical website creation platforms (e.g. Wordpress, Squarespace, Wix) currently still require you to manually enter in each repetitive element. But being the busy person you are, you don't have time to regularly make these changes to your website.
+Entering new HTML elements (e.g. `<div>...</div>`) every time you want to update a webpage can be repetitive and tedious. Not to mention prone to typos and bugs, especially to someone who might not have a lot of experience in web development. Even commerical website creation platforms (e.g. Wordpress, Squarespace, Wix) currently still require you to manually enter in each repetitive element. But being the busy person you are, you don't have time to regularly make these changes to your website.
 <br><br>
 For these reasons, I used javascript to automatically construct the webpages from data tables (in *.csv* format). This has the advantage of being able to create new entries of the same element without having to write any redundant code; all you have to do is update the appropriate CSV and push the changes to GitHub. 
 <br><br> 
