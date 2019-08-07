@@ -126,63 +126,26 @@
 		</div>
 		<div class="inner" id="homepageCols">
 			<div class="row container">
+				
+				<!-- Publications col -->
 				<div class="col-md-4 homepageColumn container" id="recent_pubs">
 					<h3>Recent Publications</h3>
 					<div class="scroll">
-						<ul>
-							<li>
-								<strong>Prioritizing Parkinson’s disease genes using population-scale transcriptomic data. </strong><br>
-								<i>Nature Communications, March 1, 2019</i><br>
-								<a href="https://www.nature.com/articles/s41467-019-08912-9" target="_blank">
-									<i class="fas fa-book"></i> Paper
-								</a> 
-							</li>
-							<li>
-								<strong>Integrative transcriptome analyses of the aging brain implicate altered splicing in Alzheimer’s disease
-									susceptibility. </strong><br>
-								<i>Nature Genetics, October 8, 2018</i><br>
-								<a href="https://www.nature.com/articles/s41588-018-0238-1" target="_blank">
-									<i class="fas fa-book"></i> Paper
-								</a>
-								<a href="https://directorsblog.nih.gov/2018/10/16/a-new-piece-of-the-alzheimers-puzzle/" target="_blank">
-									<i class="fa fa-newspaper-o"></i> Press
-								</a>
-							</li>
-						</ul>
+						<ul id="publication_list"></ul>
 					</div>
 					<a href="./publications.html" target="_blank" class="button alt">More Publications</a>
 				</div>
 
+				<!-- News and Events col -->
 				<div class="col-md-4 homepageColumn news container" id="news">
 					<h3>News and Events</h3>
 					<div class="scroll"> 
-						<ul>
-							<li><b>02 . 04 . 2019</b>
-								<p>Postdoc Elisa was awarded the 2019 ADRC Pilot Grant! Congratulations Elisa!</p>
-								<hr>
-								<p>Madison was accepted to (another!) medical school, Penn State.</p>
-							</li>
-							<li><b>12 . 05 . 2018</b>
-								<p> Research associate Madison was accepted to medical school!</p>
-							</li>
-							<li><b>11 . 12 . 2018</b>
-								<p>New members Brian and Katia have joined our lab! Welcome Brian and Katia!</p>
-							</li>
-							<li><b>10 . 08 . 2018</b>
-								<p>Our work on alternative splicing in AD was published in Nature Genetics! Great job team!</p>
-							</li>
-							<li><b>10 . 09 . 2018</b>
-								<p>New member Maojuan joined our lab. Welcome Maojuan!</p>
-							</li>
-							<li><b>07 . 15 . 2018</b>
-								<p> Post-doctoral Fellow Elisa was awarded the Ramon Areces Foundation Fellowship. Congrats
-									Elisa! </p>
-							</li>
-						</ul>
+						<ul id="News_Events_list"> </ul>
 					</div>
 					<a href="./projects.html" target="_blank" class="button alt">More News</a>
 				</div>
 
+				<!-- Twitter col -->
 				<div class="col-md-4 homepageColumn" id="twitter">
 					<h3>Recent Tweets</h3>
 					<a class="twitter-timeline container" href="https://twitter.com/trajnp?ref_src=twsrc%5Etfw" height=84%>
@@ -195,6 +158,64 @@
 		</div>
 
 		<br><br><br><br>
+
+		<!-- Create News_Events from CSV -->
+		<script>
+				d3.csv("./documents/News_Events.csv")
+					.then(function (data) {
+						// Method 2: As Divs
+						var createDivs = function (data) {
+							var createDataDiv = function (d) {  
+								var htmlStr =  
+									"<li><b>" + d.Date + "</b><hr>\
+										<p>" + d.Text + "</p>\
+									</li>"
+								return htmlStr
+							}
+							data.forEach(d => {
+								// Prevent blank rows from being imported
+								if (d.Text != ""){
+									var htmlStr = createDataDiv(d);
+									$('#News_Events_list').append(htmlStr);
+								} 
+							});
+						}
+						createDivs(data);
+					});  
+			</script>
+
+		<!-- Highlight the most recent publications -->
+		<script>
+				d3.csv("./documents/Publications.csv")
+					.then(function (data) {
+						var createDivs = function (data) {
+							var createDataDiv = function (d) {  
+								var htmlStr =  
+								"<li><strong>" + d.Title + "</strong><br>\
+									<i>"+d.Journal + "<br>("+ d.Year + ")</i><br><hr>\
+									<a href='" + d.Link + "' target='_blank'>\
+										<i class='fas fa-book'></i> Paper\
+									</a>"
+								if (d.NewsLink != ""){
+									htmlStr += "<a href='" + d.NewsLink + "' target='_blank'>\
+													<i class='fa fa-newspaper-o'></i> Press\
+												</a>"
+								} 
+								htmlStr += "</li>"
+								return htmlStr
+							}
+							data.forEach(d => {
+								// Prevent blank rows from being imported
+								if (d.Text != ""){
+									var htmlStr = createDataDiv(d);
+									$('#publication_list').append(htmlStr);
+								} 
+							});
+						}
+						createDivs(data);
+					});  
+			</script>
+
 		<!-- Correct vertical alignment of in-page links-->
 		<script>
 			var shiftWindow = function() { scrollBy(0, -120) };

@@ -14,8 +14,11 @@ New York, NY 10029*
 # Updating the Website - Tutorial  
 * All `code` is to be executed in the terminal/command line.
 - The website uses javascript to take data CSVs and automatically construct the webpages. The following pages are currently updatable by editing the CSVs:
+    + [**Home**](https://rajlabmssm.github.io/RajLab_website/index.html): 
+        - `Publications.csv` = Automatically updates the "Recent Publications" feed by highligting publications in descending order of publication date.
+        - `News_Events.csv` = Easily add updates to the "News and Events" feed by inserting new rows into this CSV. 
 
-    + [**Team](https://rajlabmssm.github.io/RajLab_website/tean.html): 
+    + [**Team**](https://rajlabmssm.github.io/RajLab_website/team.html): 
         - `Team.csv` = All past and present members on the *Team* page. Members are automatically assigned to different sections depending on their "Status" column ("PI", "active", "student", or "alumn").  
 
     + [**Publications / Presentations**](https://rajlabmssm.github.io/RajLab_website/publications.html): 
