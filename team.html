@@ -96,7 +96,8 @@
 		d3.csv("./documents/Team.csv")
 			.then(function (data) { 
                 var addLinks = function(d) {
-                            var dict = {Twitter: "fa fa-twitter",
+                            var dict = {Email:"fa fa-envelope",
+                                        Twitter: "fa fa-twitter",
                                         LinkedIn:"fab fa-linkedin-in",
                                         GoogleScholar:"fa fa-google",
                                         ResearchGate:"fab fa-researchgate",
@@ -141,33 +142,13 @@
                                         <div class="card">\
                                             <div class="card-body text-center mt-4">\
                                                 <h4 class="card-title">' + d.Name + ', ' + d.Degree + '</h4>\
-                                                <p class="card-text">' + d.Bio + '</p>\
-                                                <ul class="list-inline">\
-                                                    <li class="list-inline-item">\
-                                                        <a class="social-icon text-xs-center" target="_blank"\
-                                                            href="https://twitter.com/trajnp?lang=en">\
-                                                            <i class="fa fa-twitter"></i>\
-                                                        </a>\
-                                                    </li>\
-                                                    <li class="list-inline-item">\
-                                                        <a class="social-icon text-xs-center" target="_blank"\
-                                                            href="https://www.linkedin.com/in/towfique-raj-8120836/">\
-                                                            <i class="fa fa-linkedin-square"></i>\
-                                                        </a>\
-                                                    </li>\
-                                                    <li class="list-inline-item">\
-                                                        <a class="social-icon text-xs-center" target="_blank"\
-                                                            href="https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en">\
-                                                            <i class="fa fa-google"></i>\
-                                                        </a>\
-                                                    </li>\
-                                                </ul>\
-                                            </div>\
-                                        </div>\
-                                    </div>'
-                                    
-                            var cap = '</div>\
-                                    </div>'
+                                                <p class="card-text">' + d.Bio + '</p>'
+                        back += addLinks(d);
+                        back += '<br></div>\
+                                </div>\
+                            </div>' 
+                        var cap = '</div>\
+                                </div>'
                         var htmlStr = front + back + cap
                         return htmlStr
                     }
