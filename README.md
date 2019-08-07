@@ -13,8 +13,16 @@ New York, NY 10029*
 
 # Updating the Website - Tutorial  
 ## Overview
+
+Let's say you have a website for a lab where the team is constantly rotating, you're producing lots of new publications, and/or you'd like to make frequent news updates. But being the busy person you are, you don't have time to regularly make these changes to your website.
+<br>
+Entering new HTML elements (e.g. <div>...</div>) every time you want to update a webpage can be repetitive and tedious. Not to mention prone to typos and bugs, especially to someone who might not have a lot of experience in web development. Even commerical website creation platforms (e.g. Wordpress, Squarespace, Wix) currently still require you to manually enter in each repetitive element.
+<br>
+For these reasons, I use use javascript to take data CSVs and automatically construct the webpages. This has the advantage of being able to create new entries of the same element without having to write any redundant code; all you have to do is update the appropriate CSV and push the changes to GitHub. 
+<br><br>
+
 * All `code` is to be executed in the terminal/command line.
-- The website uses javascript to take data CSVs and automatically construct the webpages. The following pages are currently updatable by editing the following CSVs:
+- The following pages are currently updatable by editing the following CSVs:
     + ### [Home](https://rajlabmssm.github.io/RajLab_website/index.html): 
         - `Publications.csv` = Automatically updates the "Recent Publications" feed by highligting publications in descending order of publication date.
         - `News_Events.csv` = Easily add updates to the "News and Events" feed by inserting new rows into the top of this CSV. 
