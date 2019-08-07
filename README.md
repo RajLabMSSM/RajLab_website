@@ -39,7 +39,7 @@ For these reasons, I used javascript to automatically construct the webpages fro
     + ### [Funding](https://rajlabmssm.github.io/RajLab_website/funding.html):
         -  `Grants.csv`: All grants awarded (active and past).  
 
-- All other pages must be updated by editing the HTML files. A good IDE is recommended to do this; I reccommend [Visual Studio Code](https://code.visualstudio.com) combined with the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), to see how your edits change the website in real-time.
+- All other pages must be updated by editing the HTML files. A good IDE helps to do this efficiently; I reccommend [Visual Studio Code](https://code.visualstudio.com) combined with the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), to see how your edits change the website in real-time.
 - If you want to edit the Navbar or the Footer, you only need to edit the `navbar.html` and/or `footer.html` files in order to propogate these changes to the whole website.
 
 <br><br>
