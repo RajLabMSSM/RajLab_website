@@ -28,7 +28,7 @@
 
     <!-- Auto resize text -->
     <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/jquery.textfill.min.js"></script>
+    <!-- <script src="./assets/js/jquery.textfill.min.js"></script> -->
 
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
     <script src="./assets/js/jquery.fittext.js"></script>
@@ -60,681 +60,178 @@
                 </h1>
             </header>
 
+            <!-- PI -->
+            <div class="row"> 
+                <div class="tf" id="PI_card"> </div>
+            </div> 
             <!-- Team -->
-            <div class="row">
-                <!-- Team member -->
-                <div class="tf">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="./images/team/Towfique.jpg" alt="card image">
-                                        </p>
-                                        <h4 class="card-title">Towfique Raj, Ph.D.</h4>
-                                        <p class="card-text"> Principal Investigator</p>
-                                        <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Towfique Raj, Ph.D.</h4>
-                                        <p class="card-text">
-                                            <h2 class="leadLetter">T</h2>owfique Raj, Ph.D., is a core faculty member in
-                                            the
-                                            <a target="_blank"
-                                                href="https://icahn.mssm.edu/research/loeb-alzheimers">Ronald
-                                                M.
-                                                Loeb Center for Alzheimer's Disease</a> and an assistant professor
-                                            in the <a target="_blank"
-                                                href="https://icahn.mssm.edu/about/departments/neuroscience">Department
-                                                of Neuroscience</a> and the <a target="_blank"
-                                                href="https://icahn.mssm.edu/research/genomics">Department
-                                                of Genetics and Genomics</a> at Icahn School of Medicine at Mount
-                                            Sinai, New York. Dr. Raj received his Ph.D. in genetics from
-                                            <a target="_blank"
-                                                href="https://www.graduate.study.cam.ac.uk/courses/directory/blgepdphg">Cambridge
-                                                University</a> and completed a postdoctoral fellowship at the
-                                            <a target="_blank" href="https://www.broadinstitute.org/">Broad
-                                                Institute</a> of MIT
-                                            and Harvard. Before joining Mount Sinai, Dr. Raj was an instructor of
-                                            neurology at <a target="_blank" href="https://hms.harvard.edu/">Harvard
-                                                Medical School</a>
-                                            and a visiting scholar at <a target="_blank"
-                                                href="https://www.stanford.edu/">Stanford
-                                                University</a>. Dr. Raj received the <a target="_blank"
-                                                href="https://www.gatescambridge.org/">Gates-Cambridge
-                                                Scholarship</a>, <a target="_blank"
-                                                href="https://researchtraining.nih.gov/programs/fellowships">NIH
-                                                Ruth L. Kirschstein Research Service Award</a> and the <a
-                                                target="_blank"
-                                                href="https://www.donorscure.org/conference/about">Charleston
-                                                Conference on Alzheimer's Disease Award</a>.
-                                            <br>
-                                            His research group
-                                            uses powerful computational and experimental tools for genetic research
-                                            and interdisciplinary approaches to understand the genetic factors
-                                            driving neurodegenerative diseases with the ultimate goal of finding a
-                                            cure. More recently, Dr. Raj's group is interested in linking genetic
-                                            risk factors for Alzheimer's and Parkinson's disease to detectable
-                                            changes in innate immune cells that may contribute to disease
-                                            progression. A major direction of his laboratory has been to understand
-                                            the role of peripheral immune cells in neurodegenerative disease
-                                            pathogenesis (see the MyND study). His group is leading efforts to set
-                                            up human cohorts for deep multi-omics profiling of immune cells. His
-                                            long-term interest is to translate findings from these studies to
-                                            potentially identify novel immune therapeutic targets and biomarkers.
-                                        </p>
-
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://twitter.com/trajnp?lang=en">
-                                                    <i class="fa fa-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/towfique-raj-8120836/">
-                                                    <i class="fa fa-linkedin-square"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en">
-                                                    <i class="fa fa-google"></i>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="team"> 
+                <div class="row" id="teamContainer"></div>
             </div>
-            <!-- ./Team member -->
-            <div id="team">
-                <!-- Team member -->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class="img-fluid" src="./images/team/Elisa.jpeg" alt="card image">
-                                            </p>
-                                            <h4 class="card-title">Elisa Navarro, Ph.D.</h4>
-                                            <p class="card-text">Post-Doctoral Fellow</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Elisa Navarro, Ph.D.</h4>
-                                            <p class="card-text">Elisa obtained her PhD at the <a target="_blank"
-                                                    href="http://www.ifth.es">Teofilo Hernando
-                                                    Institute</a> in <a target="_blank"
-                                                    href="http://www.uam.es/UAM/Home.htm?language=es">Universidad
-                                                    Autonoma de
-                                                    Madrid</a>. She is interested in understanding how the immune system
-                                                is altered in Alzheimer's and Parkinson's disease,
-                                                moving from genomic to transcriptomics and proteomics, and especially
-                                                deciphering how gene variants may affect
-                                                cellular function. Apart from the MyND project, Elisa also loves to run
-                                                around Central Park, try new IPAs or just
-                                                enjoy NYC!
-                                            </p>
-                                            <ul class="list-inline">
 
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://twitter.com/Elisa_Navarro_?lang=en">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/elisa-navarro-267058118/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://scholar.google.com/citations?user=xgDw-mMAAAAJ&hl=en&oi=ao">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Ricardo.jpeg"
-                                                    alt="card image"></p>
-                                            <h4 class="card-title">Ricardo Vialle, Ph.D.</h4>
-                                            <p class="card-text">Post-Doctoral Fellow</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Ricardo Vialle, Ph.D.</h4>
-                                            <p class="card-text">Ricardo is working with state-of-the-art computational
-                                                methods and sequencing technologies to unveil the role of genomic
-                                                structural variation in brain diseases. He obtained his PhD in
-                                                Bioinformatics in 2017 from the<a target="_blank"
-                                                    href="https://ufmg.br/cursos/pos-graduacao/doutorado/2573/01">
-                                                    Federal University of Minas Gerais</a> in Brazil. When not in the
-                                                lab, Ricardo enjoys playing guitar and video games</p>
-                                            <ul class="list-inline">
 
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://twitter.com/ricardovialle?lang=en">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/ricardovialle/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://scholar.google.com/citations?user=rhThrMcAAAAJ&hl=en">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Guilietta.jpeg"
-                                                    alt="card image"></p>
-                                            <h4 class="card-title">Giulietta Riboldi, M.D.</h4>
-                                            <p class="card-text">Physician</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Giulietta Riboldi, M.D.</h4>
-                                            <p class="card-text">Giulietta is a post-doctoral fellow at the <a
-                                                    target="_blank"
-                                                    href="https://med.nyu.edu/parkinson/fresco-institute-parkinsons-movement-disorders">
-                                                    Fresco Institute for Parkinson’s disease and Movement
-                                                    Disorders</a>at
-                                                NYU Langone Health. She received her MD and completed her Neurology
-                                                Residency at the <a target="_blank"
-                                                    href="http://www.unimi.it/ENG/university/31941.htm">University
-                                                    of Milan</a>. Her current project in the Raj lab is focusing on
-                                                understanding the role of risk factor gene, GBA, in Parkinson's
-                                                disease.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/giulietta-riboldi-70b91027/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href=" https://www.researchgate.net/profile/Giulietta_Riboldi">
-                                                        <i class="fab fa-researchgate"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://scholar.google.com/citations?user=YPtjK4cAAAAJ&hl=en">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Jack.jpeg" alt="card image">
-                                            </p>
-                                            <h4 class="card-title">Jack Humphrey, Ph.D.</h4>
-                                            <p class="card-text">Post-Doctoral Fellow</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Jack Humphrey, Ph.D.</h4>
-                                            <p class="card-text">Jack obtained his Ph.D. in Clinical Neuroscience from
-                                                <a href="https://www.ucl.ac.uk/" target="_blank">University College
-                                                    London</a>, after spending time
-                                                as a visiting researcher at <a href="https://www.stanford.edu/"
-                                                    target="_blank">Stanford University</a> and as a computational
-                                                scientist at <a href="https://www.inivata.com/" target="_blank">Inivata
-                                                    Ltd</a>, a Cambridge-based
-                                                biotech startup. He develops methods to analyse and visualise large
-                                                human 'omics datasets to understand the biology
-                                                of the fatal neurodegenerative disease Amyotrophic Lateral Sclerosis. In
-                                                his spare time he goes rock climbing and
-                                                plays the bass.</p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/jack-humphrey-9ba9a26a/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://scholar.google.co.uk/citations?user=x6GuSDsAAAAJ&hl=en">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Katia.JPG" alt="card image">
-                                            </p>
-                                            <h4 class="card-title">Katia Lopes, Ph.D.</h4>
-                                            <p class="card-text">Data Analyst</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Katia Lopes, Ph.D.</h4>
-                                            <p class="card-text">Katia's academic background includes a Bachelor’s
-                                                degree in Computer Information System followed by a Master’s degree in
-                                                Bioinformatics where she worked with transcriptome analysis. In 2017
-                                                she received her PhD from UFMG (Brazil) after a period as a visiting
-                                                student at Salamanca University, Spain. Her thesis focused on the
-                                                application of phylostratigraphy strategies to depict evolutionary gene
-                                                co-expression networks in human tissues. Later on, she studied the
-                                                identification of miRNAs as potential prognostic/diagnostic biomarkers
-                                                in human diseases. Katia has experience working with database design
-                                                and maintenance, gene expression analysis and bioinformatics-specific
-                                                pipeline development. When not in the lab, Katia likes travelling,
-                                                cycling and collecting "The Little Prince" books from different
-                                                countries and languages!</p>
-                                            <ul class="list-inline">
 
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://twitter.com/lopeskp?lang=en">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.instagram.com/katiapaivalopes/">
-                                                        <i class="fab fa-instagram"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href=" https://www.researchgate.net/profile/Katia_De_Paiva_Lopes">
-                                                        <i class="fab fa-researchgate"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://scholar.google.com/citations?user=y2ttJsIAAAAJ&hl=en">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://github.com/katiaplopes">
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Brian.JPG" alt="card image">
-                                            </p>
-                                            <h4 class="card-title">Brian Schilder, M.Phil.</h4>
-                                            <p class="card-text">Bioinformatician II</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Brian Schilder, M.Phil.</h4>
-                                            <p class="card-text">
-                                                Brian earned his Sc.B. from Brown University in Cognitive Neuroscience
-                                                (2011). He earned his M.Phil. at The George Washington University in
-                                                Human Paleobiology (2017),
-                                                researching the ecological, neuroanatomical, transcriptomic, and
-                                                genomic
-                                                evolution of the hippocampus and episodic memory.
-                                                <br><br>
-                                                He is currently investigating the molecular mechanisms underlying
-                                                Parkinson's and Alzheimer's disease. He develops computational
-                                                pipelines
-                                                that integrate and analyze large-scale multi-omics and clinical data
-                                                using a wide variety of advanced statistical methodologies, including
-                                                deep learning.
-                                            </p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://bschilder.github.io/BMSchilder/">
-                                                        <p class="cvText"> Digital CV </p> <i
-                                                            class="fas fa-address-card">
-                                                        </i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://twitter.com/BMSchilder">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/brian-schilder/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://scholar.google.com/citations?user=PR6KaQQAAAAJ&hl=en">
-                                                        <i class="fa fa-google"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://github.com/bschilder">
-                                                        <i class="fab fa-github"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/evan.JPG" alt="card image">
-                                            </p>
-                                            <h4 class="card-title">Evan Udine, M.S.</h4>
-                                            <p class="card-text">Research Associate</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Evan Udine, M.S.</h4>
-                                            <p class="card-text">Evan received his B.A. in Neuroscience and Behavior
-                                                from <a target="_blank"
-                                                    href="https://neuroscienceandbehavior.vassar.edu/">
-                                                    Vassar
-                                                    College </a> in 2016 and M.S. in Neuroscience from <a
-                                                    target="_blank" href="https://neuroscience.columbia.edu/">
-                                                    Columbia University </a> in 2018. He's currently involved in the
-                                                MyND project and is working to integrate clinical and mutli-omic data
-                                                to elucidate genetic drivers of disease. When not working, you can find
-                                                Evan on the tennis court or enjoying the occasional fast food run.</p>
-                                            <ul class="list-inline">
-
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://twitter.com/EvanUdine?lang=en">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/evan-udine-2487bab2/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Madison.jpeg"
-                                                    alt="card image"></p>
-                                            <h4 class="card-title">Madison Parks, B.S.</h4>
-                                            <p class="card-text">Research Associate</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Madison Parks, B.S.</h4>
-                                            <p class="card-text">Madison is a recent graduate of <a target="_blank"
-                                                    href="https://www.dickinson.edu/homepage/41/neuroscience">
-                                                    Dickinson College </a>where she obtained her B.S. in Neuroscience.
-                                                In the lab, Madison uses molecular techniques to elucidate genetic
-                                                contributors to neurodegenerative diseases. She will be attending
-                                                medical school in the fall with the ambition to increase accessibility
-                                                to healthcare in underprivilaged communities. </p>
-                                            <ul class="list-inline">
-                                                <li class="list-inline-item">
-                                                    <a class="social-icon text-xs-center" target="_blank"
-                                                        href="https://www.linkedin.com/in/madison-parks-000458157/">
-                                                        <i class="fa fa-linkedin-square"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ./Team member -->
-
-                    <!-- Team member -->
-                    <div class="col-md-4">
-                        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                            <div class="mainflip">
-                                <div class="frontside">
-                                    <div class="card">
-                                        <div class="card-body text-center">
-                                            <p><img class=" img-fluid" src="./images/team/Maojuan.JPG" alt="card image">
-                                            </p>
-                                            <h4 class="card-title">Maojuan Zhuang, M.D.</h4>
-                                            <p class="card-text">Research Associate</p>
-                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="backside">
-                                    <div class="card">
-                                        <div class="card-body text-center mt-4">
-                                            <h4 class="card-title">Maojuan Zhuang, M.D.</h4>
-                                            <p class="card-text">Maojuan earned her medical degree from Weifang Medical
-                                                College in China, and was a pediatrician before relocating to the U.S.
-                                                In the lab, she has been instrumental in sample processing and
-                                                organization, as well as nucleic acid extraction and genotyping. When
-                                                not in the lab, Maojuan enjoys spending time with her family.</p>
-                                            <ul class="list-inline">
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- ./Team member -->
-
-                <!-- Team member -->
-                <div class="col-md-4">
-                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                        <div class="mainflip">
-                            <div class="frontside">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <p><img class=" img-fluid" src="./images/team/Welmoed.jpeg" alt="card image">
-                                        </p>
-                                        <h4 class="card-title">Welmoed van Zuiden, B.S.</h4>
-                                        <p class="card-text">Visiting Student</p>
-                                        <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="backside">
-                                <div class="card">
-                                    <div class="card-body text-center mt-4">
-                                        <h4 class="card-title">Welmoed van Zuiden, B.S.</h4>
-                                        <p class="card-text">Welmoed obtained her B.S. in Biomedical Sciences at the <a
-                                                href="https://www.uu.nl/en" target="_blank">University of Utrecht</a>
-                                            (the Netherlands),
-                                            where she is currently enrolled in the Master's Programme Neuroscience &
-                                            Cognition. In the lab of <a
-                                                href="https://www.mountsinai.org/profiles/lotje-d-de-witte"
-                                                target="_blank">Dr. Lot de Witte</a>, she
-                                            is investigating microglial changes in schizophrenia. With the help of Raj
-                                            lab members, she is performing
-                                            bioinformatic analysis of transcriptomic data. Outside of the lab, Welmoed
-                                            likes to exercise and play volleyball or
-                                            join happy hour with her fellow lab members.</p>
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a class="social-icon text-xs-center" target="_blank"
-                                                    href="https://www.linkedin.com/in/welmoed-van-zuiden-81b11610a/">
-                                                    <i class="fa fa-linkedin-square"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./Team member -->
-
-            </div>
             <div id="visiting_members">
                 <h2>Visiting & Rotation Students</h2>
                 <p>
-                    <ul>
-                        <li><strong>Kristen Watkins, B.S.</strong> (MSSM Rotation Student)</li>
-                        <li><strong>Aanay Shah, M.D.</strong> (MSSM Rotation Student)</li>
-                    </ul>
+                    <ul id="student_list"></ul>
                 </p>
             </div>
 
             <div id="lab_alumni">
                 <h2>Lab Alumni</h2>
                 <p>
-                    <ul>
-                        <li><strong>Garrett Wong</strong> (now a Ph.D. student at UCSF)</li>
-                        <li><strong>Satesh Ramdhani, Ph.D.</strong> (now in industry)</li>
-                        <li><strong>Tamjeed Sikder</strong> (now Manager at Mount Sinai Neuropathology Brain Bank)</li>
-                        <li><strong>Matthew Chan</strong> (High School Summer Student)</li>
-                        <li><strong>Julia Cai</strong> (High School Summer Student)</li>
-                    </ul>
+                    <ul id="alumni_list"> </ul>
                 </p>
             </div>
             
 
     </section>
+    <!-- Automatically create Team profiles from CSV -->
 
+
+
+ 
+    <script>  
+		d3.csv("./documents/Team.csv")
+			.then(function (data) { 
+                var addLinks = function(d) {
+                            var dict = {Twitter: "fa fa-twitter",
+                                        LinkedIn:"fab fa-linkedin-in",
+                                        GoogleScholar:"fa fa-google",
+                                        ResearchGate:"fab fa-researchgate",
+                                        Instagram:"fab fa-instagram",
+                                        Website:"fas fa-address-card",
+                                        GitHub:"fab fa-github"
+                                        };  
+                            
+                            var listStr = ' <ul class="list-inline">'
+                            for (var key in dict) { 
+                                if (d[key] != ""){
+                                    listStr += '<li class="list-inline-item">\
+                                                    <a class="social-icon text-xs-center" target="_blank"\
+                                                        href="' + d[key] + '">\
+                                                        <i class="' + dict[key] + '"></i>\
+                                                    </a>\
+                                                </li>'
+                                } 
+                            } 
+                            listStr += '</ul>'
+                            return listStr
+                        }
+
+				var createDivs = function (data) {
+                    // Create PI div
+                    var createHTML_PI = function(d){ 
+                    var front = '<div class="image-flip" ontouchstart="this.classList.toggle(\'hover\');">\
+                                    <div class="mainflip">\
+                                        <div class="frontside">\
+                                            <div class="card">\
+                                                <div class="card-body text-center">\
+                                                    <p><img class=" img-fluid" src="' + d.Image +'" alt="card image">\
+                                                    </p>\
+                                                    <h4 class="card-title">' + d.Name + ', ' + '</h4>\
+                                                    <p class="card-text"> ' + d.Title + '</p>\
+                                                    <a href="" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>\
+                                                </div>\
+                                            </div>\
+                                        </div>'
+
+                        var back = '<div class="backside">\
+                                        <div class="card">\
+                                            <div class="card-body text-center mt-4">\
+                                                <h4 class="card-title">' + d.Name + ', ' + d.Degree + '</h4>\
+                                                <p class="card-text">' + d.Bio + '</p>\
+                                                <ul class="list-inline">\
+                                                    <li class="list-inline-item">\
+                                                        <a class="social-icon text-xs-center" target="_blank"\
+                                                            href="https://twitter.com/trajnp?lang=en">\
+                                                            <i class="fa fa-twitter"></i>\
+                                                        </a>\
+                                                    </li>\
+                                                    <li class="list-inline-item">\
+                                                        <a class="social-icon text-xs-center" target="_blank"\
+                                                            href="https://www.linkedin.com/in/towfique-raj-8120836/">\
+                                                            <i class="fa fa-linkedin-square"></i>\
+                                                        </a>\
+                                                    </li>\
+                                                    <li class="list-inline-item">\
+                                                        <a class="social-icon text-xs-center" target="_blank"\
+                                                            href="https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en">\
+                                                            <i class="fa fa-google"></i>\
+                                                        </a>\
+                                                    </li>\
+                                                </ul>\
+                                            </div>\
+                                        </div>\
+                                    </div>'
+                                    
+                            var cap = '</div>\
+                                    </div>'
+                        var htmlStr = front + back + cap
+                        return htmlStr
+                    }
+
+                    // Create all other team member divs
+					var createHTML = function (d) {  
+						var front =  '<div class="col-md-4">\
+                                        <div class="image-flip" ontouchstart="this.classList.toggle(\'hover\');">\
+                                            <div class="mainflip">\
+                                                <div class="frontside">\
+                                                    <div class="card">\
+                                                        <div class="card-body text-center">\
+                                                            <p><img class="img-fluid" src="' + d.Image +'" alt="card image"></p>\
+                                                            <h4 class="card-title">' + d.Name + ', ' + d.Degree + '</h4>\
+                                                            <p class="card-text">' + d.Title + '</p>\
+                                                            <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>\
+                                                        </div>\
+                                                    </div>\
+                                                </div>'
+                                              
+                        var back =  '<div class="backside">\
+                                        <div class="card">\
+                                            <div class="card-body text-center mt-4">\
+                                                <h4 class="card-title">' + d.Name + ', ' + d.Degree + '</h4>\
+                                                <p class="card-text">' + d.Bio + '</p>'
+                        back += addLinks(d)
+                        back +=  '</div>\
+                                </div>\
+                            </div>'    
+                        var cap = '</div>\
+                                </div>'
+                var htmlStr = front + back + cap  
+				return htmlStr
+				}
+					data.forEach(d => {
+                        if (d.Status == 'active'){
+                            if (d.Name=='Towfique Raj'){ 
+                           var htmlStr = createHTML_PI(d);
+                           $('#PI_card').append(htmlStr);
+                        } else {  
+                            var htmlStr = createHTML(d);
+						    $('#teamContainer').append(htmlStr);
+                            }
+                        } 
+                        if (d.Status == "student"){
+                            var visitStr = '<li><strong>' + d.Name + ', ' + d.Degree + '</strong>\
+                                                (' + d.Title + ')  \
+                                                <a href="mailto:' + d.Email + '"><i class="fa fa-envelope"></i></a></li>';
+                            $('#student_list').append(visitStr); 
+                        }
+                        if (d.Status == "alumn"){
+                            var almumniStr = '<li><strong>' + d.Name + ', ' + d.Degree + '</strong>\
+                                                (' + d.Title + ')';
+                            if (d.Email != ""){
+                                almumniStr += ' <a href="mailto:' + d.Email + '"><i class="fa fa-envelope"></i></a></li>'; 
+                            }     
+                            $('#alumni_list').append(almumniStr); 
+                        }
+                        
+					});
+				}
+				createDivs(data);
+			});  
+	</script>
 
     <!-- Footer -->
     <section id="footer"></section>

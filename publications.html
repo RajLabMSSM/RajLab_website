@@ -127,70 +127,44 @@
 				</p>
 
 			</header>
-			<div id="slideshare" class="row"> 
-				<div>
-					<!-- presentation -->
-					<iframe src="//www.slideshare.net/slideshow/embed_code/key/cgZmIzrJzaV1CZ" width="595" height="485"
-						frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-						style="margin-bottom:5px; max-width: 100%;"
-						allowfullscreen> </iframe>
-					<div style="margin-bottom:5px"> <strong> <a
-								href="//www.slideshare.net/BrianSchilder/fungen-jc-presentation-mostafavi-et-al-2019"
-								title="FunGen JC Presentation - Mostafavi et al. (2019)" target="_blank">FunGen JC
-								Presentation - Mostafavi et al. (2019)</a> </strong> by <strong><a
-								href="https://www.researchgate.net/profile/Katia_De_Paiva_Lopes" target="_blank">Katia Lopes</a></strong>
-					</div>
-				</div>
-
-				<div>
-					<!-- presentation -->
-					<iframe src="//www.slideshare.net/slideshow/embed_code/key/iW42wiLIHwFiuP" width="595" height="485"
-						frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-						style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-						allowfullscreen>
-					</iframe>
-					<div style="margin-bottom:5px"> <strong> <a
-								href="//www.slideshare.net/BrianSchilder/github-presentation-128406831"
-								title="GitHub Presentation" target="_blank">GitHub Presentation</a> </strong> by
-						<strong><a href="//www.slideshare.net/BrianSchilder" target="_blank">Brian Schilder</a></strong>
-					</div>
-				</div>
-
-				<div>
-					<!-- presentation -->
-					<iframe src="//www.slideshare.net/slideshow/embed_code/key/HyrqheRo0DTvF8" width="595" height="485"
-						frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-						style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-						allowfullscreen>
-					</iframe>
-					<div style="margin-bottom:5px"> <strong> <a
-								href="//www.slideshare.net/BrianSchilder/sundaram-et-al-2018-presentation"
-								title="Sundaram et al. 2018 Presentation" target="_blank">Sundaram et al. 2018
-								Presentation</a> </strong> by <strong><a href="https://www.slideshare.net/BrianSchilder"
-								target="_blank">Brian Schilder</a></strong>
-					</div>
-				</div>
-
-				<div>
-					<!-- presentation -->
-					<iframe src="//www.slideshare.net/slideshow/embed_code/key/2EVAAd87LCT8Z9" width="595" height="485"
-						frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
-						style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;"
-						allowfullscreen>
-					</iframe>
-					<div style="margin-bottom:5px"> <strong> <a
-								href="//www.slideshare.net/RicardoVialle/raj-lab-meeting-may012019"
-								title="Li et al. 2017 - Lab Meeting Presentation" target="_blank">Li et al. 2017 - Lab Meeting 
-								Presentation</a> </strong> by <strong><a href="https://www.researchgate.net/profile/Katia_De_Paiva_Lopes"
-								target="_blank">Katia Lopes</a></strong> and <strong><a href="https://www.researchgate.net/profile/Ricardo_Vialle"
-								target="_blank">Ricardo Vialle</a></strong>
-					</div>
-				</div>
-			</div>
-
+			
+			<!-- Container for javascript rendering -->
+			<div id="slideshare" class="row"></div> 
 		</div>
 
 	</section>
+
+	<!-- Automatically generate PRESENTATIONS from file -->
+	<script>  
+		d3.csv("./documents/Presentations.csv")
+			.then(function (data) {
+				// Method 2: As Divs
+				var createDivs = function (data) {
+					var createHTML = function (d) {  
+						var htmlStr =  
+							"<div class='presentationsDiv'>\
+								<iframe src='" + d.iframe + "'\
+									width='595' height='485'\
+									frameborder='0' marginwidth='0' marginheight='0' scrolling='no'\
+									style='margin-bottom:5px; max-width: 100%;'\
+									allowfullscreen> </iframe>\
+								<div style='margin-bottom:5px'> <strong>\
+								<a href='" + d.URL + "'\
+									title='" + d.Title + "' target='_blank'>" + d.Title + "</a> </strong>\
+									by <strong><a href='" + d.Author_URL + "' target='_blank'>" + d.Authors + "</a></strong>\
+								</div>\
+							</div> <br><br>"
+						return htmlStr
+					}
+					data.forEach(d => {
+						var htmlStr = createHTML(d);
+						$('#slideshare').append(htmlStr);
+					});
+				}
+				createDivs(data);
+			});  
+	</script>
+
 
 	<!-- Automatically generate publications from file -->
 	<script>
@@ -199,7 +173,7 @@
 			$('#publicationTabs a[href="#pubsTable_tab"]').tab('show');
 		})
 
-		d3.csv("./documents/publications_Raj_Lab.csv")
+		d3.csv("./documents/Publications.csv")
 			.then(function (data) {
 				// Method 2: As Divs
 				var createDivs = function (data) {
@@ -236,7 +210,7 @@
 
 	<!-- Method 1: Publication as Datatable -->
 	<script>
-		d3.csv("./documents/publications_Raj_Lab.csv")
+		d3.csv("./documents/Publications.csv")
 			.then(function (data) {
 				// Remove empty rows
 				const obj = Object.values(data)
