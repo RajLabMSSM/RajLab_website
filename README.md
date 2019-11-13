@@ -84,6 +84,11 @@ For these reasons, I used javascript to automatically construct the webpages fro
 - And voilà! Your website will now be updated, all with no or minimal HTML coding:
     + **Note**: You may have to wait a little bit for all the changes to fully appear in the website (GitHub Pages can take some time to update). 
 
+# Troubleshooting  
+## DNS Hosting  
+What if you have bought a domain name (e.g. `www.rajlab.org`) that you want to use for this website instead of the default url (e.g. `https://rajlabmssm.github.io/RajLab_website/`)? In our case, we use GoDaddy. This can be a bit tricky to set up so I recommend the following tutorial:  
+- [GoDaddy Domain with GitHub Pages](https://medium.com/@JinnaBalu/godaddy-domain-with-github-pages-62aed906d4ef)
+
 <hr><hr>
 
 ### Web Creators:  
