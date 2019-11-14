@@ -98,9 +98,9 @@ active,Katia Lopes, Ph.D.,Data Analyst,"Katia's academic background includes a B
                                                 pipeline development. When not in the lab, Katia likes travelling,
                                                 cycling and collecting ""The Little Prince"" books from different
                                                 countries and languages!",./images/team/Katia.JPG,https://twitter.com/lopeskp?lang=en,,https://scholar.google.com/citations?user=y2ttJsIAAAAJ&hl=en,https://www.researchgate.net/profile/Katia_De_Paiva_Lopes,https://www.instagram.com/katiapaivalopes/,https://github.com/katiaplopes,,katia.lopes@mssm.edu
-active,Brian Schilder,M.Phil.,Bioinformatician II,"Brian earned his Sc.B. from Brown University in Cognitive Neuroscience
-                                                (2011). He earned his M.Phil. at The George Washington University in
-                                                Human Paleobiology (2017),
+active,Brian Schilder,M.Phil.,Bioinformatician II,"Brian earned his Sc.B. in Cognitive Neuroscience from <a href=""https://www.brown.edu/academics/cognitive-linguistic-psychological-sciences/home"" target=""_blank"">Brown University</a>
+                                                (2011). In 2017, he earned his M.Phil. in
+                                                Human Paleobiology at <a href=""https://www.gwu.edu"" target=""_blank"">The George Washington University </a> (2017),
                                                 researching the ecological, neuroanatomical, transcriptomic, and
                                                 genomic
                                                 evolution of the hippocampus and episodic memory.
@@ -134,7 +134,7 @@ alumn,Madison Parks, B.S.,Research Associate,"Madison is a recent graduate of <a
                                                 medical school in the fall with the ambition to increase accessibility
                                                 to healthcare in underprivilaged communities.",,,,,,,,,
 alumn,Kristen Watkins,B.S.,MSSM Rotation Student,,,,,,,,,,kristen.watkins@icahn.mssm.edu
-student,Aanay Shah,M.D.,MSSM Rotation Student,,,,,,,,,,aanay.shah@icahn.mssm.edu
+active,Aanay Shah,M.D.,MSSM Rotation Student,"Aanay is currently a Ph.D. candidate in the <a href=""https://icahn.mssm.edu/education/masters/clinical-research/education"" target=""_blank"">Clinical and Translational Research Program at Mount Sinai</a> under the mentorship of Dr. Towfique Raj and <a href=""http://labs.neuroscience.mssm.edu/project/castellano-lab/"" target=""_blank"">Dr. Joseph Castellano</a>. Coming from a medical background, Aanay completed his M.B.B.S. (M.D. equivalent) at <a href=""http://pdumcrajkot.org"" target=""_blank"">Pandit Deendayal Upadhyay Medical School</a> in Rajkot, India in 2014 and worked as a junior doctor before pursuing his interests in clinical research. His current work in the lab comprises of plasma proteomic analysis for Alzheimer's disease as a part of his thesis. Outside of his research interests, he loves to teach biostatistics to first year students, as well as try new dessert spots in and around NYC.",./images/team/Aanay.JPG,,https://www.linkedin.com/in/aanay-shah-316ba4148/,,,,,,aanay.shah@icahn.mssm.edu
 alumn,Welmoed van Zuiden, B.S.,Visiting Student,"Welmoed obtained her B.S. in Biomedical Sciences at the <a
                                                 href=""https://www.uu.nl/en"" target=""_blank"">University of Utrecht</a>
                                             (the Netherlands),
@@ -152,4 +152,5 @@ alumn,Satesh Ramdhani,Ph.D.,now in industry,,,,,,,,,,
 alumn,Tamjeed Sikder,M.A.,now Manager at Mount Sinai Neuropathology Brain Bank,,,,,,,,,,tamjeed.sikder@mssm.edu
 alumn,Matthew Chan,,High School Summer Student,,,,,,,,,,
 alumn,Julia Cai,,High School Summer Student,,,,,,,,,,
-student,Sanan Venkatesh,M.D.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu
+student,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu
+active,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com
