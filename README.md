@@ -28,7 +28,7 @@ For these reasons, I used javascript to automatically construct the webpages fro
         - `News_Events.csv` = Easily add updates to the "News and Events" feed by inserting new rows into the top of this CSV. 
 
     + ### [Projects](https://rajlabmssm.github.io/RajLab_website/projects.html): 
-        - `Projects.csv` = Each "Project" is part of a "Group" with the same theme. You can add as many Groups and Projects as you like. You can also add associated papers by filling in the "PaperLink" and "PaperJournal" columns.
+        - `Projects.csv` = Each "Project" is part of a "Group" with the same theme. You can add as many Groups and Projects as you like. You can also add associated papers by filling in the "PaperLink" and "PaperJournal" columns, as well a list of contributers/co-authors in the "Contributers" column.
         - You can also add a custom picture for each Project by adding the image path to the "Image" column.
 
     + ### [Team](https://rajlabmssm.github.io/RajLab_website/team.html): 
