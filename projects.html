@@ -48,97 +48,73 @@
 	<section id="main" class="project_page">
 	
 		<div class="inner">
+			<!-- HEADER -->
 			<header class="major special">
 
-				<h1><i class="fa fa-sitemap" aria-hidden="true"></i>
-					</i>
-					Projects</h1>
+				<h1><i class="fa fa-sitemap" aria-hidden="true"></i> Projects</h1>
 				<p>Our lab is currently working on a variety of projects related to:<br>
-					<a href="#Neuroimmunology">Neuroimmunology</a>, <a href="#FunctionalGenomics">Functional Genomics and Gene
-						Regulation</a>,
+					<a href="#Neuroimmunology">Neuroimmunology</a>, 
+					<a href="#FunctionalGenomicsandGeneRegulation">Functional Genomics and Gene Regulation</a>,
 					and <a href="#Technology">Technology</a></p>
 			</header>
 
-			 
-			<!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="opacity: 1; position: absolute; min-width: 1310px; min-height: 737px; left: -165px; top: 0px;" muted="" id="SITE_BACKGROUNDcurrentVideovideo" class="bgVideovideo" width="1310" height="737" src="https://video.wixstatic.com/video/11062b_6a134fc09ea34833a17d295e295ab517/1080p/mp4/file.mp4"></video> -->
-		
-			<!-- Text -->
-			<div class="container allProjects">
-				
-				<div class="row" id="Neuroimmunology">
-					<h2>Neuroimmunology</h2>
-					<div class="row projectContent">
-						<div class="col-md-3 project">
-							<h3>MyND</h3><br><br>
-							<img src="./icons/DNA.png">
-							<p>The role of <strong>My</strong>eloid cells in <strong>N</strong>euro<strong>d</strong>egeneration</p>
-						</div>
-						<div class="col-md-3 project">
-							<h3>Biomarkers of Neurodegeneration </h3>
-							<img src="./icons/chemicals.png">
-							<p>Identifying biomarkers in Alzheimer’s and Parkinson’s disease</p>
-						</div>
-						<div class="col-md-3 project">
-							<h3>LRRK2 and GBA in Parkinson’s</h3>
-							<img src="./icons/DNA.png">
-							<p>The Role of LRRK2 and GBA in manifesting and non-manifesting Parkinson’s disease </p>
-						</div>
-						<div class="col-md-3 project">
-							<h3>Microglia</h3><br><br>
-							<img src="./icons/chemicals.png">
-							<p>Characterization of human microglia in health and disease</p>
-						</div>
-					</div>
-				</div>
-				<!--End projectRow-->
-
-				<div class="row" id="FunctionalGenomics">
-					<h2>Functional Genomics and Gene Regulation</h2>
-					<div class="row projectContent">
-						<div class="col-md-3 project">
-							<h3>Variant Effects</h3><br><br>
-							<img src="./icons/DNA.png">
-							<p>Characterizing genetic variants that affect the cellular phenotypes</p>
-						</div>
-						<div class="col-md-3 project">
-							<h3>Alternate Splicing</h3><br><br>
-							<img src="./icons/chemicals.png">
-							<p>Regulation of Alternative pre-mRNA Splicing</p>
-						</div>
-						<div class="col-md-3 project">
-							<h3>Structural Variants</h3><br><br>
-							<img src="./icons/DNA.png">
-							<p>Patterns and mechanisms of structural variations in brain diseases</p>
-						</div>
-						<div class="col-md-3 project">
-							<h3>Multi-omics Integration</h3>
-							<img src="./icons/chemicals.png">
-							<p>Integrating molecular omics data to understand disease mechanisms</p>
-						</div>
-					</div>
-				</div>
-				<!--End projectRow-->
-
-				<div class="row" id="Technology">
-					<h2>Technology</h2>
-					<div class="row projectContent container">
-						<div class="col-md-3 project">
-							<h3>Big Data Integration</h3><br><br>
-							<img src="./icons/DNA.png">
-							<p>Methods for Big Data Integration</p>
-						</div>
-					</div>
-				</div>
-				<!--End projectRow-->
-
-			</div>
+			<!-- CONTENTS --> 
+			<div class="container allProjects" id="ProjectsContainer"></div>
+			<br> 
 		</div>
 	</section>
 
+
+	<script>
+			d3.csv("./documents/Projects.csv")
+				// D3 Tutorial: https://www.d3-graph-gallery.com/graph/basic_datamanipulation.html
+				.then(function (data) {
+					// Method 2: As Divs
+					var createDivs = function (data) {
+						// Iterate over each project group
+						var unique_groups = d3.map(data, function(d){return(d.Group)}).keys()
+						console.log(unique_groups)  
+						unique_groups.forEach(g => {
+							console.log(g) 
+							var dsub = data.filter(function(d){ return d.Group == g })
+							console.log(dsub)
+							var gid = g.replace(/\s/g, '') // id's can't have whitespace
+							var htmlGROUP = "<div class='row' id='"+gid+"'><h2>"+g+"</h2></div>"
+							$('#ProjectsContainer').append(htmlGROUP); 
+							// Iterate over rows within groups
+							dsub.forEach(d => { 
+								if (d.Title != ""){
+									// Add certain rows only if they're not blank
+									var description_row = (d.Description === "") ? "" : "<div class='row container'><p class='Description'>"+d.Description+"</p></div>";
+									var contributer_row = (d.Contributers === "") ? "" : "<div class='row container'><h4 class='Contributers'> Contributers:</h4><p>"+d.Contributers+"</p></div>";
+									var paper_row = (d.PaperLink === "") ? "" : "<div class='row container'><a href='" + d.PaperLink + "' target='_blank'><h4><i class='fas fa-scroll'></i> Paper: </h4><p>" + d.PaperJournal + "</p></a></div>";
+									var image_col = (d.Image === "") ? "" : "<div class='col-md-3 project'><img src='"+d.Image+"'></div>";
+									console.log("Contr",contributer_row)
+									var createDiv = function (d){ 
+										var htmlStr =  
+											"<div class='row projectContent container'>\
+												<div class='col-md-9'>\
+													<h3>"+d.Project+"</h3>"+ 
+													description_row+
+													contributer_row+
+													paper_row+ 
+												"</div>"+
+												image_col+ 
+											"</div>" 
+										return htmlStr
+									}
+									var htmlStr = createDiv(d);
+									$('#'+d.Group.replace(/\s/g, '')).append(htmlStr);
+								} 
+							}); 
+						}) 
+					}
+					createDivs(data);
+				});  
+		</script>
+
 	<!-- Footer -->
-	<section id="footer"></section>
-
-
+	<section id="footer"></section> 
 
 </body>
 

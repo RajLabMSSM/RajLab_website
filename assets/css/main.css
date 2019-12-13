@@ -3260,13 +3260,17 @@ i.red {
 }
 
 .projectContent {
-  height: 300px;
+  min-height: 10%;
+  width:70%;
   background: var(--primary-color);
   border-radius: 2px;
   margin-left: 0;
   margin-top: 10px;
-  margin-bottom: 250px;
+  margin-bottom: 10px;
+  margin-left:50px;
+  padding: 20px;
 }
+ 
 
 .project p {
   display: block;
@@ -3304,7 +3308,7 @@ i.red {
   height: 150px;
   display: block;
   max-height: 200px;
-  margin: 10px auto;
+  /* margin: 10px auto; */
 }
 
 .project:hover {
