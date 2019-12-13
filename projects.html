@@ -86,7 +86,7 @@
 								if (d.Title != ""){
 									// Add certain rows only if they're not blank
 									var description_row = (d.Description === "") ? "" : "<div class='row container'><p class='Description'>"+d.Description+"</p></div>";
-									var contributer_row = (d.Contributers === "") ? "" : "<div class='row container'><h4 class='Contributers'> Contributers:</h4><p>"+d.Contributers+"</p></div>";
+									var contributor_row = (d.Contributors === "") ? "" : "<div class='row container'><h4 class='Contributors'> Contributors:</h4><p>"+d.Contributors+"</p></div>";
 									var paper_row = (d.PaperLink === "") ? "" : "<div class='row container'><a href='" + d.PaperLink + "' target='_blank'><h4><i class='fas fa-scroll'></i> Paper: </h4><p>" + d.PaperJournal + "</p></a></div>";
 									var image_col = (d.Image === "") ? "" : "<div class='col-md-3 project'><img src='"+d.Image+"'></div>";
 									console.log("Contr",contributer_row)
@@ -96,7 +96,7 @@
 												<div class='col-md-9'>\
 													<h3>"+d.Project+"</h3>"+ 
 													description_row+
-													contributer_row+
+													contributor_row+
 													paper_row+ 
 												"</div>"+
 												image_col+ 
