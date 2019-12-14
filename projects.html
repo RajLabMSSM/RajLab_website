@@ -73,11 +73,11 @@
 					var createDivs = function (data) {
 						// Iterate over each project group
 						var unique_groups = d3.map(data, function(d){return(d.Group)}).keys()
-						console.log(unique_groups)  
+						// console.log(unique_groups)  
 						unique_groups.forEach(g => {
-							console.log(g) 
+							// console.log(g) 
 							var dsub = data.filter(function(d){ return d.Group == g })
-							console.log(dsub)
+							// console.log(dsub)
 							var gid = g.replace(/\s/g, '') // id's can't have whitespace
 							var htmlGROUP = "<div class='row' id='"+gid+"'><h2>"+g+"</h2></div>"
 							$('#ProjectsContainer').append(htmlGROUP); 
@@ -89,7 +89,7 @@
 									var contributor_row = (d.Contributors === "") ? "" : "<div class='row container'><h4 class='Contributors'> Contributors:</h4><p>"+d.Contributors+"</p></div>";
 									var paper_row = (d.PaperLink === "") ? "" : "<div class='row container'><a href='" + d.PaperLink + "' target='_blank'><h4><i class='fas fa-scroll'></i> Paper: </h4><p>" + d.PaperJournal + "</p></a></div>";
 									var image_col = (d.Image === "") ? "" : "<div class='col-md-3 project'><img src='"+d.Image+"'></div>";
-									console.log("Contr",contributer_row)
+									 
 									var createDiv = function (d){ 
 										var htmlStr =  
 											"<div class='row projectContent container'>\
