@@ -3262,13 +3262,26 @@ i.red {
 .projectContent {
   min-height: 10%;
   width:70%;
-  background: var(--primary-color);
+  background:rgba(0,0,0,.4);
+  
   border-radius: 2px;
   margin-left: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left:50px;
   padding: 20px;
+}
+
+.projectContent:hover {
+  transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out; 
+
+  background-color: rgba(255, 255, 255, .2); 
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 28px -7px rgba(14, 12, 12, 0.75);
+  -moz-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
 }
  
 
@@ -3287,9 +3300,9 @@ i.red {
   -webkit-transition: opacity 0.3s ease-in-out;
 }
 
-.project h3 {
+.projectContent h3 {
   text-transform: none;
-  color: var(--background-color);
+  color: var(--primary-color);
   padding: 20px 10px 10px 10px;
   margin: 10px;
   display: inline-block;
@@ -3307,19 +3320,24 @@ i.red {
 .project img {
   height: 150px;
   display: block;
+  min-height: 100px;
   max-height: 200px;
+  padding: 10px;
   /* margin: 10px auto; */
 }
+ 
 
-.project:hover {
-  transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
+/* .project:hover {
+  transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
 
-  -webkit-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
+  background-color: rgba(255, 255, 255, .2); 
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 28px -7px rgba(14, 12, 12, 0.75);
   -moz-box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 28px -7px rgba(0, 0, 0, 0.75);
-}
+} */
 
 .project p {
   min-height: 150px;
@@ -3337,7 +3355,7 @@ i.red {
   display: block;
   color: var(--secondary-color);
   text-transform: none;
-  margin: 0;
+  margin-top: 100px;
 }
  
 /* Footer */
@@ -3580,6 +3598,7 @@ table.dataTable thead .pubsHeader {
   color: var(--background-color);
   background: var(--primary-color);
   padding: 20px;
+  margin-bottom: 50px;
   border-radius: 20px;
   text-align: center;
 
@@ -3589,7 +3608,7 @@ table.dataTable thead .pubsHeader {
 }
 .collapseButton h2:hover,
 .collapseButton h3:hover {
-  background: var(--secondary-color);
+  background: var(--secondary-color); 
 }
 .collapseButton:hover {
   text-decoration: none;
@@ -3598,10 +3617,10 @@ table.dataTable thead .pubsHeader {
 #activeGrants,
 #completedGrants,
 .publicationsDiv {
-  border: var(--tertiary-color) solid 0.5px;
+  /* border: var(--tertiary-color) solid 0.5px; */
   border-radius: 4px;
-  padding: 50px;
-  margin-bottom: 80px;
+  /* padding: 50px; */
+  margin-bottom: 80px; 
 
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
@@ -3621,7 +3640,7 @@ table.dataTable thead .pubsHeader {
 }
 .grantDetails, 
 .pubDetails {
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.4);
   border-radius: 4px;
   padding: 20px;
   display: flex;
@@ -3664,7 +3683,7 @@ table.dataTable thead .pubsHeader {
 
 /* Data / Software */
 .dataSoftware {
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.4);
   border-radius: 4px;
   padding: 20px;
   text-align: left;
@@ -3722,8 +3741,9 @@ h5 {
   display: block;
 }
 .GoogleForm {
+  opacity: .9;
   font-family: var(--main-font);
-  background-color: var(--primary-color);
+  background-color: rgba(25, 25, 25, .4);
   border-radius: 4px;
   padding: 10px;
 }
