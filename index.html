@@ -187,7 +187,7 @@
 					});  
 			</script>
 
-		<!-- Highlight the most recent publications -->
+		<!-- Highlight the most recent publications from CSV-->
 		<script>
 				d3.csv("./documents/Publications.csv")
 					.then(function (data) {
@@ -225,6 +225,41 @@
 			if (location.hash) shiftWindow();
 			window.addEventListener("hashchange", shiftWindow);
 		</script>
+		<!-- Automatically generate publications from file -->
+	
+
+
+	<script>
+		d3.csv("./documents/Lab_Activities.csv")
+			// D3 Tutorial: https://www.d3-graph-gallery.com/graph/basic_datamanipulation.html
+			.then(function (data) { 
+				var createDivs = function (data) {
+					// Iterate over each project group
+					var unique_groups = d3.map(data, function(d){return(d.Event+" "+d.Year)}).keys() 
+					data.forEach(function(d) {return d.Group = d.Event+" "+d.Year;}); 
+					unique_groups.forEach((g,i) => {
+						// console.log(g)  
+						// console.log(i)
+						var dsub = data.filter(function(d){console.log(d.Group); return d.Group === g })
+						dsub.forEach(function(d) {return d.Gallery = "gallery"+i;});   
+						var gallery_id = "gallery"+i 
+						console.log("GALLERY:"+gallery_id)
+						// Add group to navigation buttons
+						$('#activitiesCollapse_rows').append("<a href='"+gallery_id+"'>"+g+"</a>")
+						// Iterate over rows within groups
+						$('#activities_images').append("<div class='row' id='"+gallery_id+"'><h4>"+g+"</h4></div>") 
+						dsub.forEach(d => { 
+							console.log(d)
+							console.log(d.Gallery)
+							if (d.Image != ""){ 
+								$("#"+d.Gallery).append("<img src='"+d.Image+"'>")  
+							} 
+						}); 
+					}) 
+				}
+				createDivs(data);
+			});  
+	</script>
  
 
 		<!-- Activities -->
@@ -235,108 +270,14 @@
 			</a>
 			
 			<div class="collapse show" id="activitiesCollapse"> 
+				<!-- Navigation bar -->
 				<div class="row container JumpTo">
 					<p>Jump to:</p>
-					<div class="row">
-						<a href="#gallery9">HalloweeeEEEEeeen! 2019</a>
-						<a href="#gallery8">ASHG 2019</a>
-						<a href="#gallery7">GGS Retreat 2019</a>
-						<a href="#gallery6">Madison's Sendoff 2019</a>
-						<a href="#gallery5">Lab Picnic 2019</a>
-						<a href="#gallery4">Bull Hill Hiking 2018</a>
-						<a href="#gallery3">Holiday Party Painting 2018</a>
-						<a href="#gallery2">Friedman Brain Institute Holiday Party 2018</a>
-						<a href="#gallery1">Science-ing</a>
-					</div> 
+					<div class="row" id="activitiesCollapse_rows"></div> 
 				</div>
-			
+				<!-- Images -->
 				<div class="row container" > 
-					<div class="col-md-12 activities"> 
-						<div class="row" id="gallery9">
-							<h4>HalloweeeEEEEeeen!<br>2019</h4> 
-							<img src="./images/Action/Halloween-2019_2.jpg"> 
-							<img src="./images/Action/Halloween-2019_1.jpg"> 
-						</div> 
-
-						<div class="row" id="gallery8">
-							<h4>American Society<br>of Human Genetics<br>2019</h4> 
-							<img src="./images/Action/ASHG-2019_1.jpg"> 
-							<img src="./images/Action/ASHG-2019_2.jpg"> 
-							<img src="./images/Action/ASHG-2019_3.jpg"> 
-							<img src="./images/Action/ASHG-2019_4.jpg"> 
-							<img src="./images/Action/ASHG-2019_5.jpg"> 
-							<img src="./images/Action/ASHG-2019_6.jpg"> 
-							<img src="./images/Action/ASHG-2019_7.jpg"> 
-							<img src="./images/Action/ASHG-2019_8.jpg"> 
-							<img src="./images/Action/ASHG-2019_9.jpg"> 
-						</div> 
-
-						<div class="row" id="gallery7">
-							<h4>GGS Retreat 2019</h4> 
-							<img src="./images/Action/GGS Retreat 2019 (1).jpg"> 
-							<img src="./images/Action/GGS Retreat 2019 (2).jpg"> 
-							<img src="./images/Action/GGS Retreat 2019 (3).jpg"> 
-						</div> 
-
-						<div class="row" id="gallery6">
-							<h4>Madison's Sendoff<br>2019</h4> 
-							<img src="./images/Action/Madison Sendoff (1).jpg"> 
-							<img src="./images/Action/Madison Sendoff (2).jpg"> 
-							<img src="./images/Action/Madison Sendoff (3).jpg"> 
-							<img src="./images/Action/Madison Sendoff (4).jpg"> 
-							<img src="./images/Action/Madison Sendoff (5).jpg">
-						</div> 
-
-						<div class="row" id="gallery5">
-							<h4>Lab Picnic<br>2019</h4> 
-							<img src="./images/Action/lab_picnic(2).jpg">  
-							<img src="./images/Action/lab_picnic(1).jpg">    
-							<img src="./images/Action/lab_picnic.jpg"> 
-							<img src="./images/Action/lab_picnic(6).jpg">   
-							<img src="./images/Action/lab_picnic(7).jpg">  
-							<img src="./images/Action/lab_picnic(4).jpg">     
-							<img src="./images/Action/lab_picnic(3).jpg">    
-							<img src="./images/Action/lab_picnic(5).jpg">
-						</div> 
-
-						<div class="row" id="gallery4">
-							<h4>Bull Hill Hiking<br>2018</h4> 
-							<img src="./images/Action/BullHill_hike1.jpg"> 
-							<img src="./images/Action/BullHill_hike2.jpg"> 
-							<img src="./images/Action/BullHill_hike3.jpg">   
-						</div> 
-						
-						<div class="row" id="gallery3">
-							<h4>Holiday Party Painting<br><2018></h4> 
-							<img src="./images/Action/holiday_painting4.jpg"> 
-							<img src="./images/Action/holiday_painting3.jpg"> 
-							<img src="./images/Action/holiday_painting2.jpg"> 
-							<img src="./images/Action/holiday_painting1.jpg">  
-						</div> 
-
-						<div class="row" id="gallery2">
-							<h4>Friedman Brain Institute<br>Holiday Party<br>2018</h4>
-							<img src="./images/Action/FBI_holiday1.jpg">
-							<img src="./images/Action/FBI_holiday2.jpg"> 
-						</div>
-						
-						<div class="row" id="gallery1"> 
-							<h4>Science-ing</h4> 
-							<img src="./images/Action/elisa_computer_good.jpg">
-							<img src="./images/Action/elisa_thumbs.jpg"> 
-							<img src="./images/Action/evan_computer.jpg">  
-							<img src="./images/Action/lab_girls.jpg">
-							<img src="./images/Action/labcoats.jpg"> 
-							<img src="./images/Action/denim_twinsies.jpg">  
-							<img src="./images/Action/madison_maual_sorter.jpg">
-							<img src="./images/Action/madison_pipet.jpg">
-							<img src="./images/Action/mao_macs.jpg"> 
-							<img src="./images/Action/office_window.jpg"> 
-							<img src="./images/Action/plant.jpg"> 
-							<img src="./images/Action/lab_bar.jpg"> 
-							<img src="./images/Action/old_lab_centralPark.jpg"> 
-						</div> 
-					</div>
+					<div class="col-md-12 activities" id="activities_images"></div>
 				</div>
 			</div> 
 		</div>

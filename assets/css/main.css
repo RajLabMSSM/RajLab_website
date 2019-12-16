@@ -3460,6 +3460,7 @@ i.red {
 table.pubsTable {
   width: 100%;
   clear: both;
+  background-color: transparent;
 }  
 
 table.dataTable { 
@@ -3469,23 +3470,38 @@ table.dataTable {
 table.dataTable td {
   border: var(--secondary-color) solid 0.2px !important;
   color: white;
-  background-color: rgba(0,0, 0, .9);
-}
-table.dataTable tbody tr:nth-child(even):hover {
-  transition: 0.3s ease-in-out;
-  -moz-transition: 0.3s ease-in-out;
-  -webkit-transition: 0.3s ease-in-out;
-  background-color: rgba(25, 25, 25, .8) !important;
-  color: white;
+  background-color: transparent;
+  /* background-color: rgba(0,0, 0, .5); */
 }
 
-table.dataTable tbody tr:nth-child(odd):hover {
+table.dataTable tbody tr:nth-child(even){ 
+  background-color: rgba(25, 25, 25, .4);
+}
+
+table.dataTable tbody tr:nth-child(odd){ 
+  background-color: rgba(25, 25, 25, .6);
+}
+
+table.dataTable tbody tr:hover {
   transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -webkit-transition: 0.3s ease-in-out;
-  background-color: rgba(25, 25, 25, .6) !important;
-  color: white;
+  background-color: rgba(25, 25, 25, .8) !important;  
 }
+
+table.dataTable tbody tr:hover a {
+	color: magenta;
+	text-decoration: none; 
+}
+
+.paperLink:hover a{
+	color: magenta;
+	text-decoration: none; 
+}
+.paperLink i {
+	color: var(--primary-color); 
+}
+ 
  
 table.dataTable tbody .tbl_Title {
   font-weight: bold;
@@ -3502,16 +3518,7 @@ table.dataTable tbody .tbl_Journal {
 	font-weight: bold;
 	font-size: 1.2em;
 }
-.paperLink:hover a{
-	color: blue;
-	text-decoration: none; 
-}
-.paperLink i {
-	color: blue; 
-}
-.paperLink:hover i {
-	color: magenta;
-}
+
 
 
 
