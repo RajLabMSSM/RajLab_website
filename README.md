@@ -26,7 +26,7 @@ For these reasons, I used javascript to automatically construct the webpages fro
     + ### [Home](https://rajlabmssm.github.io/RajLab_website/index.html): 
         - `Publications.csv` = Automatically updates the "Recent Publications" feed by highligting publications in descending order of publication date.
         - `News_Events.csv` = Easily add updates to the "News and Events" feed by inserting new rows into the top of this CSV. 
-        - `Lab_Activities.csv1 = Add images from various lab events (e.g. conferences, socials) by adding the "Event" name, "Year", and the path to the "Image" (to each respective column). Each row is a new image. The script will automatically organize the image and generate button links above.
+        - `Lab_Activities.csv` = Add images from various lab events (e.g. conferences, socials) by adding the "Event" name, "Year", and the path to the "Image" (to each respective column). Each row is a new image. The script will automatically organize the image and generate button links above.
 
     + ### [Projects](https://rajlabmssm.github.io/RajLab_website/projects.html): 
         - `Projects.csv` = Each "Project" is part of a "Group" with the same theme. You can add as many Groups and Projects as you like. You can also add associated papers by filling in the "PaperLink" and "PaperJournal" columns, as well a list of contributors/co-authors in the "Contributors" column.
