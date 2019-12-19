@@ -68,8 +68,7 @@
 	<script>
 			d3.csv("./documents/Projects.csv")
 				// D3 Tutorial: https://www.d3-graph-gallery.com/graph/basic_datamanipulation.html
-				.then(function (data) {
-					// Method 2: As Divs
+				.then(function (data) { 
 					var createDivs = function (data) {
 						// Iterate over each project group
 						var unique_groups = d3.map(data, function(d){return(d.Group)}).keys()
