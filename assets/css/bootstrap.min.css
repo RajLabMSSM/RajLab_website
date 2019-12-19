@@ -3747,7 +3747,10 @@ input[type="submit"].btn-block {
 }
 .navbar-brand img {
     max-height: 60px; 
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
+
  
 
 .navbar-brand:focus,
@@ -3755,6 +3758,11 @@ input[type="submit"].btn-block {
   text-decoration: none;
   color: var(--secondary-color); 
 }
+.navbar-brand:hover img {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .navbar-nav {
   display: -ms-flexbox;
   display: flex;
