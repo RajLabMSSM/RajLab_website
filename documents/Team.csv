@@ -111,7 +111,7 @@ active,Brian Schilder,M.Phil.,Bioinformatician II,"Brian earned his Sc.B. in Cog
                                                 that integrate and analyze large-scale multi-omics and clinical data
                                                 using a wide variety of advanced statistical methodologies, including
                                                 deep learning.",./images/team/Brian.JPG,https://twitter.com/BMSchilder,https://www.linkedin.com/in/brian-schilder/,https://scholar.google.com/citations?user=PR6KaQQAAAAJ&hl=en,https://www.researchgate.net/profile/Brian_Schilder,,https://github.com/bschilder,https://bschilder.github.io/BMSchilder/,brian.schilder@mssm.edu
-active,Evan Udine,M.S.,Research Associate,"Evan received his B.A. in Neuroscience and Behavior
+alumn,Evan Udine,M.S.,now a Ph.D. student at the Mayo Clinic in Florida,"Evan received his B.A. in Neuroscience and Behavior
                                                 from <a target=""_blank""
                                                     href=""https://neuroscienceandbehavior.vassar.edu/"">
                                                     Vassar
@@ -126,7 +126,7 @@ active,Maojuan Zhuang,M.D.,Research Associate,"Maojuan earned her medical degree
                                                 In the lab, she has been instrumental in sample processing and
                                                 organization, as well as nucleic acid extraction and genotyping. When
                                                 not in the lab, Maojuan enjoys spending time with her family.",./images/team/Maojuan.JPG,,,,,,,,maojuan.zhuang@mssm.edu
-alumn,Madison Parks, B.S.,Research Associate,"Madison is a recent graduate of <a target=""_blank""
+alumn,Madison Parks,B.S.,now an M.D. student at the University of Maryland,"Madison is a recent graduate of <a target=""_blank""
                                                     href=""https://www.dickinson.edu/homepage/41/neuroscience"">
                                                     Dickinson College </a>where she obtained her B.S. in Neuroscience.
                                                 In the lab, Madison uses molecular techniques to elucidate genetic
@@ -134,8 +134,8 @@ alumn,Madison Parks, B.S.,Research Associate,"Madison is a recent graduate of <a
                                                 medical school in the fall with the ambition to increase accessibility
                                                 to healthcare in underprivilaged communities.",,,,,,,,,
 alumn,Kristen Watkins,B.S.,MSSM Rotation Student,,,,,,,,,,kristen.watkins@icahn.mssm.edu
-active,Aanay Shah,M.D.,PhD Student,"Aanay is currently a Ph.D. candidate in the <a href=""https://icahn.mssm.edu/education/masters/clinical-research/education"" target=""_blank"">Clinical and Translational Research Program at Mount Sinai</a> under the mentorship of Dr. Towfique Raj and <a href=""http://labs.neuroscience.mssm.edu/project/castellano-lab/"" target=""_blank"">Dr. Joseph Castellano</a>. Coming from a medical background, Aanay completed his M.B.B.S. (M.D. equivalent) at <a href=""http://pdumcrajkot.org"" target=""_blank"">Pandit Deendayal Upadhyay Medical School</a> in Rajkot, India in 2014 and worked as a junior doctor before pursuing his interests in clinical research. His current work in the lab comprises of plasma proteomic analysis for Alzheimer's disease as a part of his thesis. Outside of his research interests, he loves to teach biostatistics to first year students, as well as try new dessert spots in and around NYC.",./images/team/Aanay.JPG,,https://www.linkedin.com/in/aanay-shah-316ba4148/,,,,,,aanay.shah@icahn.mssm.edu
-alumn,Welmoed van Zuiden, B.S.,Visiting Student,"Welmoed obtained her B.S. in Biomedical Sciences at the <a
+alumn,Aanay Shah,M.D.,Ph.D. Student,"Aanay is currently a Ph.D. candidate in the <a href=""https://icahn.mssm.edu/education/masters/clinical-research/education"" target=""_blank"">Clinical and Translational Research Program at Mount Sinai</a> under the mentorship of Dr. Towfique Raj and <a href=""http://labs.neuroscience.mssm.edu/project/castellano-lab/"" target=""_blank"">Dr. Joseph Castellano</a>. Coming from a medical background, Aanay completed his M.B.B.S. (M.D. equivalent) at <a href=""http://pdumcrajkot.org"" target=""_blank"">Pandit Deendayal Upadhyay Medical School</a> in Rajkot, India in 2014 and worked as a junior doctor before pursuing his interests in clinical research. His current work in the lab comprises of plasma proteomic analysis for Alzheimer's disease as a part of his thesis. Outside of his research interests, he loves to teach biostatistics to first year students, as well as try new dessert spots in and around NYC.",./images/team/Aanay.JPG,,https://www.linkedin.com/in/aanay-shah-316ba4148/,,,,,,aanay.shah@icahn.mssm.edu
+alumn,Welmoed van Zuiden,B.S.,Visiting Student,"Welmoed obtained her B.S. in Biomedical Sciences at the <a
                                                 href=""https://www.uu.nl/en"" target=""_blank"">University of Utrecht</a>
                                             (the Netherlands),
                                             where she is currently enrolled in the Master's Programme Neuroscience &
@@ -154,4 +154,7 @@ alumn,Matthew Chan,,High School Summer Student,,,,,,,,,,
 alumn,Julia Cai,,High School Summer Student,,,,,,,,,,
 student,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu
 active,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com
-active,Amanda Allan,,Research Associate, ,./icons/brain-icon.png,,,,,,,,amanda.allan@mssm.edu
+active,Amanda Allan,B.S.,Research Associate, ,./icons/brain-icon.png,,,,,,,,amanda.allan@mssm.edu
+active,Charlie Argyrou,M.S.,Clinical Research Coordinator,,,,,,,,,,charlie.argyrou@mssm.edu
+alumn,Saori Sakaue,M.D.,Visiting Student,,,,,,,,,,
+alumn,Jake Herb,B.S.,MSSM Rotation Student,,,,,,,,,,
