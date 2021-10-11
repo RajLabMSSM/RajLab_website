@@ -1,4 +1,4 @@
-﻿Status,Name,Degree,Title,Bio,Image,Twitter,LinkedIn,GoogleScholar,ResearchGate,Instagram,GitHub,Website,Email
+﻿Status,Name,Degree,Title,Bio,Image,Twitter,LinkedIn,GoogleScholar,ResearchGate,Instagram,GitHub,Website,Email,,,,,,,,,
 active,Towfique Raj,Ph.D.,Principal Investigator,"<h2 class=""leadLetter"">T</h2>owfique Raj, Ph.D., is a core faculty member in
                                             the
                                             <a target=""_blank""
@@ -42,7 +42,7 @@ active,Towfique Raj,Ph.D.,Principal Investigator,"<h2 class=""leadLetter"">T</h2
                                             pathogenesis (see the MyND study). His group is leading efforts to set
                                             up human cohorts for deep multi-omics profiling of immune cells. His
                                             long-term interest is to translate findings from these studies to
-                                            potentially identify novel immune therapeutic targets and biomarkers.",./images/team/Towfique.jpg,https://twitter.com/trajnp?lang=en,https://www.linkedin.com/in/towfique-raj-8120836/,https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en,,,,,towfique.raj@mssm.edu
+                                            potentially identify novel immune therapeutic targets and biomarkers.",./images/team/Towfique.jpg,https://twitter.com/trajnp?lang=en,https://www.linkedin.com/in/towfique-raj-8120836/,https://scholar.google.com/citations?user=_1soEyEAAAAJ&hl=en,,,,,towfique.raj@mssm.edu,,,,,,,,,
 alumn,Elisa Navarro,Ph.D.,Now a Professor at Complutense University of Madrid,"Elisa obtained her PhD at the <a target=""_blank""
                                                     href=""http://www.ifth.es"">Teofilo Hernando
                                                     Institute</a> in <a target=""_blank""
@@ -54,14 +54,14 @@ alumn,Elisa Navarro,Ph.D.,Now a Professor at Complutense University of Madrid,"E
                                                 deciphering how gene variants may affect
                                                 cellular function. Apart from the MyND project, Elisa also loves to run
                                                 around Central Park, try new IPAs or just
-                                                enjoy NYC!",./images/team/Elisa.jpeg,https://twitter.com/Elisa_Navarro_?lang=en,https://www.linkedin.com/in/elisa-navarro-267058118/,https://scholar.google.com/citations?user=xgDw-mMAAAAJ&hl=en&oi=ao,,,,,elisa.navarro@mssm.edu
+                                                enjoy NYC!",./images/team/Elisa.jpeg,https://twitter.com/Elisa_Navarro_?lang=en,https://www.linkedin.com/in/elisa-navarro-267058118/,https://scholar.google.com/citations?user=xgDw-mMAAAAJ&hl=en&oi=ao,,,,,elisa.navarro@mssm.edu,,,,,,,,,
 active,Ricardo Vialle,Ph.D.,Post-Doctoral Fellow,"Ricardo is working with state-of-the-art computational
                                                 methods and sequencing technologies to unveil the role of genomic
                                                 structural variation in brain diseases. He obtained his PhD in
                                                 Bioinformatics in 2017 from the<a target=""_blank""
                                                     href=""https://ufmg.br/cursos/pos-graduacao/doutorado/2573/01"">
                                                     Federal University of Minas Gerais</a> in Brazil. When not in the
-                                                lab, Ricardo enjoys playing guitar and video games.",./images/team/Ricardo.jpeg,https://twitter.com/ricardovialle?lang=en,https://www.linkedin.com/in/ricardovialle/,https://scholar.google.com/citations?user=rhThrMcAAAAJ&hl=en,,,,,ricardo.vialle@mssm.edu
+                                                lab, Ricardo enjoys playing guitar and video games.",./images/team/Ricardo.jpeg,https://twitter.com/ricardovialle?lang=en,https://www.linkedin.com/in/ricardovialle/,https://scholar.google.com/citations?user=rhThrMcAAAAJ&hl=en,,,,,ricardo.vialle@mssm.edu,,,,,,,,,
 active,Giulietta Riboldi,M.D.,Physician,"Giulietta is a post-doctoral fellow at the <a
                                                     target=""_blank""
                                                     href=""https://med.nyu.edu/parkinson/fresco-institute-parkinsons-movement-disorders"">
@@ -72,7 +72,7 @@ active,Giulietta Riboldi,M.D.,Physician,"Giulietta is a post-doctoral fellow at 
                                                     href=""http://www.unimi.it/ENG/university/31941.htm"">University
                                                     of Milan</a>. Her current project in the Raj lab is focusing on
                                                 understanding the role of risk factor gene, GBA, in Parkinson's
-                                                disease.",./images/team/Guilietta.jpeg,,https://www.linkedin.com/in/giulietta-riboldi-70b91027/,https://scholar.google.com/citations?user=YPtjK4cAAAAJ&hl=en,https://www.researchgate.net/profile/Giulietta_Riboldi,,,,Giulietta.Riboldi@nyulangone.org
+                                                disease.",./images/team/Guilietta.jpeg,,https://www.linkedin.com/in/giulietta-riboldi-70b91027/,https://scholar.google.com/citations?user=YPtjK4cAAAAJ&hl=en,https://www.researchgate.net/profile/Giulietta_Riboldi,,,,Giulietta.Riboldi@nyulangone.org,,,,,,,,,
 active,Jack Humphrey, Ph.D.,Post-Doctoral Fellow,"Jack obtained his Ph.D. in Clinical Neuroscience from
                                                 <a href=""https://www.ucl.ac.uk/"" target=""_blank"">University College
                                                     London</a>, after spending time
@@ -84,7 +84,7 @@ active,Jack Humphrey, Ph.D.,Post-Doctoral Fellow,"Jack obtained his Ph.D. in Cli
                                                 human 'omics datasets to understand the biology
                                                 of the fatal neurodegenerative disease Amyotrophic Lateral Sclerosis. In
                                                 his spare time he goes rock climbing and
-                                                plays the bass.",./images/team/Jack.JPG,,https://www.linkedin.com/in/jack-humphrey-9ba9a26a/,https://scholar.google.co.uk/citations?user=x6GuSDsAAAAJ&hl=en,,,,,Jack.Humphrey@mssm.edu
+                                                plays the bass.",./images/team/Jack.JPG,,https://www.linkedin.com/in/jack-humphrey-9ba9a26a/,https://scholar.google.co.uk/citations?user=x6GuSDsAAAAJ&hl=en,,,,,Jack.Humphrey@mssm.edu,,,,,,,,,
 active,Katia Lopes, Ph.D.,Data Analyst,"Katia's academic background includes a Bachelor’s
                                                 degree in Computer Information System followed by a Master’s degree in
                                                 Bioinformatics where she worked with transcriptome analysis. In 2017
@@ -97,13 +97,13 @@ active,Katia Lopes, Ph.D.,Data Analyst,"Katia's academic background includes a B
                                                 and maintenance, gene expression analysis and bioinformatics-specific
                                                 pipeline development. When not in the lab, Katia likes travelling,
                                                 cycling and collecting ""The Little Prince"" books from different
-                                                countries and languages!",./images/team/Katia.JPG,https://twitter.com/lopeskp?lang=en,,https://scholar.google.com/citations?user=y2ttJsIAAAAJ&hl=en,https://www.researchgate.net/profile/Katia_De_Paiva_Lopes,https://www.instagram.com/katiapaivalopes/,https://github.com/katiaplopes,,katia.lopes@mssm.edu
-active,Josep Oriol Narcis Majos, Ph.D.,Post-Doctoral Fellow,"Oriol is a post-doctoral fellow (wet lab) who obtained his PhD at the <a href=""https://web.unican.es"" target=""_blank"">Universidad de Cantabria</a>. He is interested in understanding how the immune system, both innate and adaptive, is altered in Parkinson's and Alzheimer's disease, moving from genomics to transcriptomics and proteomics. Apart from science, Oriol also loves to walk around the city, do sports and play video games.",././images/team/Oriol.jpg,,,,,,,,joseporiol.narcismajos@mssm.edu
+                                                countries and languages!",./images/team/Katia.JPG,https://twitter.com/lopeskp?lang=en,,https://scholar.google.com/citations?user=y2ttJsIAAAAJ&hl=en,https://www.researchgate.net/profile/Katia_De_Paiva_Lopes,https://www.instagram.com/katiapaivalopes/,https://github.com/katiaplopes,,katia.lopes@mssm.edu,,,,,,,,,
+active,Josep Oriol Narcis Majos, Ph.D.,Post-Doctoral Fellow,"Oriol is a post-doctoral fellow (wet lab) who obtained his PhD at the <a href=""https://web.unican.es"" target=""_blank"">Universidad de Cantabria</a>. He is interested in understanding how the immune system, both innate and adaptive, is altered in Parkinson's and Alzheimer's disease, moving from genomics to transcriptomics and proteomics. Apart from science, Oriol also loves to walk around the city, do sports and play video games.",././images/team/Oriol.jpg,,,,,,,,joseporiol.narcismajos@mssm.edu,,,,,,,,,
 active,Elena Coccia, Ph.D.,Post-Doctoral Fellow,"Elena obtained her Ph.D. in Neuroscience from
-                                                <a href=""https://www2.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html"" target=""_blank"">University Autonoma of Barcelona</a>. Her work focuses on understanding cell type-specific effects of Parkinson's Disease genetic variants in pluripotent stem cells models. In her free time Elena loves to explore NYC, try new food and travel.",./images/team/Elena.JPG,,,,,,,,elena.coccia@mssm.edu
-active,Daniele Mattei, Ph.D.,Post-Doctoral Fellow,,,,,,,,,,daniele.mattei@mssm.edu
-active,Mikaela Rosen,B.S.,Ph.D. Student,"Mikaela has a BS in Biology from the University of Richmond in Richmond, VA. Her coursework concentrated in Neuroscience while her research focused on proteomics and computational chemistry. She attended a summer internship at Memorial Sloan Kettering where she worked on some single cell sequencing analysis. During her PhD, she will continue working with single cell data while learning more about the other ‘omics work being done in the lab. She is excited to be working at the intersection of immunology and neuroscience! Outside of the lab, Mikaela loves to enjoy the outdoors - both in the city and in nature. She also enjoys playing tennis and spending time with her family, including her dog Levi.",,,,,,,,,mikaela.rosen@icahn.mssm.edu
-active,Ashvin Ravi,B.A.,Associate Researcher,"Ashvin earned his Bachelor's Degree in Developmental Genetics from UC Berkeley and is currently an Associate Researcher in the dry lab. He is interested in analyzing gene expression and genetic variants in Alzheimer's Disease. In his free time, Ashvin loves to hike, explore New York, and play volleyball. ",,,https://www.linkedin.com/in/ashvin-ravi-9b8b31159/,,,,,,ashvin.ravi@mssm.edu
+                                                <a href=""https://www2.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html"" target=""_blank"">University Autonoma of Barcelona</a>. Her work focuses on understanding cell type-specific effects of Parkinson's Disease genetic variants in pluripotent stem cells models. In her free time Elena loves to explore NYC, try new food and travel.",./images/team/Elena.JPG,,,,,,,,elena.coccia@mssm.edu,,,,,,,,,
+active,Daniele Mattei, Ph.D.,Post-Doctoral Fellow,,,,,,,,,,daniele.mattei@mssm.edu,,,,,,,,,
+active,Mikaela Rosen,B.S.,Ph.D. Student,"Mikaela has a BS in Biology from the University of Richmond in Richmond, VA. Her coursework concentrated in Neuroscience while her research focused on proteomics and computational chemistry. She attended a summer internship at Memorial Sloan Kettering where she worked on some single cell sequencing analysis. During her PhD, she will continue working with single cell data while learning more about the other ‘omics work being done in the lab. She is excited to be working at the intersection of immunology and neuroscience! Outside of the lab, Mikaela loves to enjoy the outdoors - both in the city and in nature. She also enjoys playing tennis and spending time with her family, including her dog Levi.",,,,,,,,,mikaela.rosen@icahn.mssm.edu,,,,,,,,,
+active,Ashvin Ravi,B.A.,Associate Researcher,"Ashvin earned his Bachelor's Degree in Developmental Genetics from UC Berkeley and is currently an Associate Researcher in the dry lab. He is interested in analyzing gene expression and genetic variants in Alzheimer's Disease. In his free time, Ashvin loves to hike, explore New York, and play volleyball. ",,,https://www.linkedin.com/in/ashvin-ravi-9b8b31159/,,,,,,ashvin.ravi@mssm.edu,,,,,,,,,
 alumn,Brian Schilder,M.Phil.,Now a Ph.D. student in the Clinical Medical Research Program at Imperial College London,"Brian earned his Sc.B. in Cognitive Neuroscience from <a href=""https://www.brown.edu/academics/cognitive-linguistic-psychological-sciences/home"" target=""_blank"">Brown University</a>
                                                 (2011). In 2017, he earned his M.Phil. in
                                                 Human Paleobiology at <a href=""https://www.gwu.edu"" target=""_blank"">The George Washington University </a> (2017),
@@ -116,9 +116,9 @@ alumn,Brian Schilder,M.Phil.,Now a Ph.D. student in the Clinical Medical Researc
                                                 pipelines
                                                 that integrate and analyze large-scale multi-omics and clinical data
                                                 using a wide variety of advanced statistical methodologies, including
-                                                deep learning.",./images/team/Brian.JPG,,https://twitter.com/BMSchilder,https://www.linkedin.com/in/brian-schilder/,https://scholar.google.com/citations?user=PR6KaQQAAAAJ&hl=en,https://www.researchgate.net/profile/Brian_Schilder,,https://github.com/bschilder,https://bschilder.github.io/BMSchilder/,brian.schilder@mssm.edu
-active,Benjamin Muller,M.S.,Data Scientist,"Ben has a BA in Applied Mathematics from Queens College and an MS in Computer Science from the Courant Institute of Mathematical Sciences at NYU. After completing his Master’s and a few internships at Sinai, he joined the Raj dry lab where he will focus on building and deploying reproducible data-processing and data-analysis pipelines for omics data. In his free time, Ben enjoys reading fiction, baking things he knows he shouldn’t be eating, and rock climbing.",./images/team/Ben.jpg,,,,,,,,benjamin.muller@mssm.edu
-active,Erica Brophy,M.S.,Data Scientist,Erica is a Bioinformatician (dry lab) who earned a Bachelor’s degree in Biomedical Engineering from Clemson University followed by a Masters Degree in Biomedical Informatics from Stony Brook Medicine. Her experience includes genetic engineering research conducted at Memorial Sloan Kettering Cancer Center and her thesis focused on scRNA-seq splicing data as well as machine learning at Weill Cornell Medicine/ New York Genome Center.,./images/team/Erica,,,,,,,,,./images/team/Erica.png,,,,,,,,erica.brophy@mssm.edu
+                                                deep learning.",./images/team/Brian.JPG,,https://twitter.com/BMSchilder,https://www.linkedin.com/in/brian-schilder/,https://scholar.google.com/citations?user=PR6KaQQAAAAJ&hl=en,https://www.researchgate.net/profile/Brian_Schilder,,https://github.com/bschilder,https://bschilder.github.io/BMSchilder/,brian.schilder@mssm.edu,,,,,,,,
+active,Benjamin Muller,M.S.,Data Scientist,"Ben has a BA in Applied Mathematics from Queens College and an MS in Computer Science from the Courant Institute of Mathematical Sciences at NYU. After completing his Master’s and a few internships at Sinai, he joined the Raj dry lab where he will focus on building and deploying reproducible data-processing and data-analysis pipelines for omics data. In his free time, Ben enjoys reading fiction, baking things he knows he shouldn’t be eating, and rock climbing.",./images/team/Ben.jpg,,,,,,,,benjamin.muller@mssm.edu,,,,,,,,,
+active,Erica Brophy,M.S.,Data Scientist,Erica is a Bioinformatician (dry lab) who earned a Bachelor’s degree in Biomedical Engineering from Clemson University followed by a Masters Degree in Biomedical Informatics from Stony Brook Medicine. Her experience includes genetic engineering research conducted at Memorial Sloan Kettering Cancer Center and her thesis focused on scRNA-seq splicing data as well as machine learning at Weill Cornell Medicine/ New York Genome Center.,./images/team/Erica.png,,,,,,,,,./images/team/Erica.png,,,,,,,,erica.brophy@mssm.edu
 alumn,Evan Udine,M.S.,Now a Ph.D. student at the Mayo Clinic in Florida,"Evan received his B.A. in Neuroscience and Behavior
                                                 from <a target=""_blank""
                                                     href=""https://neuroscienceandbehavior.vassar.edu/"">
@@ -128,21 +128,21 @@ alumn,Evan Udine,M.S.,Now a Ph.D. student at the Mayo Clinic in Florida,"Evan re
                                                     Columbia University </a> in 2018. He's currently involved in the
                                                 MyND project and is working to integrate clinical and mutli-omic data
                                                 to elucidate genetic drivers of disease. When not working, you can find
-                                                Evan on the tennis court or enjoying the occasional fast food run.",./images/team/evan.JPG,https://twitter.com/EvanUdine?lang=en,https://www.linkedin.com/in/evan-udine-2487bab2/,,,,,,
+                                                Evan on the tennis court or enjoying the occasional fast food run.",./images/team/evan.JPG,https://twitter.com/EvanUdine?lang=en,https://www.linkedin.com/in/evan-udine-2487bab2/,,,,,,,,,,,,,,,
 active,Maojuan Zhuang,M.D.,Research Associate,"Maojuan earned her medical degree from Weifang Medical
                                                 College in China, and was a pediatrician before relocating to the U.S.
                                                 In the lab, she has been instrumental in sample processing and
                                                 organization, as well as nucleic acid extraction and genotyping. When
-                                                not in the lab, Maojuan enjoys spending time with her family.",./images/team/Maojuan.JPG,,,,,,,,maojuan.zhuang@mssm.edu
+                                                not in the lab, Maojuan enjoys spending time with her family.",./images/team/Maojuan.JPG,,,,,,,,maojuan.zhuang@mssm.edu,,,,,,,,,
 alumn,Madison Parks,B.S.,Now an M.D. student at the University of Maryland,"Madison is a recent graduate of <a target=""_blank""
                                                     href=""https://www.dickinson.edu/homepage/41/neuroscience"">
                                                     Dickinson College </a>where she obtained her B.S. in Neuroscience.
                                                 In the lab, Madison uses molecular techniques to elucidate genetic
                                                 contributors to neurodegenerative diseases. She will be attending
                                                 medical school in the fall with the ambition to increase accessibility
-                                                to healthcare in underprivilaged communities.",,,,,,,,,
-alumn,Kristen Watkins,B.S.,MSSM Rotation Student,,,,,,,,,,kristen.watkins@icahn.mssm.edu
-alumn,Aanay Shah,M.D.,Ph.D. Student,"Aanay is currently a Ph.D. candidate in the <a href=""https://icahn.mssm.edu/education/masters/clinical-research/education"" target=""_blank"">Clinical and Translational Research Program at Mount Sinai</a> under the mentorship of Dr. Towfique Raj and <a href=""http://labs.neuroscience.mssm.edu/project/castellano-lab/"" target=""_blank"">Dr. Joseph Castellano</a>. Coming from a medical background, Aanay completed his M.B.B.S. (M.D. equivalent) at <a href=""http://pdumcrajkot.org"" target=""_blank"">Pandit Deendayal Upadhyay Medical School</a> in Rajkot, India in 2014 and worked as a junior doctor before pursuing his interests in clinical research. His current work in the lab comprises of plasma proteomic analysis for Alzheimer's disease as a part of his thesis. Outside of his research interests, he loves to teach biostatistics to first year students, as well as try new dessert spots in and around NYC.",./images/team/Aanay.JPG,,https://www.linkedin.com/in/aanay-shah-316ba4148/,,,,,,aanay.shah@icahn.mssm.edu
+                                                to healthcare in underprivilaged communities.",,,,,,,,,,,,,,,,,,
+alumn,Kristen Watkins,B.S.,MSSM Rotation Student,,,,,,,,,,kristen.watkins@icahn.mssm.edu,,,,,,,,,
+alumn,Aanay Shah,M.D.,Ph.D. Student,"Aanay is currently a Ph.D. candidate in the <a href=""https://icahn.mssm.edu/education/masters/clinical-research/education"" target=""_blank"">Clinical and Translational Research Program at Mount Sinai</a> under the mentorship of Dr. Towfique Raj and <a href=""http://labs.neuroscience.mssm.edu/project/castellano-lab/"" target=""_blank"">Dr. Joseph Castellano</a>. Coming from a medical background, Aanay completed his M.B.B.S. (M.D. equivalent) at <a href=""http://pdumcrajkot.org"" target=""_blank"">Pandit Deendayal Upadhyay Medical School</a> in Rajkot, India in 2014 and worked as a junior doctor before pursuing his interests in clinical research. His current work in the lab comprises of plasma proteomic analysis for Alzheimer's disease as a part of his thesis. Outside of his research interests, he loves to teach biostatistics to first year students, as well as try new dessert spots in and around NYC.",./images/team/Aanay.JPG,,https://www.linkedin.com/in/aanay-shah-316ba4148/,,,,,,aanay.shah@icahn.mssm.edu,,,,,,,,,
 alumn,Welmoed van Zuiden,B.S.,Visiting Student,"Welmoed obtained her B.S. in Biomedical Sciences at the <a
                                                 href=""https://www.uu.nl/en"" target=""_blank"">University of Utrecht</a>
                                             (the Netherlands),
@@ -154,17 +154,17 @@ alumn,Welmoed van Zuiden,B.S.,Visiting Student,"Welmoed obtained her B.S. in Bio
                                             lab members, she is performing
                                             bioinformatic analysis of transcriptomic data. Outside of the lab, Welmoed
                                             likes to exercise and play volleyball or
-                                            join happy hour with her fellow lab members.",,,https://www.linkedin.com/in/welmoed-van-zuiden-81b11610a/,,,,,,j.w.r.vanzuiden@students.uu.n
-alumn,Garrett Wong,B.S.,Now a Ph.D. student at UCSF,,,,,,,,,,
-alumn,Satesh Ramdhani,Ph.D.,Now in industry,,,,,,,,,,
-alumn,Tamjeed Sikder,M.A.,Now Manager at Mount Sinai Neuropathology Brain Bank,,,,,,,,,,tamjeed.sikder@mssm.edu
-alumn,Matthew Chan,,High School Summer Student,,,,,,,,,,
-alumn,Julia Cai,,High School Summer Student,,,,,,,,,,
-alumn,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu
-active,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com
-active,Amanda Allan,B.S.,Research Associate, ,./icons/brain-icon.png,,,,,,,,amanda.allan@mssm.edu
-active,Charlie Argyrou,M.S.,Clinical Research Coordinator,"Charlie earned a B.A. in Biology and Anthopology at Macalester College in St. Paul, MN and an M.S. in Physiology from Georgetown in Washington D.C. After stints in EMS and Mental Health Counseling, Charlie has settled in well with the Raj Lab.",./images/team/Charlie.JPG,,,,,,,,charlie.argyrou@mssm.edu
-alumn,Saori Sakaue,M.D.,Visiting Student,,,,,,,,,,
-alumn,Jake Herb,B.S.,MSSM Rotation Student,,,,,,,,,,
-student,Emily Kozik,B.A.,MSSM Rotation Student,,,,,,,,,,
-student,Rahat Hasan,B.S.,Master's Student,,,,,,,,,,
+                                            join happy hour with her fellow lab members.",,,https://www.linkedin.com/in/welmoed-van-zuiden-81b11610a/,,,,,,j.w.r.vanzuiden@students.uu.n,,,,,,,,,
+alumn,Garrett Wong,B.S.,Now a Ph.D. student at UCSF,,,,,,,,,,,,,,,,,,,
+alumn,Satesh Ramdhani,Ph.D.,Now in industry,,,,,,,,,,,,,,,,,,,
+alumn,Tamjeed Sikder,M.A.,Now Manager at Mount Sinai Neuropathology Brain Bank,,,,,,,,,,tamjeed.sikder@mssm.edu,,,,,,,,,
+alumn,Matthew Chan,,High School Summer Student,,,,,,,,,,,,,,,,,,,
+alumn,Julia Cai,,High School Summer Student,,,,,,,,,,,,,,,,,,,
+alumn,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu,,,,,,,,,
+active,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com,,,,,,,,,
+active,Amanda Allan,B.S.,Research Associate, ,./icons/brain-icon.png,,,,,,,,amanda.allan@mssm.edu,,,,,,,,,
+active,Charlie Argyrou,M.S.,Clinical Research Coordinator,"Charlie earned a B.A. in Biology and Anthopology at Macalester College in St. Paul, MN and an M.S. in Physiology from Georgetown in Washington D.C. After stints in EMS and Mental Health Counseling, Charlie has settled in well with the Raj Lab.",./images/team/Charlie.JPG,,,,,,,,charlie.argyrou@mssm.edu,,,,,,,,,
+alumn,Saori Sakaue,M.D.,Visiting Student,,,,,,,,,,,,,,,,,,,
+alumn,Jake Herb,B.S.,MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
+student,Emily Kozik,B.A.,MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
+student,Rahat Hasan,B.S.,Master's Student,,,,,,,,,,,,,,,,,,,
