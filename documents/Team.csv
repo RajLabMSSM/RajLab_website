@@ -1,4 +1,4 @@
-﻿Status,Name,Degree,Title,Bio,Image,Twitter,LinkedIn,GoogleScholar,ResearchGate,Instagram,GitHub,Website,Email,,,,,,,,,
+Status,Name,Degree,Title,Bio,Image,Twitter,LinkedIn,GoogleScholar,ResearchGate,Instagram,GitHub,Website,Email,,,,,,,,,
 active,Towfique Raj,Ph.D.,Principal Investigator,"<h2 class=""leadLetter"">T</h2>owfique Raj, Ph.D., is a core faculty member in
                                             the
                                             <a target=""_blank""
@@ -73,7 +73,7 @@ active,Giulietta Riboldi,M.D.,Physician,"Giulietta is a post-doctoral fellow at 
                                                     of Milan</a>. Her current project in the Raj lab is focusing on
                                                 understanding the role of risk factor gene, GBA, in Parkinson's
                                                 disease.",./images/team/Guilietta.jpeg,,https://www.linkedin.com/in/giulietta-riboldi-70b91027/,https://scholar.google.com/citations?user=YPtjK4cAAAAJ&hl=en,https://www.researchgate.net/profile/Giulietta_Riboldi,,,,Giulietta.Riboldi@nyulangone.org,,,,,,,,,
-active,Jack Humphrey, Ph.D.,Post-Doctoral Fellow,"Jack obtained his Ph.D. in Clinical Neuroscience from
+active,Jack Humphrey, Ph.D.,Instructor,"Jack obtained his Ph.D. in Clinical Neuroscience from
                                                 <a href=""https://www.ucl.ac.uk/"" target=""_blank"">University College
                                                     London</a>, after spending time
                                                 as a visiting researcher at <a href=""https://www.stanford.edu/""
@@ -84,8 +84,8 @@ active,Jack Humphrey, Ph.D.,Post-Doctoral Fellow,"Jack obtained his Ph.D. in Cli
                                                 human 'omics datasets to understand the biology
                                                 of the fatal neurodegenerative disease Amyotrophic Lateral Sclerosis. In
                                                 his spare time he goes rock climbing and
-                                                plays the bass.",./images/team/Jack.JPG,,https://www.linkedin.com/in/jack-humphrey-9ba9a26a/,https://scholar.google.co.uk/citations?user=x6GuSDsAAAAJ&hl=en,,,,,Jack.Humphrey@mssm.edu,,,,,,,,,
-active,Katia Lopes, Ph.D.,Data Analyst,"Katia's academic background includes a Bachelor’s
+                                                plays the bass.",./images/team/Jack.JPG,,https://www.linkedin.com/in/jack-humphrey-9ba9a26a/,https://scholar.google.co.uk/citations?user=x6GuSDsAAAAJ&hl=en,,,https://jackhump.github.io/,,Jack.Humphrey@mssm.edu,,,,,,,,,
+active,Katia Lopes, Ph.D.,Post-Doctoral Fellow,"Katia's academic background includes a Bachelor’s
                                                 degree in Computer Information System followed by a Master’s degree in
                                                 Bioinformatics where she worked with transcriptome analysis. In 2017
                                                 she received her PhD from UFMG (Brazil) after a period as a visiting
@@ -161,11 +161,15 @@ alumn,Tamjeed Sikder,M.A.,Now Manager at Mount Sinai Neuropathology Brain Bank,,
 alumn,Matthew Chan,,High School Summer Student,,,,,,,,,,,,,,,,,,,
 alumn,Julia Cai,,High School Summer Student,,,,,,,,,,,,,,,,,,,
 alumn,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu,,,,,,,,,
-active,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com,,,,,,,,,
+alumn,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com,,,,,,,,,
 active,Amanda Allan,B.S.,Research Associate, ,./icons/brain-icon.png,,,,,,,,amanda.allan@mssm.edu,,,,,,,,,
 active,Charlie Argyrou,M.S.,Clinical Research Coordinator,"Charlie earned a B.A. in Biology and Anthopology at Macalester College in St. Paul, MN and an M.S. in Physiology from Georgetown in Washington D.C. After stints in EMS and Mental Health Counseling, Charlie has settled in well with the Raj Lab.",./images/team/Charlie.JPG,,,,,,,,charlie.argyrou@mssm.edu,,,,,,,,,
 alumn,Saori Sakaue,M.D.,Visiting Student,,,,,,,,,,,,,,,,,,,
 alumn,Jake Herb,B.S.,MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
-student,Emily Kozik,B.A.,MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
+alumn,Emily Kozik,B.A.,MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
+alumn,Collin Spencer,B. S.,MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
 student,Rahat Hasan,B.S.,Master's Student,,,,,,,,,,kailash.babupanneerselvam@icahn.mssm.edu,,,,,,,,,
-active,Kailash Babu Panneerselvam,"B.Tech, M.Tech",MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
+student,Flora (Hyomin) Seo,B.S.,Master's Student,,,,,,,,,,,,,,,,,,,
+alumn,Kailash Babu Panneerselvam,"B.Tech, M.Tech",MSSM Rotation Student,,,,,,,,,,,,,,,,,,,
+student,Tatsuhiko Naito,MD,Visiting Student,,,,,,,,,,,,,,,,,,,
+alumn,Abdullah Uddin,M.S.,Computational Volunteer,,,,,,,,,,,,,,,,,,,
