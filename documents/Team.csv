@@ -141,9 +141,9 @@ alumn,Madison Parks,B.S.,Now an M.D. student at the University of Maryland,"Madi
                                                 contributors to neurodegenerative diseases. She will be attending
                                                 medical school in the fall with the ambition to increase accessibility
                                                 to healthcare in underprivilaged communities.",,,,,,,,,,
-alumn,Kristen Watkins,B.S.,MSSM Rotation Student,,,,,,,,,,kristen.watkins@icahn.mssm.edu,
+student,Kristen Watkins,B.S.,MSSM Rotation Student,,,,,,,,,,kristen.watkins@icahn.mssm.edu,
 alumn,Aanay Shah,M.D.,Ph.D. Student,"Aanay is currently a Ph.D. candidate in the <a href=""https://icahn.mssm.edu/education/masters/clinical-research/education"" target=""_blank"">Clinical and Translational Research Program at Mount Sinai</a> under the mentorship of Dr. Towfique Raj and <a href=""http://labs.neuroscience.mssm.edu/project/castellano-lab/"" target=""_blank"">Dr. Joseph Castellano</a>. Coming from a medical background, Aanay completed his M.B.B.S. (M.D. equivalent) at <a href=""http://pdumcrajkot.org"" target=""_blank"">Pandit Deendayal Upadhyay Medical School</a> in Rajkot, India in 2014 and worked as a junior doctor before pursuing his interests in clinical research. His current work in the lab comprises of plasma proteomic analysis for Alzheimer's disease as a part of his thesis. Outside of his research interests, he loves to teach biostatistics to first year students, as well as try new dessert spots in and around NYC.",./images/team/Aanay.JPG,,https://www.linkedin.com/in/aanay-shah-316ba4148/,,,,,,aanay.shah@icahn.mssm.edu,
-alumn,Welmoed van Zuiden,B.S.,Visiting Student,"Welmoed obtained her B.S. in Biomedical Sciences at the <a
+student,Welmoed van Zuiden,B.S.,Visiting Student,"Welmoed obtained her B.S. in Biomedical Sciences at the <a
                                                 href=""https://www.uu.nl/en"" target=""_blank"">University of Utrecht</a>
                                             (the Netherlands),
                                             where she is currently enrolled in the Master's Programme Neuroscience &
@@ -158,16 +158,16 @@ alumn,Welmoed van Zuiden,B.S.,Visiting Student,"Welmoed obtained her B.S. in Bio
 alumn,Garrett Wong,B.S.,Now a Ph.D. student at UCSF,,,,,,,,,,,
 alumn,Satesh Ramdhani,Ph.D.,Now in industry,,,,,,,,,,,
 alumn,Tamjeed Sikder,M.A.,Now Manager at Mount Sinai Neuropathology Brain Bank,,,,,,,,,,tamjeed.sikder@mssm.edu,
-alumn,Matthew Chan,,High School Summer Student,,,,,,,,,,,
-alumn,Julia Cai,,High School Summer Student,,,,,,,,,,,
-alumn,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu,
-alumn,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com,
+student,Matthew Chan,,High School Summer Student,,,,,,,,,,,
+student,Julia Cai,,High School Summer Student,,,,,,,,,,,
+student,Sanan Venkatesh,B.S.,MSSM Rotation Student,,,,https://www.linkedin.com/in/sanan-venkatesh-7436b194/,,,,,,sanan.venkatesh@icahn.mssm.edu,
+student,Gijsje Snijders,M.Sc.,Visiting Student,The focus of Gijsje's PhD is investigating whether the immune system is involved in the pathogenesis of psychiatric diseases. ,./images/team/Gijsje.jpeg,,https://www.linkedin.com/in/gijsje-snijders-4a1744b9/,,,,,,gijsjesnijders@gmail.com,
 alumn,Amanda Allan,B.S.,Research Associate, ,./icons/brain-icon.png,,,,,,,,amanda.allan@mssm.edu,
 alumn,Charlie Argyrou,M.S.,Clinical Research Coordinator,"Charlie earned a B.A. in Biology and Anthopology at Macalester College in St. Paul, MN and an M.S. in Physiology from Georgetown in Washington D.C. After stints in EMS and Mental Health Counseling, Charlie has settled in well with the Raj Lab.",./images/team/Charlie.jpg,,,,,,,,charlie.argyrou@mssm.edu,
 alumn,Saori Sakaue,M.D.,Visiting Student,,,,,,,,,,,
-alumn,Jake Herb,B.S.,MSSM Rotation Student,,,,,,,,,,,
-alumn,Emily Kozik,B.A.,MSSM Rotation Student,,,,,,,,,,,
-alumn,Collin Spencer,B. S.,MSSM Rotation Student,,,,,,,,,,,
+student,Jake Herb,B.S.,MSSM Rotation Student,,,,,,,,,,,
+student,Emily Kozik,B.A.,MSSM Rotation Student,,,,,,,,,,,
+student,Collin Spencer,B. S.,MSSM Rotation Student,,,,,,,,,,,
 alumn,Rahat Hasan,B.S.,Data Analyst,,./icons/brain-icon.png,,,,,,,,rahat.hasan@icahn.mssm.edu,
 active,Flora (Hyomin) Seo,B.S.,Data Analyst,"I have a Bachelor's Degree in Mechanical Engineering and minor degree in Computer Science from Cooper Union Albert Nerken school of Engineering in New York. I am in a Master's program in Biomedical Data Science in Icahn school of medicine in Mount Sinai. Joining the Raj lab, I will be conducting my thesis in RNA editing with postdoc Jack Humphrey.",./images/team/Hyomin.jpeg,,,,,,,,hyomin.seo@icahn.mssm.edu,
 active,Tatsuhiko Naito,MD,Post-Doctoral Fellow,,./images/team/Tatsu.jpeg,,,https://scholar.google.com/citations?user=MsgHbu0AAAAJ&hl=en,,,https://github.com/tatsuhikonaito,,tatsuhiko.naito@mssm.edu,
@@ -177,3 +177,4 @@ active,Ariana Chriss,B.S.,Ph.D. Candidate,,./images/team/Ariana.JPG,,,,,,,,arian
 active,Winston H. Cuddleston,"BS, MS",Ph.D. Candidate,"Winston graduated magna cum laude from the University of Nevada, Reno with a BS in Neuroscience and a minor in Biochemistry. He then went on to get a MS in Cellular and Molecular Biology, also from the University of Nevada, Reno. His master's thesis was entitled ''Regulation and Function of Alternative Polyadenylation and Alternative Splicing in the D.melanogaster Nervous System''. Winston's PhD research investigates the dynamic regulation of RNA editing in the brain, and its contributions to neurological disorders. Outside of the lab, he's involved in organizational efforts at ISMMS to promote the success of LGBTQIA+ scientists through oSTEM, and otherwise spends his time camping, brewing kombucha, or being (perhaps a little too) obsessed with his three cats: Malone, Ned, and Sirius.",./images/team/Winston.jpg,https://twitter.com/cuddlestonryn,https://www.linkedin.com/in/winston-cuddleston-48111b108,,https://www.researchgate.net/profile/Winston-Cuddleston,,https://github.com/ryncuddleston,,winston.cuddleston@icahn.mssm.edu,
 active,Elena Mejia,BA,Associate Researcher II,,./icons/brain-icon.png,,,,,,,,elena.mejia@mssm.edu,
 active,Carlos Perez Mandry,B.S.,Clinical Research Coordinator,,./images/team/Carlos.jpg,,https://www.linkedin.com/in/carlos-perez-mandry-203a7312b,,,,,,carlos.perezmandry@mssm.edu,
+student,Ariana Gatt,Ph.D.,Senior Research Fellow,,,,,,,,,,,
